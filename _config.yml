@@ -28,6 +28,7 @@ markdown: kramdown
 
 kramdown:
   parse_block_html: true
+  input: GFM
 
 gems:
   - jekyll-paginate
