@@ -6,21 +6,21 @@
 </description>
     <link>http://jedenbod.cz/</link>
     <atom:link href="http://jedenbod.cz/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Mar 2016 04:12:43 +0100</pubDate>
-    <lastBuildDate>Sun, 20 Mar 2016 04:12:43 +0100</lastBuildDate>
+    <pubDate>Sun, 20 Mar 2016 04:21:15 +0100</pubDate>
+    <lastBuildDate>Sun, 20 Mar 2016 04:21:15 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>Seznam.cz prohlížeč</title>
         <description>&lt;p&gt;Nejspíše vám neuniklo, že Seznam.cz &lt;a href=&quot;http://seznam.seznamblog.cz/post/105271178401/seznam-cz-predstavuje-prvni-verzi-sveho-prohlizece&quot;&gt;oznámil&lt;/a&gt; &lt;a href=&quot;https://www.seznam.cz/prohlizec&quot;&gt;vydání vlastního prohlížeče&lt;/a&gt;. Zajímavé je, že nejde o &lt;em&gt;přebarvený&lt;/em&gt; Chrome/Firefox, ale o &lt;em&gt;vlastní prohlížeč&lt;/em&gt;. Na české poměry poněkud nezvyklý projekt. Podíváme se, z jakého je těsta a co umí.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-4.48.31.png&quot; alt=&quot;Seznam.cz Prohlížeč&quot; /&gt; Seznam.cz prohlížeč po spuštění&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-4.48.31.png&quot; alt=&quot;Seznam.cz Prohlížeč&quot; /&gt; Seznam.cz prohlížeč po spuštění&lt;/p&gt;
 
 &lt;p&gt;Prohlížeč je dostupný jak pro desktop Windows/Mac, tak i pro Android a &lt;em&gt;brzy&lt;/em&gt; i iOS. Zaměřím se na Mac verzi.&lt;/p&gt;
 
 &lt;p&gt;Jádro aplikace je postaveno na &lt;a href=&quot;https://github.com/rogerwang/node-webkit&quot;&gt;node-webkit&lt;/a&gt; - tudíž se jedná o vykreslovací jádro Blink - de facto shodné s aktuální verzí Google Chrome, což potvrzuje i HTML5 Test. Dobrou zprávou je, že uživatelům budou fungovat všechny moderní vychytávky.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-5.38.28.png&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-5.38.28-570x386.png&quot; alt=&quot;HTML5 test - Seznam.cz&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-5.38.28.png&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-5.38.28-570x386.png&quot; alt=&quot;HTML5 test - Seznam.cz&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Jak vůbec fungují node-webkit aplikace? Mají v zásadě 2 vrstvy:&lt;/p&gt;
 
@@ -35,7 +35,7 @@
 
 &lt;p&gt;Node-webkit aplikace se skládají z HTML a JS souborů, takže se můžeme podívat jak vypadá inicializační stránka init.html:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-6.20.22.png&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-6.20.22.png&quot; alt=&quot;init.html&quot; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.22.png&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.22.png&quot; alt=&quot;init.html&quot; /&gt;&lt;/a&gt;
 Zde jsou moduly, které slouží jako globální objekty pro celý proces (historie, nastavení, autoupdate prohlížeče atd.). Lze vidět, že se při startu načítá i několik modulů, které ještě nejsou v současné verzi &lt;em&gt;(1.0.3)&lt;/em&gt; jako: synchronizace hesel, načítání favicon, registrace (?). Občas narazíte i na podivné kusy kódu jako:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;
@@ -51,12 +51,12 @@ Zde jsou moduly, které slouží jako globální objekty pro celý proces (histo
     &lt;/code&gt;&lt;/pre&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Zajímavější kód najdeme na stránce nového (aplikačního) okna &lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-6.20.36.png&quot;&gt;win.html&lt;/a&gt;. Zaprvé: Seznam prohlížeč nevyužívá UI z node-webkit (které vypadá zkrátka jako defaultní prohlížeč), ale místo toho &lt;strong&gt;implementuje celé uživatelské rozhraní pomocí &lt;a href=&quot;https://angularjs.org&quot;&gt;AngularJS&lt;/a&gt;&lt;/strong&gt; (s rozdílným CSS pro Windows a Mac, aby ovládací prvky odpovídaly platformě).&lt;/p&gt;
+&lt;p&gt;Zajímavější kód najdeme na stránce nového (aplikačního) okna &lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.36.png&quot;&gt;win.html&lt;/a&gt;. Zaprvé: Seznam prohlížeč nevyužívá UI z node-webkit (které vypadá zkrátka jako defaultní prohlížeč), ale místo toho &lt;strong&gt;implementuje celé uživatelské rozhraní pomocí &lt;a href=&quot;https://angularjs.org&quot;&gt;AngularJS&lt;/a&gt;&lt;/strong&gt; (s rozdílným CSS pro Windows a Mac, aby ovládací prvky odpovídaly platformě).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/seznam-chrome.png&quot; alt=&quot;Seznam.cz prohlížeč s node-webkit chrome&quot; /&gt;
 Jak vidíte, je to vcelku rozsáhlá aplikace. Nechal jsem zdrojové kódy projet nástrojem &lt;a href=&quot;https://github.com/es-analysis/plato&quot;&gt;Plato&lt;/a&gt; pro analýzu JS kódu a výsledkem (po vynechání knihoven) je 12588 řádků s průměrem 143 řádků na soubor. Projevuje se, že aplikaci nejspíše psalo více týmů, které se neshodly, protože chybí jednotný styl zápisu. Používají se různé typy komentářů - většina funkcí je však úplně nekomentovaná. Občas se používají $constructory, občas ne. Občas se používá &lt;a href=&quot;http://jak.seznam.cz&quot;&gt;JAK&lt;/a&gt;, občas ne. Což se poté projevuje na &lt;a href=&quot;http://www.jslint.com&quot;&gt;JSLint&lt;/a&gt; chybách. Nejspíše se tlačilo na vydání k určitému datu.&lt;/p&gt;
 
-&lt;p&gt;[aesop_parallax height=”400px” img=”http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-7.01.04-e1419146497410.png” parallaxbg=”on” caption=”Plato report” captionposition=”top-right” lightbox=”off” floater=”off” floaterposition=”left” floaterdirection=”up”]&lt;/p&gt;
+&lt;p&gt;[aesop_parallax height=”400px” img=”http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-7.01.04-e1419146497410.png” parallaxbg=”on” caption=”Plato report” captionposition=”top-right” lightbox=”off” floater=”off” floaterposition=”left” floaterdirection=”up”]&lt;/p&gt;
 
 &lt;p&gt;Jak jsem říkal, celé UI je vybudováno přes AngularJS, takže máte přístup i k Developer toolbaru (ctrl+shift+j) můžete se podívat, jak vše funguje. Většina ovládacích prvků je řešena přes Angular direktivy, místo UI routeru se používají node-webkit okna.&lt;/p&gt;
 
@@ -84,7 +84,7 @@ Jak vidíte, je to vcelku rozsáhlá aplikace. Nechal jsem zdrojové kódy proje
 
 &lt;p&gt;Například v Chrome, díky sandboxu vás pád jedné neohrozí a ostatní záložky bez problému fungují dále.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-7.57.37.png&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-7.57.37-570x391.png&quot; alt=&quot;Chrome Sandbox&quot; /&gt;&lt;/a&gt; Chrome Sandbox&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-7.57.37.png&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-7.57.37-570x391.png&quot; alt=&quot;Chrome Sandbox&quot; /&gt;&lt;/a&gt; Chrome Sandbox&lt;/p&gt;
 
 &lt;p&gt;&lt;del&gt;Ale tím největším nebezpečím, na které jsem v současné verzi Seznam.cz prohlížeče narazil, je &lt;strong&gt;neomezený přístup k uživatelským datům&lt;/strong&gt;. Přes HTML5 API, má stránka přístup k webkameře, mikrofonu atd. Prohlížeč na to nijak neupozorní, ani uživatele nevyzve k potvrzení přístupu.&lt;/del&gt;&lt;/p&gt;
 
@@ -98,7 +98,7 @@ Jak vidíte, je to vcelku rozsáhlá aplikace. Nechal jsem zdrojové kódy proje
 
 &lt;p&gt;Webkit/Blink jádro samo o sobě uživatele chrání před různými typy útoků - ale implementace v node-webkit některé věci obchází pro snadnější vývoj desktop aplikací. Tak například můžete simulovat click pro jakýkoliv element. &lt;a href=&quot;http://jsfiddle.net/0104bhnc/1/&quot;&gt;Třeba filepicker s display:none&lt;/a&gt;, což je věc, kterou vám žádný jiný prohlížeč nepovolí (z dobrých důvodů). Seznam prohlížeč poslušně otevře dialog pro výběr souborů, aniž by ho uživatel nějak inicializoval. A takovýchto změn je bohužel vcelku dost.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-16.24.20-570x360.png&quot; alt=&quot;Seznam.cz prohlížeč - filepicker&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-16.24.20-570x360.png&quot; alt=&quot;Seznam.cz prohlížeč - filepicker&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;del&gt;Verdikt: jedná se o &lt;strong&gt;nebezpečný, nedokončený produkt&lt;/strong&gt; a jeho vydání je spíše hrozbou pro uživatele, než zárukou bezpečí a rychlosti. Jeho spásou můžou být rychlé a časté aktualizace, ale Seznam má co dohánět.&lt;/del&gt;&lt;/p&gt;
 </description>
@@ -301,7 +301,7 @@ Jak vidíte, je to vcelku rozsáhlá aplikace. Nechal jsem zdrojové kódy proje
 
 &lt;p&gt;Tento test také zajistí 100% code coverage v &lt;a href=&quot;http://gotwarlost.github.io/istanbul/&quot;&gt;Istanbulu&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-23.57.02.png&quot; alt=&quot;AngularJS - loadJS code coverage&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-23.57.02.png&quot; alt=&quot;AngularJS - loadJS code coverage&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Nov 2014 20:31:34 +0100</pubDate>
         <link>http://jedenbod.cz/1703-knihovny-tretich-stran-v-angularu.html</link>
