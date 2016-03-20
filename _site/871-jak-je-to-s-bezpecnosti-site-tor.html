@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+  <head>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>Jak je to s bezpečností sítě Tor</title>
+  <meta name="description" content="Inspirací k napsání toho článku pro mne bylo zjištění, že americká vláda v posledních letech investovala do protokolu Tor a začala monitorovat provoz na této...">
+
+  <link rel="canonical" href="http://jedenbod.cz/871-jak-je-to-s-bezpecnosti-site-tor.html">
+  <link rel="alternate" type="application/rss+xml" title="Jedenbod.cz" href="http://jedenbod.cz/feed.xml">
+
+  <script type="application/ld+json">
+  
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "http://jedenbod.cz/871-jak-je-to-s-bezpecnosti-site-tor.html",
+  "headline": "Jak je to s bezpečností sítě Tor",
+  "datePublished": "2010-06-27T21:21:12+02:00",
+  "dateModified": "2010-06-27T21:21:12+02:00",
+  "description": "Inspirací k napsání toho článku pro mne bylo zjištění, že americká vláda v posledních letech investovala do protokolu Tor a začala monitorovat provoz na této...",
+  "author": {
+    "@type": "Person",
+    "name": "Jakub Mikuláš"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jedenbod.cz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://jedenbod.cz",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://jedenbod.cz",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+
+  <style amp-custom>
+  
+  /**
+ * Syntax highlighting styles
+ */
+.highlight {
+  background: #fff; }
+  .highlighter-rouge .highlight {
+    background: #eef; }
+  .highlight .c {
+    color: #998;
+    font-style: italic; }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2; }
+  .highlight .k {
+    font-weight: bold; }
+  .highlight .o {
+    font-weight: bold; }
+  .highlight .cm {
+    color: #998;
+    font-style: italic; }
+  .highlight .cp {
+    color: #999;
+    font-weight: bold; }
+  .highlight .c1 {
+    color: #998;
+    font-style: italic; }
+  .highlight .cs {
+    color: #999;
+    font-weight: bold;
+    font-style: italic; }
+  .highlight .gd {
+    color: #000;
+    background-color: #fdd; }
+  .highlight .gd .x {
+    color: #000;
+    background-color: #faa; }
+  .highlight .ge {
+    font-style: italic; }
+  .highlight .gr {
+    color: #a00; }
+  .highlight .gh {
+    color: #999; }
+  .highlight .gi {
+    color: #000;
+    background-color: #dfd; }
+  .highlight .gi .x {
+    color: #000;
+    background-color: #afa; }
+  .highlight .go {
+    color: #888; }
+  .highlight .gp {
+    color: #555; }
+  .highlight .gs {
+    font-weight: bold; }
+  .highlight .gu {
+    color: #aaa; }
+  .highlight .gt {
+    color: #a00; }
+  .highlight .kc {
+    font-weight: bold; }
+  .highlight .kd {
+    font-weight: bold; }
+  .highlight .kp {
+    font-weight: bold; }
+  .highlight .kr {
+    font-weight: bold; }
+  .highlight .kt {
+    color: #458;
+    font-weight: bold; }
+  .highlight .m {
+    color: #099; }
+  .highlight .s {
+    color: #d14; }
+  .highlight .na {
+    color: #008080; }
+  .highlight .nb {
+    color: #0086B3; }
+  .highlight .nc {
+    color: #458;
+    font-weight: bold; }
+  .highlight .no {
+    color: #008080; }
+  .highlight .ni {
+    color: #800080; }
+  .highlight .ne {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nf {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nn {
+    color: #555; }
+  .highlight .nt {
+    color: #000080; }
+  .highlight .nv {
+    color: #008080; }
+  .highlight .ow {
+    font-weight: bold; }
+  .highlight .w {
+    color: #bbb; }
+  .highlight .mf {
+    color: #099; }
+  .highlight .mh {
+    color: #099; }
+  .highlight .mi {
+    color: #099; }
+  .highlight .mo {
+    color: #099; }
+  .highlight .sb {
+    color: #d14; }
+  .highlight .sc {
+    color: #d14; }
+  .highlight .sd {
+    color: #d14; }
+  .highlight .s2 {
+    color: #d14; }
+  .highlight .se {
+    color: #d14; }
+  .highlight .sh {
+    color: #d14; }
+  .highlight .si {
+    color: #d14; }
+  .highlight .sx {
+    color: #d14; }
+  .highlight .sr {
+    color: #009926; }
+  .highlight .s1 {
+    color: #d14; }
+  .highlight .ss {
+    color: #990073; }
+  .highlight .bp {
+    color: #999; }
+  .highlight .vc {
+    color: #008080; }
+  .highlight .vg {
+    color: #008080; }
+  .highlight .vi {
+    color: #008080; }
+  .highlight .il {
+    color: #099; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto; }
+
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #828282; }
+
+amp-img {
+  background-color: grey; }
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+main {
+  display: block; }
+
+body {
+  font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig"; }
+
+.site-header {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 16px auto 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 800px) {
+    .site-header {
+      padding: 0 16px; } }
+  .site-header .page-links {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px; }
+    .site-header .page-links a {
+      text-decoration: none;
+      color: #999999; }
+      .site-header .page-links a:hover {
+        color: #333333; }
+
+.page-notice {
+  background-color: rgba(202, 185, 24, 0.1);
+  padding: 9px;
+  border: 1px solid #CAB918;
+  border-radius: 2px;
+  color: #867a10; }
+
+.blog-title {
+  margin-bottom: 8px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  outline: 0;
+  line-height: 40px;
+  word-break: break-word;
+  color: #333333; }
+  .blog-title a {
+    text-decoration: none;
+    color: #333333; }
+
+.blog-header {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.content {
+  width: 100%;
+  max-width: 700px;
+  margin: 25px auto 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 800px) {
+    .content {
+      padding: 0 16px; } }
+  .content article {
+    padding: 20px 0;
+    border-bottom: 1px solid #f2f2f0; }
+    .content article:last-child {
+      border-bottom: 0px; }
+    .content article .post-title {
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      font-style: normal;
+      display: block;
+      font-size: 36px;
+      line-height: 1.15;
+      margin: 0 0; }
+      .content article .post-title a {
+        text-decoration: none;
+        color: #333332; }
+        .content article .post-title a:hover {
+          text-decoration: none; }
+    .content article .post-excerpt {
+      letter-spacing: -0.02em;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1.59;
+      color: #666665; }
+    .content article .post-meta {
+      font-size: 14px;
+      color: #b3b3b1;
+      line-height: 30px; }
+      .content article .post-meta a {
+        color: #b3b3b1;
+        text-decoration: none; }
+        .content article .post-meta a:hover {
+          text-decoration: underline; }
+
+.post-template .content {
+  max-width: 700px; }
+
+.index-headline {
+  border-top: 1px solid #dededc;
+  margin: 0;
+  padding: 16px 0; }
+  .index-headline span {
+    color: #b3b3b1;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.pagination {
+  text-align: center;
+  padding: 16px 0 0;
+  margin-bottom: 40px;
+  font-size: 12px; }
+  .pagination a {
+    color: #999999;
+    text-decoration: none; }
+    .pagination a:hover {
+      color: #333333; }
+
+.post .post-meta {
+  font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+.post .post-title {
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.04em;
+  font-size: 50px;
+  line-height: 1.1;
+  color: #333332;
+  margin-bottom: 50px; }
+.post .author-image {
+  background-image: url(//assets/images/author.jpg);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 8px;
+  margin-bottom: -10px;
+  float: left;
+  background-size: cover;
+  border-radius: 100%;
+  text-indent: -9999px; }
+.post .post-meta-text {
+  color: #b3b3b1;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  overflow: hidden;
+  font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+.post .post-content {
+  width: 100%;
+  font-family: Georgia, Cambria, "Times New Roman", Times, "Lora", serif;
+  color: #333333; }
+  .post .post-content h1, .post .post-content h2, .post .post-content h3 {
+    font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+  .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6 {
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+  .post .post-content h3 {
+    font-size: 36px; }
+  .post .post-content h2, .post .post-content h1 {
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-bottom: 0px; }
+  .post .post-content p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.59;
+    letter-spacing: -.002em;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: #333333;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto; }
+  .post .post-content a {
+    color: #333333;
+    text-decoration: underline; }
+  .post .post-content amp-img, .post .post-content amp-youtube {
+    margin-top: 30px; }
+  .post .post-content figure {
+    margin: 0;
+    padding: 0 0 30px; }
+  .post .post-content figcaption {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #666665;
+    outline: 0;
+    z-index: 300;
+    text-align: center; }
+  .post .post-content hr {
+    border: 0;
+    padding: 0;
+    display: block;
+    width: 15%;
+    margin: 30px auto;
+    border: 0px solid #dddddd;
+    border-top: 1px solid #dddddd; }
+  .post .post-content blockquote {
+    margin: 0 0 30px;
+    margin-left: -26px;
+    border-left: 3px solid #57ad68;
+    padding-left: 20px; }
+    .post .post-content blockquote p {
+      letter-spacing: 0.01rem;
+      font-weight: 400;
+      mborder-left: 3px solid #57ad68;
+      mpadding-left: 20px;
+      mmargin-left: -26px;
+      padding-bottom: 3px; }
+  .post .post-content ul, .post .post-content ol {
+    padding: 0 0 30px;
+    margin: 0; }
+  .post .post-content li {
+    padding: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-bottom: 12px;
+    padding-top: 2px; }
+    .post .post-content li p {
+      padding: 0 0 1.618rem; }
+  .post .post-content ol li {
+    list-style-type: decimal; }
+
+.share {
+  text-align: right;
+  padding: 20px 0 0; }
+  .share a {
+    text-decoration: none;
+    color: #bbbbbb;
+    padding-left: 12px; }
+    .share a .hidden {
+      display: none; }
+    .share a:hover {
+      color: #333333; }
+
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eeeeff; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+@media (max-width: 550px) {
+  .site-header .page-links {
+    position: static; } }
+
+  </style>
+
+
+
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+  <body>
+    <header class="site-header">
+  <h1 class="blog-title"><a href="/">JedenBod</a></h1>
+
+  <div class="page-notice">
+    Tento blog je opuštěn a přežívá pouze záloha. Většina informací zde je nejspíše zastaralých.
+  </div>
+
+  <div class="page-links">
+    <a class="page-link" href="/">Domů</a>
+    • <a class="page-link" href="http://mikul.as">Jakub Mikuláš</a>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</header>
+
+
+    <main class="content" role="main">
+  <article class="post">
+    <div class="post-meta">
+      <h1 class="post-title">Jak je to s bezpečností sítě Tor</h1>
+    </div>
+
+    <section class="post-content">
+      <a name="topofpage"></a>
+      <p>Inspirací k napsání toho článku pro mne bylo zjištění, že americká vláda v posledních letech investovala do protokolu <a href="http://en.wikipedia.org/wiki/Tor_(anonymity_network)">Tor</a> a začala monitorovat provoz na této síti ((Nemohu přímo linkovat zdroj)).</p>
+
+<p>Tento článek je jakýmsi volným pokračováním k mému staršímu návodu ohledně <a href="http://jedenbod.cz/617-jak-skryt-adresu-sveho-pc.html">skrývání IP a MAC adresy</a>. Hned na začátku v něm však chybí jedna důležitá informace: můžete být také <strong>identifikováni podle odesílaných a přijímaných dat</strong>.</p>
+
+<p>Na začátek trocha teoretického tlachání:</p>
+
+<h2 id="jak-vbec-funguje-s-tor">Jak vůbec funguje síť Tor?</h2>
+
+<h3 id="nejdve-pr-slovek">Nejdříve pár slovíček</h3>
+
+<ul>
+  <li>
+    <p><strong>A</strong>lice × <strong>B</strong>ob – dva uživatelé, kteří si posílají zprávu</p>
+  </li>
+  <li>
+    <p><strong>Tor Nod/Onion Router</strong> – počítač/server, na kterém běží Tor ((Pokud nevíte co je Tor, přečtěte si můj starší článek, ve kterém je část věnová právě Toru - <a href="http://jedenbod.cz/617-jak-skryt-adresu-sveho-pc.html#tor">Jak skrýt adresu svého PC</a>)) nastavený tak, aby přijímal a přeposílal zprávy v Onion Cloudu</p>
+  </li>
+  <li>
+    <p><strong>Onion Cloud</strong> – skupina Nodů, která si mezi sebou posílá šifrované zprávy _(působí jako poslové) _</p>
+  </li>
+  <li>
+    <p><strong>Exit Relay</strong> – Druh Tor Nodu - Poslední Nod, než zpráva opustí Onion Cloud</p>
+  </li>
+  <li>
+    <p><strong>D</strong>ave – Server, který zná adresy dalších Onion Nodů ((Ano, Tor není úplně decentralizovaný a má své vlastní Onion Proxy servery. Nebezpečí v případě většího DoS útoku.))</p>
+  </li>
+</ul>
+
+<p><strong>(nebojte, začne to dávat smysl!)</strong></p>
+
+<h3 id="alice-posl-bobovi-zprvu">Alice posílá Bobovi zprávu</h3>
+
+<ol>
+  <li>
+    <p><strong>Alice **(Client System) si od **Davea</strong> (Onion Proxy) zjistí adresy <strong>Tor Nodů</strong> (Onion Router)</p>
+  </li>
+  <li>
+    <p><strong>Alice</strong> vyšle zprávu pro <strong>Boba</strong> (Target System) a ta vstoupí do <strong>Tor (Onion) Cloudu</strong>, kde tunely prochází přes počítáče sloužící jako <strong>Tor Nody</strong> (Onion Routery)<a href="http://ntrg.cs.tcd.ie/undergrad/4ba2.05/group10/index.html"><img src="http://ntrg.cs.tcd.ie/undergrad/4ba2.05/group10/OnionRouting.png" alt="Onion Routing" /></a>_Zdroj: _<a href="http://ntrg.cs.tcd.ie/undergrad/4ba2.05/group10/index.html"><em>http://ntrg.cs.tcd.ie/undergrad/4ba2.05/group10/index.html</em></a></p>
+  </li>
+  <li>
+    <p>Vše v této části je zašifrované. Data se posílájí šifrovanými tunely, které existují jen několik minut. Jednotlivé nody neznají ‘cestu zpět’, takže nemůžou zpětně vystopovat, odkud data přišla. <strong>Onion Cloud je nejbezpečnější fází přenosu dat po síti Tor.</strong></p>
+  </li>
+  <li>
+    <p>Nyní přichází klíčová fáze: zpráva pro Boba, která se doteď neustále přesouvala v šifrované podobě mezi jednotlivými Nody, vstoupí do posledního Exit Nodu_ (Na obrázku Exit Funnel)_, odkud má být předána přímo Bobovi. Zde se zpráva musí dešifrovat, aby ji Bob pochopil a až po dešifrování se odešle. A to je problém.</p>
+  </li>
+</ol>
+
+<h2 id="pro-je-to-tak-velk-problm">Proč je to tak velký problém?</h2>
+
+<p>Dešifrovanou zprávu pro Boba může bez problémů přečíst:</p>
+
+<ol>
+  <li>
+    <p>Správce Exit Nodu</p>
+  </li>
+  <li>
+    <p>Útočník provádějící sniffing <em>(čmuchání)</em> kolem portů Exit Nodu</p>
+  </li>
+</ol>
+
+<p>Právě první možnost je ta, kterou používají americké zpravodajské služby. Spravují velké množství Exit Nodů, díky čemuž kontrolují provoz, který je prováděn skrze Tor sítě. V západních zemích pomalu ubývá Exit Nodů, které spravují soukromé osoby. Největší vinu na tomto úbytku mají především žaloby a policejní zásahy proti Exit Nodům <em>(spousta ilegálního provozu je vedena skrze Tor, takže o záminky na žaloby není nouze) _viz. článek <a href="http://calumog.wordpress.com/2009/03/18/why-you-need-balls-of-steel-to-operate-a-tor-exit-node/">Why you need balls of steel to operate a Tor exit node</a> _(obvinění z šíření dětské pornografie)</em>. Případně článek <a href="http://toddsnotes.blogspot.com/2009/11/because-i-ran-tor-police-took-all-my.html">Because I ran Tor, the police took all my computers</a> <em>(obvinění z napomáhání k únosu dítěte)</em>. Ano, i takové věci se dějí skrze Tor.</p>
+
+<p>Ale samotný Tor nám ukazuje lepší stránku věci: <a href="https://www.torproject.org/torusers.html.en">Kdo používá Tor</a>. A jak ukazuje <a href="http://www.omninerd.com/articles/What_Traffic_is_on_a_TOR_Relay">Analýza provozu Tor Exit Nodu</a>, skutečně je využíván například k obcházení <a href="http://en.wikipedia.org/wiki/Internet_censorship_in_the_People's_Republic_of_China">Velkého čínské firewallu</a> nebo i <a href="http://en.wikipedia.org/wiki/Category:Internet_censorship_by_country">v jiných zemích strádajících cenzurou internetu</a>. Přesně k těmto účelům byl Tor, jakožto i jiné projekty pro anonymní a necenzurovaný internet, vybudován. Samotní autoři si jsou vědomi, že Tor je využíván i ke špatným věcem, ale právě díky jednoduché obsluze z něj plyne více užitku pro lidi používající jej pro dobré účely. Zlý lidé mají mnohem více příležitostí maskovat své aktivity. Viz. <a href="http://www.torproject.org/faq-abuse.html.en">Zneužití Toru</a>.</p>
+
+<p>To, že vláda, podle všeho zatím pouze ta americká, a v menší míře i čínská, dokáže kontrolovat odchozí provoz, je velmi limitující představa. Na The Hidden Wiki <em>(už podle názvu pochopíte, že ji nemohu přímo linkovat, je zkrátka ‘Hidden’ – naleznete ji na Tor síti)</em> se píše dokonce o možnosti editovat přeposílanou zprávu. Tuto myšlenku podporuje také existence projektu <a href="http://www.metasploit.com/">Metasploit</a> – více info v článku na ZDNetu o <a href="http://www.zdnet.com/blog/security/hacker-builds-tracking-system-to-nab-tor-pedophiles/114">chytání pedofilů na Toru</a>.</p>
+
+<blockquote>
+  <p><strong>2.</strong> When child porn-related keywords are seen (either the Web request, or the response), inject a little extra HTML code into the response going back to the Web browser. This HTML code would connect to my decloaking engine.&lt;/blockquote&gt;</p>
+
+  <p>Do odpovědi se zakomponuje například kousek <a href="http://cs.wikipedia.org/wiki/Java_(programovac%C3%AD_jazyk)">Javy</a>, která se na koncovém počítači připojí k serveru útočníka, čímž odhalí pravou IP adresu uživatele Toru. Samozřejmě, lze to obejít routováním <strong>všech</strong> připojení skrze Tor.</p>
+
+  <p>I v článku o <a href="http://en.wikipedia.org/wiki/Tor_(anonymity_network)#Weaknesses">Toru na wikipedii</a> naleznete jeho další slabiny.</p>
+
+  <h2 id="je-tedy-tor-nebezpen">Je tedy Tor nebezpečný?</h2>
+
+  <p><strong>Odpověd je: Může být.</strong></p>
+
+  <p>Pokud z Exit Nodu odcházejí nešifrovaná data, je možnost odposlouchávání stejná, jako že vás odposlouchává váš ISP. Správcům Exit Nodů (<a href="http://www.omninerd.com/articles/What_Traffic_is_on_a_TOR_Relay">podle této analýzy provozu Tor Exit Nodu</a>) se každou chvíli podaří zachytit nějaké to heslo, či zprávu <em>(například z IRC).</em></p>
+
+  <p>Pokud však používáte end-to-end šifrování <em>(<a href="http://cs.wikipedia.org/wiki/Transport_Layer_Security">SSL</a>),</em> <a href="https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#CanexitnodeseavesdroponcommunicationsIsntthatbad">které byste používat měli</a> <em>(jdeli vám o bezpečnost tak moc, že používáte Tor),</em> jste relativně v bezpečí.</p>
+
+  <p>Pokud navíc směrujete všechen provoz skrz Tor Proxy bránu, měli byste být téměř nevystopovatelní.</p>
+
+  <p>Občas se mluví o analýze provozu nebo o napadení Tor Nodů, ale i tak je bezpečnost Tor sítě, co se vystopovatelnosti týče, velmi velká. Více v <a href="https://svn.torproject.org/svn/tor/trunk/doc/design-paper/tor-design.html#sec:attacks">dokumentaci v sekci o útocích</a>. I když lze těžko zjistit, <strong>kdo</strong> daný obsah požadoval, je však relativně snadno možné monitorovat jaký obsah se po darknetu ((Skrytá část internetu)) pohybuje.</p>
+
+  <p>Záleží tedy primárně na:</p>
+
+  <ol>
+    <li>
+      <p>Zabezpečení vašeho PC – přesměrování DNS, používání nebezpečných ActiveX prvků, které se na vlastní pěst připojují mimo proxy, Spyware, Keyloggery atd.</p>
+    </li>
+    <li>
+      <p>Šifrování posílaných informací – zabráníte odposlechu</p>
+    </li>
+    <li>
+      <p>Možnosti útočníka – Má prostředky na sledování částí sítě? Může infikovat Tor Nody?</p>
+    </li>
+  </ol>
+
+  <p>Samozřejmě záleží také na tom, co útočník chce. Buď si pouze ověřit, že s druhou stranou komunikujete <em>(toto, by se mu mohlo podařit, viz dokumentace Toru výše)</em> nebo jaká data po síti přenášíte. Zkrátka záleží hodně na okolnostech. Avšak platí, že útoky, které by vás mohly na Toru ohrozit jsou mimo bezpečností rizika většiny uživatelů.</p>
+
+  <p>Samozřejmě existují i alternativy k Toru, ale ty jsou na tom s bezpečností <em>(z praktického pohledu)</em> velmi podobně.</p>
+
+  <ul>
+    <li>
+      <p><a href="http://freenetproject.org/">Freenet</a> – <a href="http://en.wikipedia.org/wiki/Freenet">wiki</a> – skvělý na přenos souborů</p>
+    </li>
+    <li>
+      <p><a href="http://www.i2p2.de">I2P</a> – <a href="http://en.wikipedia.org/wiki/I2P">wiki</a> – podobný na Tor <em>(viz. <a href="http://www.i2p2.de/how_networkcomparisons">srovnání I2P s Torem</a>)</em></p>
+    </li>
+    <li>
+      <p>Případně menší <a href="http://www.planetpeer.de/wiki/index.php/Main_Page">srovnání různých anonymních sítí</a></p>
+    </li>
+  </ul>
+
+  <p>Další materiály naleznete především na The Hidden Wiki a Onion Forum – pokud je máte pochopit, tak věřím, že si je bude schopni nalézt sami.</p>
+
+  <p>Hodně štěstí</p>
+</blockquote>
+
+    </section>
+  </article>
+</main>
+
+  </body>
+</html>
