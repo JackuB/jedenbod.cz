@@ -1,0 +1,79 @@
+---
+author: JackuB
+comments: true
+date: 2009-08-26 15:47:53+00:00
+excerpt: Zamyšlení nad budoucnosti literatu v 21. století.
+layout: post
+slug: kniha-2-0
+title: Kniha 2.0
+permalink: /475-:slug.html
+categories:
+- Internet
+- Sociologie
+- Úvaha
+tags:
+- beletrie
+- ebook
+- kniha
+- knihovna
+- Knihy
+- literatura
+- poezie
+---
+
+Již několik let slyším názory, že brzy vznikne skutečně globální trh s online knihami. Čtečky-_ebooky_ výrazně slevní a bude z čeho vybírat. Přitom cena samotné _e-knihy_ půjde rapidně dolů. Bohužel tomu stále tak není. Nemám tušení, co tento _boom _brzdí. Malá poptávka rozhodně ne.  Tak jako tak, skutečně se dá očekávat nárůst prodeje menších čtecích zařízení a s ním spojené rozrůstání nabídky online ebooků.
+
+
+### Menší zamyšlení
+
+
+Pokud před dnešní generaci, která upředňostňuje![Anna Karenina](http://jedenbod.cz/wp-content/uploads/2009/08/anna-karenina.jpg) krátké klipy na Youtube, krátké statusy na Twitteru a krátké zprávy v IM programech, postavíte několikaset stránkovou Annu Kareninu, co na to řeknou? Mluvíme-li o mladém mainstreamu, má u nich _klasická_ beletrie šanci uspět? Teoretickou šanci by měla poezie. Je většinou složitější, ale **je krátká** a existují i proudy, které častokrát nejsou tak složité na pochopení. Například poetismus nebo dadaismus. Upředňostňování poezie na internetu můžeme vidět již dnes. Kupříkladu na [Písmák.cz](http://www.pismak.cz) je většina děl '[zlatého výběru](http://www.pismak.cz/index.php?data=zlaty_vyber)' poezie.
+
+Tak jako tak, je nepopiratelné, že knihy v dnešní době internetu u mladých lidí nehrají tak velkou roli a nebojím se říct, že kdyby nebylo _nutnosti _přečíst _něco _do školy, bylo by čtenářů ještě mnohem méně.
+
+
+### Důvody
+
+
+
+
+#### Nesprávná čtecí zařízení
+
+
+Číst delší text z monitoru není nic příjemného. To mi nikdo nevyvrátí. Čtení na netbooku je už lepší. Má přibližný tvar a velikost knihy, můžete se s ním, doslova, válet a po stažení jasu už to celkem ujde. Několik knih jsem takto už přečetl. Lepší volbou jsou čtecí zařízení-ebooky, ale těch je, zvláště u nás, stále málo.
+
+Papírové knihy tedy zůstávají stále tou nejlepší volbou pro čtení, jenže nejsou tak pohodlné, jako elektronické knihy. Zvláště co se dostupnosti týče. Častokrát musíte na půjčení knihy dlouho čekat a mnoho z nich je také naprosto nesehnatelných. To ani nepřipomínám dlouhé cesty do knihoven, krátkou půjčovní dobu _(rád si občas jen tak zalistuji nějakou knihou, kterou jsem například četl již dávno) _atd.
+
+Zkrátka, papírové knihy se mohou z dnešního hlediska jevit jako neefektivní.
+
+
+### Pasivní
+
+
+Kniha je pasivní médium, z pohledu obsahu ji nemůžete nijak ovlivnit. Je před nás předkládán lineární, neměnný příběh, který je odrazem vnitřního rozpoložení autora. Je to jakýsi obtisk samotného autora, který, ač autor sám už může být po smrti, stále vydává svědectví o něm samotném a často také o dobové úrovni/náladě.
+
+
+##### **Pasivní zábava, podobná televizi.**
+
+
+Dalo by se říct, že televize je postupně nahrazována **interaktivními** médii - hrami a internetem. Podívejme se na příklad online videa.
+
+Media on Demand, např. Youtube.com, Google Video, Joost nebo Hulu, jsou velmi populární. Největším _tahákem_ jsou krátká, většinou zábavná videa _(maximálně seriály). _Z toho by šlo odvodit, že knihy by, pro úspěch, musely být krátké a zábavné. Jenže, takové knihy častokrát nejsou. Navíc mají, oproti videu další slabinu - uživatel se na ně musí plnět soustředit. Během sledování videa na Youtube si často ještě stihnu přečíst komentáře, nějaký přidat a zařadit video do oblíbených.
+
+Delší umělecké texty-knihy nemají na webu příliš velkou budoucnost. Ne v takové formě, jakou mají dnes.
+
+
+### Kniha 2.0
+
+
+Podívejme se však na příklad (PC) her. Ty jdou s interaktivitou mnohem dále, než je přidávání komentářů/sdílení apod.
+
+
+##### **Vy sami jste tvůrci příběhu.**
+
+
+Na internetu můžete samozřejmě psát blog apod., to bezpochyby, ale hry jsou oproti blogování, jakožto tvorbě obsahu, velmi specifické. Budeme se bavit o blíže neurčené, kvalitní singleplayer hře. S dostatkem volnosti pro hráče.
+
+Váš hrdina se ocitá v novém světě, možná podobném, možná vzdáleném, od toho v jakém žijete normálně. Náhle to nejste vy, ale **on**. A on přebírá vaše morální principy a postoje. Bude jednat dle vaší vůle. Dle vaší skutečné osobnosti. Protože_ "pokud chcete někoho skutečně poznat, dejte mu masku"_. Do hry se postupně obtiskuje _vaše_ osobnost.
+
+Vidíte ten rozdíl oproti pasivní knize? Pokud hrajete kvalitní hru, je to, obrazně řečeno, jako byste psali vlastní knihu. A co ta _Kniha 2.0_? Měla by být interaktivní. Uživatel by měl vytvářet příběh. Mělo by to být zábavné _(viz příklad s videem)_, aby o to lidé projevili zájem. Díky technologiím, které se dnes již normálně používají, jako dotykové displeje nebo elektronický inkoust, je možné, aby kniha přímo reagovala na vaše akce. Míšenec mezi hrou a knihou. **Kniha 2.0**.

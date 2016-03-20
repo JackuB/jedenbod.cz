@@ -1,0 +1,74 @@
+---
+author: JackuB
+comments: true
+date: 2009-09-06 12:41:28+00:00
+excerpt: Nedávno jsem narazil na docela zajímavě vypadají projekt Linuxu pro netbooky.
+  Jmenuje se <strong>Moblin</strong>.
+layout: post
+slug: moblin
+title: Moblin
+permalink: /487-:slug.html
+categories:
+- Software
+tags:
+- Acer Aspire One
+- Intel
+- Internet
+- Linux
+- Moblin
+- Moblin 2.0
+- netbook
+- User interface
+- Windows
+- Windows 7
+---
+
+Nedávno jsem narazil na docela zajímavě vypadají projekt Linuxu pro netbooky. Jmenuje se **Moblin**. Na mém Acer Aspire One teď běží Windows 7 a to úplně bez problémů a se vší parádou. Ale říkal jsem si: nejsou _Windows 7 až moc velké_? Jsou dělané, aby fungovaly na všem a zvládly v podstatě vše. Nebylo by lepší mít systém zaměřený výhradně na netbooky? Neuměl by toho moc, ale to co ano, by zvládal na 1*. Tady přichází na řadu Moblin. Malý a rychlý.
+
+
+
+
+
+
+
+
+
+Moblin vyvíjel původně **Intel,** ale dnes přešel pod Linux Foundation. Podpora primárně pro procesory Intel Atom však zůstala. Na [Moblin.org](http://moblin.org/) se dočtete, že systém nese již označení 2.0 a štítek Beta, bohužel je to stále spíše Alfa verze. To však nic neubírá ze zajímavého konceptu.
+
+**Moblin se vyznačuje především rychlostí  a přehledností**. Boot trvá pouze několik vteřin a systém je okamžitě připraven k práci. Odezva aplikací je také velmi dobrá.
+
+Co se přehlednosti týče, Moblin přichází se sympatickým konceptem **_Myzone_**.
+
+[caption id="attachment_507" align="aligncenter" width="570" caption="Moblin Myzone"][![Moblin Myzone](http://jedenbod.cz/wp-content/uploads/2009/08/myzone-570x333.jpg)](http://jedenbod.cz/wp-content/uploads/2009/08/myzone.jpg)[/caption]
+
+Je to takové hlavní informační centrum vašeho života. Co máte udělat. Co jste dělal. A co dělají vaši přátelé. To vše na jedné obrazovce.
+
+[caption id="attachment_508" align="aligncenter" width="570" caption="Moblin Myzone"]![Moblin Myzone](http://jedenbod.cz/wp-content/uploads/2009/08/m_zone-diag-570x334.jpg)[/caption]
+
+Hned vedle najdete ikony _status _a _people_, ze kterých můžete snadno ovládat váš virtuální život. V části people se mi velmi líbí možnost najednou prohledávat kontakty jak z různých IM programů tak i webových služeb.
+
+_Media _zatím nefungují jak mají, takže jsem neměl možnost otestovat. Ale podle konceptu by vše mělo fungovat na principu zoomování a následnému třídění médií.
+
+[caption id="attachment_514" align="aligncenter" width="570" caption="Moblin - Toolbar media"]![Moblin - Toolbar media](http://jedenbod.cz/wp-content/uploads/2009/09/toolbar_media-570x335.jpg)[/caption]
+
+Za zajímavý koncept bych také označil **_Pasteboard_**.
+
+[caption id="attachment_515" align="aligncenter" width="570" caption="Moblin - Toolbar pasteboard"]![Moblin - Toolbar pastboard](http://jedenbod.cz/wp-content/uploads/2009/09/toolbar_pastboard-570x333.png)[/caption]
+
+Cokoliv si zkopírujete do schránky, pomocí Ctrl+C, se uloží do jakéhosi krátkodobého úložiště. Přijde mi to jako velmi dobrý nápad, poněvadž se mi nejednou stalo, že jsem zmáčkl Ctrl+C, přičemž jsem chtěl nejdříve něco někam vložit pomocí Ctrl+V a o text jsem přišel. Tato drobnost také může najít své uplatnění např. při psaní nějaké práce či článku. Rád bych něco podobného viděl i na Windows.
+
+[Aplikační panel](http://moblin.org/documentation/moblin-netbook-intro/how-get-around-moblin-netbook-ui/applications-panel) je také řešen velmi dobře. Aplikace jsou znázorněny ikonkami a třízeny do různých kategorii. Nechybí ani vyhledávání podle názvu.
+
+A poslední jsou _zóny_, které de facto nahrazují taskbar z Windows.
+
+Za zmínku také stojí status ikony napájení, zvuku a sítí. Práce s nimi je intuitivní a příjemná.
+
+
+### Moblin × Windows 7
+
+
+**Jednoduchá a rychlá UI Moblinu se mi místy zamlouvá mnohem více než Windows 7.** Je na ní poznat, že je vyvíjena přímo pro malé ultra přenosné netbooky.
+
+Systém je stále v pseudo-Beta verzi, takže je nepoužitelný, ale po odlazení bugů a přidání více online služeb, by si mohl najít své místo na trhu. Skutečně se používá velmi dobře. Nakonec, [zkuste si jej sami](http://moblin.org/documentation/test-drive-moblin).
+
+Zatím je to velmi zajímavý projekt, který se vyplatí sledovat.

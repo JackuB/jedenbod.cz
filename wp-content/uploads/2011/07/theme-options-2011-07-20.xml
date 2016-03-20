@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<cinnamon_option_tree>
+  <row>
+    <id>1</id>
+    <item_id>general_default</item_id>
+    <item_title>1. Basics</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>1</item_sort>
+  </row>
+  <row>
+    <id>10</id>
+    <item_id>layout</item_id>
+    <item_title>Select Layout</item_title>
+    <item_desc>Choose global layout.</item_desc>
+    <item_type>radio</item_type>
+    <item_options>Sidebar-Content-Sidebar,Content-Sidebar-Sidebar,Content-Sidebar,Content</item_options>
+    <item_sort>2</item_sort>
+  </row>
+  <row>
+    <id>14</id>
+    <item_id>custom_logo</item_id>
+    <item_title>Logo</item_title>
+    <item_desc>Upload custom logo. If no logo is uploaded, automatic text logo will be used.</item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>3</item_sort>
+  </row>
+  <row>
+    <id>36</id>
+    <item_id>homepage_text</item_id>
+    <item_title>Homepage text</item_title>
+    <item_desc>Enter text to be shown on Homepage.
+Basic HTML and shortcodes are allowed.
+For using single Page as home, use WordPress &amp;lt;a href=&amp;quot;options-reading.php&amp;quot;&amp;gt;Reading options&amp;lt;/a&amp;gt; and select Static Page as Homepage.</item_desc>
+    <item_type>textarea</item_type>
+    <item_options>8</item_options>
+    <item_sort>4</item_sort>
+  </row>
+  <row>
+    <id>37</id>
+    <item_id>homepage_order</item_id>
+    <item_title>Homepage order</item_title>
+    <item_desc>By default, there are 4 widget areas and text box.</item_desc>
+    <item_type>radio</item_type>
+    <item_options>Boxes-Text,Text-Boxes,No Boxes on homepage</item_options>
+    <item_sort>5</item_sort>
+  </row>
+  <row>
+    <id>38</id>
+    <item_id>latest_posts_homepage</item_id>
+    <item_title>Show latest post on homepage?</item_title>
+    <item_desc>Latest post will not show, when using Static Page as Homepage. Number of post will corespond to number entered in &amp;lt;a href=&amp;quot;options-reading.php&amp;quot;&amp;gt;Reading options&amp;lt;/a&amp;gt;.</item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>6</item_sort>
+  </row>
+  <row>
+    <id>42</id>
+    <item_id>darken_text</item_id>
+    <item_title>Text in box on homepage</item_title>
+    <item_desc>Enter text to be shown in dark box on homepage. If you don&amp;#039;t enter any text, box won&amp;#039;t be shown.</item_desc>
+    <item_type>textarea</item_type>
+    <item_options>3</item_options>
+    <item_sort>7</item_sort>
+  </row>
+  <row>
+    <id>2</id>
+    <item_id>fonts</item_id>
+    <item_title>2. More layout options</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>8</item_sort>
+  </row>
+  <row>
+    <id>9</id>
+    <item_id>header_logo_align</item_id>
+    <item_title>Logo align</item_title>
+    <item_desc>Select align for logo, description and search box. Default: Left</item_desc>
+    <item_type>radio</item_type>
+    <item_options>Left,Center</item_options>
+    <item_sort>9</item_sort>
+  </row>
+  <row>
+    <id>15</id>
+    <item_id>display_description</item_id>
+    <item_title>Display description under logo?</item_title>
+    <item_desc>Description as entered here: &amp;lt;a href=&amp;quot;options-general.php&amp;quot;&amp;gt;General Settings&amp;lt;/a&amp;gt;. Default: No</item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>10</item_sort>
+  </row>
+  <row>
+    <id>5</id>
+    <item_id>header_display_search</item_id>
+    <item_title>Display search box?</item_title>
+    <item_desc>Display search box in header? Default: Yes</item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>11</item_sort>
+  </row>
+  <row>
+    <id>18</id>
+    <item_id>display_breadcrumbs</item_id>
+    <item_title>Display &amp;#039;Breadcrumbs navigation&amp;#039;?</item_title>
+    <item_desc>Show &amp;lt;a href=&amp;quot;http://www.useit.com/alertbox/breadcrumbs.html&amp;quot;&amp;gt;Breadcrumbs navigation&amp;lt;/a&amp;gt; on posts &amp;amp; pages? Default: Yes</item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>12</item_sort>
+  </row>
+  <row>
+    <id>6</id>
+    <item_id>header_homepage_gap</item_id>
+    <item_title>Gap between slider and menu</item_title>
+    <item_desc>Should be there a gap between menu and slider in home page? (e.g. &amp;#039;10px&amp;#039; or &amp;#039;0px&amp;#039;) Default: 0px</item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>13</item_sort>
+  </row>
+  <row>
+    <id>7</id>
+    <item_id>header_page_gap</item_id>
+    <item_title>Gap under menu</item_title>
+    <item_desc>Should be there a gap under menu in single page? (e.g. &amp;#039;10px&amp;#039; or &amp;#039;0px&amp;#039;) Default: 0px</item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>14</item_sort>
+  </row>
+  <row>
+    <id>3</id>
+    <item_id>colours</item_id>
+    <item_title>3. Colours and style</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>15</item_sort>
+  </row>
+  <row>
+    <id>8</id>
+    <item_id>font_font</item_id>
+    <item_title>Font</item_title>
+    <item_desc>Select font to be used site-wide.</item_desc>
+    <item_type>select</item_type>
+    <item_options>Droid Serif,Liberation Sans,Luxi Sans,Nobile,Sansation</item_options>
+    <item_sort>16</item_sort>
+  </row>
+  <row>
+    <id>16</id>
+    <item_id>text_size</item_id>
+    <item_title>Text size</item_title>
+    <item_desc>Select font-size in pixels? Default: 13px</item_desc>
+    <item_type>radio</item_type>
+    <item_options>12px,13px,14px,15px,16px</item_options>
+    <item_sort>17</item_sort>
+  </row>
+  <row>
+    <id>21</id>
+    <item_id>justify_text</item_id>
+    <item_title>Justify text?</item_title>
+    <item_desc>Default: No</item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>18</item_sort>
+  </row>
+  <row>
+    <id>13</id>
+    <item_id>main_color</item_id>
+    <item_title>Main color</item_title>
+    <item_desc>Choose main color for links and effects.</item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>19</item_sort>
+  </row>
+  <row>
+    <id>35</id>
+    <item_id>main_hover_color</item_id>
+    <item_title>Main link mouseover (hover) color</item_title>
+    <item_desc></item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>20</item_sort>
+  </row>
+  <row>
+    <id>26</id>
+    <item_id>header_background</item_id>
+    <item_title>Header settings</item_title>
+    <item_desc>&amp;lt;h1 style=&amp;quot;font-size:220%;margin-top:80px;&amp;quot;&amp;gt;Header&amp;lt;/h1&amp;gt;</item_desc>
+    <item_type>textblock</item_type>
+    <item_options></item_options>
+    <item_sort>21</item_sort>
+  </row>
+  <row>
+    <id>41</id>
+    <item_id>logo_color</item_id>
+    <item_title>Logo color</item_title>
+    <item_desc>Select color for text logo and description.</item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>22</item_sort>
+  </row>
+  <row>
+    <id>22</id>
+    <item_id>header_background_color</item_id>
+    <item_title>Header background</item_title>
+    <item_desc>Choose background color for header. If you are using image as header background, choose color similar to color of image.</item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>23</item_sort>
+  </row>
+  <row>
+    <id>40</id>
+    <item_id>header_overlay</item_id>
+    <item_title>Header overlay</item_title>
+    <item_desc>Cinnamon can apply light overlay over your color or image background.</item_desc>
+    <item_type>radio</item_type>
+    <item_options>None,1,2,3,4,5</item_options>
+    <item_sort>24</item_sort>
+  </row>
+  <row>
+    <id>24</id>
+    <item_id>header_background_image</item_id>
+    <item_title>Header background image</item_title>
+    <item_desc>Upload image to be used as header background. Use tiled background or any other image.</item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>26</item_sort>
+  </row>
+  <row>
+    <id>28</id>
+    <item_id>site_background</item_id>
+    <item_title>Site background</item_title>
+    <item_desc>&amp;lt;h1 style=&amp;quot;font-size:220%;margin-top:80px;&amp;quot;&amp;gt;Page body&amp;lt;/h1&amp;gt;</item_desc>
+    <item_type>textblock</item_type>
+    <item_options></item_options>
+    <item_sort>27</item_sort>
+  </row>
+  <row>
+    <id>12</id>
+    <item_id>site_background_color</item_id>
+    <item_title>Site background color</item_title>
+    <item_desc>Choose background color for page background.</item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>28</item_sort>
+  </row>
+  <row>
+    <id>31</id>
+    <item_id>footer_background</item_id>
+    <item_title>Footer background</item_title>
+    <item_desc>&amp;lt;h1 style=&amp;quot;font-size:220%;margin-top:80px;&amp;quot;&amp;gt;Footer&amp;lt;/h1&amp;gt;</item_desc>
+    <item_type>textblock</item_type>
+    <item_options></item_options>
+    <item_sort>29</item_sort>
+  </row>
+  <row>
+    <id>23</id>
+    <item_id>footer_background_color</item_id>
+    <item_title>Footer background color</item_title>
+    <item_desc>Choose background color for footer. If you are using image as footer background, choose color similar to color of image.</item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>30</item_sort>
+  </row>
+  <row>
+    <id>29</id>
+    <item_id>footer_background_image</item_id>
+    <item_title>Footer background image</item_title>
+    <item_desc>Upload image to be used as footer background. Use tiled background or any other image.</item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>31</item_sort>
+  </row>
+  <row>
+    <id>32</id>
+    <item_id>footer_text_color</item_id>
+    <item_title>Footer text color</item_title>
+    <item_desc>Choose color for text in footer.</item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>32</item_sort>
+  </row>
+  <row>
+    <id>33</id>
+    <item_id>footer_a_color</item_id>
+    <item_title>Footer link color</item_title>
+    <item_desc>Choose color for links in footer.</item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>33</item_sort>
+  </row>
+  <row>
+    <id>34</id>
+    <item_id>footer_ahover_color</item_id>
+    <item_title>Footer link mouseover (hover) color</item_title>
+    <item_desc>Choose color for links mouseover in footer.</item_desc>
+    <item_type>colorpicker</item_type>
+    <item_options></item_options>
+    <item_sort>34</item_sort>
+  </row>
+  <row>
+    <id>19</id>
+    <item_id>misc</item_id>
+    <item_title>4. Misc</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>35</item_sort>
+  </row>
+  <row>
+    <id>20</id>
+    <item_id>mobile_layout</item_id>
+    <item_title>Enable mobile layout?</item_title>
+    <item_desc></item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>36</item_sort>
+  </row>
+</cinnamon_option_tree>
