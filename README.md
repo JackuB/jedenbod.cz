@@ -15,7 +15,7 @@ Remove the `_site` directory from the project’s `.gitignore` file (it’s igno
 Make sure git knows about your subtree (the subfolder with your site).
 
 ```sh
-git add _site && git commit -m "Initial _site subtree commit"
+git add _site && git commit -m "deploying _site"
 ```
 
 ### Step 3
