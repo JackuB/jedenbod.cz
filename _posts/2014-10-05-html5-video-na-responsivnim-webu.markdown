@@ -17,6 +17,6 @@ tags:
 - webdesign
 ---
 
-Záznam z mé prezentace na srazu [Frontendisti.cz](http://www.frontendisti.cz) o <video> elementu.
+Záznam z mé prezentace na srazu [Frontendisti.cz](http://www.frontendisti.cz) o `<video>` elementu.
 
 <amp-youtube data-videoid="LLmbOVOLGQA" layout="responsive" width="480" height="270"></amp-youtube>
