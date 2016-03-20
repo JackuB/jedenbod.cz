@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+  <head>
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>Cypherpunkeři: Stav diskuze a prostředků digitální kryptografie</title>
+  <meta name="description" content="Na žádost Bystroushaaka přidávám seminární práci o cypherpunku.">
+
+  <link rel="canonical" href="http://jedenbod.cz/1262-cypherpunkeri-stav-diskuze-a-prostredku-digitalni-kryptografie.html">
+  <link rel="alternate" type="application/rss+xml" title="Jedenbod.cz" href="http://jedenbod.cz/feed.xml">
+
+  <script type="application/ld+json">
+  
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": "http://jedenbod.cz/1262-cypherpunkeri-stav-diskuze-a-prostredku-digitalni-kryptografie.html",
+  "headline": "Cypherpunkeři: Stav diskuze a prostředků digitální kryptografie",
+  "datePublished": "2011-12-05T23:50:36+01:00",
+  "dateModified": "2011-12-05T23:50:36+01:00",
+  "description": "Na žádost Bystroushaaka přidávám seminární práci o cypherpunku.",
+  "author": {
+    "@type": "Person",
+    "name": "Jakub Mikuláš"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jedenbod.cz",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://jedenbod.cz",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://jedenbod.cz",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+
+  <style amp-custom>
+  
+  /**
+ * Syntax highlighting styles
+ */
+.highlight {
+  background: #fff; }
+  .highlighter-rouge .highlight {
+    background: #eef; }
+  .highlight .c {
+    color: #998;
+    font-style: italic; }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2; }
+  .highlight .k {
+    font-weight: bold; }
+  .highlight .o {
+    font-weight: bold; }
+  .highlight .cm {
+    color: #998;
+    font-style: italic; }
+  .highlight .cp {
+    color: #999;
+    font-weight: bold; }
+  .highlight .c1 {
+    color: #998;
+    font-style: italic; }
+  .highlight .cs {
+    color: #999;
+    font-weight: bold;
+    font-style: italic; }
+  .highlight .gd {
+    color: #000;
+    background-color: #fdd; }
+  .highlight .gd .x {
+    color: #000;
+    background-color: #faa; }
+  .highlight .ge {
+    font-style: italic; }
+  .highlight .gr {
+    color: #a00; }
+  .highlight .gh {
+    color: #999; }
+  .highlight .gi {
+    color: #000;
+    background-color: #dfd; }
+  .highlight .gi .x {
+    color: #000;
+    background-color: #afa; }
+  .highlight .go {
+    color: #888; }
+  .highlight .gp {
+    color: #555; }
+  .highlight .gs {
+    font-weight: bold; }
+  .highlight .gu {
+    color: #aaa; }
+  .highlight .gt {
+    color: #a00; }
+  .highlight .kc {
+    font-weight: bold; }
+  .highlight .kd {
+    font-weight: bold; }
+  .highlight .kp {
+    font-weight: bold; }
+  .highlight .kr {
+    font-weight: bold; }
+  .highlight .kt {
+    color: #458;
+    font-weight: bold; }
+  .highlight .m {
+    color: #099; }
+  .highlight .s {
+    color: #d14; }
+  .highlight .na {
+    color: #008080; }
+  .highlight .nb {
+    color: #0086B3; }
+  .highlight .nc {
+    color: #458;
+    font-weight: bold; }
+  .highlight .no {
+    color: #008080; }
+  .highlight .ni {
+    color: #800080; }
+  .highlight .ne {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nf {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nn {
+    color: #555; }
+  .highlight .nt {
+    color: #000080; }
+  .highlight .nv {
+    color: #008080; }
+  .highlight .ow {
+    font-weight: bold; }
+  .highlight .w {
+    color: #bbb; }
+  .highlight .mf {
+    color: #099; }
+  .highlight .mh {
+    color: #099; }
+  .highlight .mi {
+    color: #099; }
+  .highlight .mo {
+    color: #099; }
+  .highlight .sb {
+    color: #d14; }
+  .highlight .sc {
+    color: #d14; }
+  .highlight .sd {
+    color: #d14; }
+  .highlight .s2 {
+    color: #d14; }
+  .highlight .se {
+    color: #d14; }
+  .highlight .sh {
+    color: #d14; }
+  .highlight .si {
+    color: #d14; }
+  .highlight .sx {
+    color: #d14; }
+  .highlight .sr {
+    color: #009926; }
+  .highlight .s1 {
+    color: #d14; }
+  .highlight .ss {
+    color: #990073; }
+  .highlight .bp {
+    color: #999; }
+  .highlight .vc {
+    color: #008080; }
+  .highlight .vg {
+    color: #008080; }
+  .highlight .vi {
+    color: #008080; }
+  .highlight .il {
+    color: #099; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto; }
+
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #828282; }
+
+amp-img {
+  background-color: grey; }
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+main {
+  display: block; }
+
+body {
+  font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig"; }
+
+.site-header {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 16px auto 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 800px) {
+    .site-header {
+      padding: 0 16px; } }
+  .site-header .page-links {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px; }
+    .site-header .page-links a {
+      text-decoration: none;
+      color: #999999; }
+      .site-header .page-links a:hover {
+        color: #333333; }
+
+.page-notice {
+  background-color: rgba(202, 185, 24, 0.1);
+  padding: 9px;
+  border: 1px solid #CAB918;
+  border-radius: 2px;
+  color: #867a10; }
+
+.blog-title {
+  margin-bottom: 8px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  outline: 0;
+  line-height: 40px;
+  word-break: break-word;
+  color: #333333; }
+  .blog-title a {
+    text-decoration: none;
+    color: #333333; }
+
+.blog-header {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.content {
+  width: 100%;
+  max-width: 700px;
+  margin: 25px auto 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 800px) {
+    .content {
+      padding: 0 16px; } }
+  .content article {
+    padding: 20px 0;
+    border-bottom: 1px solid #f2f2f0; }
+    .content article:last-child {
+      border-bottom: 0px; }
+    .content article .post-title {
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      font-style: normal;
+      display: block;
+      font-size: 36px;
+      line-height: 1.15;
+      margin: 0 0; }
+      .content article .post-title a {
+        text-decoration: none;
+        color: #333332; }
+        .content article .post-title a:hover {
+          text-decoration: none; }
+    .content article .post-excerpt {
+      letter-spacing: -0.02em;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1.59;
+      color: #666665; }
+    .content article .post-meta {
+      font-size: 14px;
+      color: #b3b3b1;
+      line-height: 30px; }
+      .content article .post-meta a {
+        color: #b3b3b1;
+        text-decoration: none; }
+        .content article .post-meta a:hover {
+          text-decoration: underline; }
+
+.post-template .content {
+  max-width: 700px; }
+
+.index-headline {
+  border-top: 1px solid #dededc;
+  margin: 0;
+  padding: 16px 0; }
+  .index-headline span {
+    color: #b3b3b1;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.pagination {
+  text-align: center;
+  padding: 16px 0 0;
+  margin-bottom: 40px;
+  font-size: 12px; }
+  .pagination a {
+    color: #999999;
+    text-decoration: none; }
+    .pagination a:hover {
+      color: #333333; }
+
+.post .post-meta {
+  font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+.post .post-title {
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.04em;
+  font-size: 50px;
+  line-height: 1.1;
+  color: #333332;
+  margin-bottom: 50px; }
+.post .author-image {
+  background-image: url(//assets/images/author.jpg);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 8px;
+  margin-bottom: -10px;
+  float: left;
+  background-size: cover;
+  border-radius: 100%;
+  text-indent: -9999px; }
+.post .post-meta-text {
+  color: #b3b3b1;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  overflow: hidden;
+  font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+.post .post-content {
+  width: 100%;
+  font-family: Georgia, Cambria, "Times New Roman", Times, "Lora", serif;
+  color: #333333; }
+  .post .post-content h1, .post .post-content h2, .post .post-content h3 {
+    font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+  .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6 {
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: "Helvetica Neue", "Open Sans", Arial, Helvetica, sans-serif; }
+  .post .post-content h3 {
+    font-size: 36px; }
+  .post .post-content h2, .post .post-content h1 {
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-bottom: 0px; }
+  .post .post-content p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.59;
+    letter-spacing: -.002em;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: #333333;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto; }
+  .post .post-content a {
+    color: #333333;
+    text-decoration: underline; }
+  .post .post-content amp-img, .post .post-content amp-youtube {
+    margin-top: 30px; }
+  .post .post-content figure {
+    margin: 0;
+    padding: 0 0 30px; }
+  .post .post-content figcaption {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #666665;
+    outline: 0;
+    z-index: 300;
+    text-align: center; }
+  .post .post-content hr {
+    border: 0;
+    padding: 0;
+    display: block;
+    width: 15%;
+    margin: 30px auto;
+    border: 0px solid #dddddd;
+    border-top: 1px solid #dddddd; }
+  .post .post-content blockquote {
+    margin: 0 0 30px;
+    margin-left: -26px;
+    border-left: 3px solid #57ad68;
+    padding-left: 20px; }
+    .post .post-content blockquote p {
+      letter-spacing: 0.01rem;
+      font-weight: 400;
+      mborder-left: 3px solid #57ad68;
+      mpadding-left: 20px;
+      mmargin-left: -26px;
+      padding-bottom: 3px; }
+  .post .post-content ul, .post .post-content ol {
+    padding: 0 0 30px;
+    margin: 0; }
+  .post .post-content li {
+    padding: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-bottom: 12px;
+    padding-top: 2px; }
+    .post .post-content li p {
+      padding: 0 0 1.618rem; }
+  .post .post-content ol li {
+    list-style-type: decimal; }
+
+.share {
+  text-align: right;
+  padding: 20px 0 0; }
+  .share a {
+    text-decoration: none;
+    color: #bbbbbb;
+    padding-left: 12px; }
+    .share a .hidden {
+      display: none; }
+    .share a:hover {
+      color: #333333; }
+
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #eeeeff; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+@media (max-width: 550px) {
+  .site-header .page-links {
+    position: static; } }
+
+  </style>
+
+
+
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+
+  <body>
+    <header class="site-header">
+  <h1 class="blog-title"><a href="/">JedenBod</a></h1>
+
+  <div class="page-notice">
+    Tento blog je opuštěn a přežívá pouze záloha. Většina informací zde je nejspíše zastaralých.
+  </div>
+
+  <div class="page-links">
+    <a class="page-link" href="/">Domů</a>
+    • <a class="page-link" href="http://mikul.as">Jakub Mikuláš</a>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</header>
+
+
+    <main class="content" role="main">
+  <article class="post">
+    <div class="post-meta">
+      <h1 class="post-title">Cypherpunkeři: Stav diskuze a prostředků digitální kryptografie</h1>
+    </div>
+
+    <section class="post-content">
+      <a name="topofpage"></a>
+      <p>Na žádost <a href="http://kitakitsune.org/">Bystroushaaka</a> přidávám seminární práci o cypherpunku.</p>
+
+<p>Pokud ji vážně hodláte číst doporučuji <a href="http://jedenbod.cz/wp-content/uploads/2011/12/Crypto.pdf">PDF verzi</a> (je hezčí).</p>
+
+<p>Pokud ji <em>vážně</em> budete číst, berte na vědomí,</p>
+
+<ul>
+  <li>
+    <p>že jsem si vědom chyb a nepřesností (klidně je opravím, pokud na ně ukážete)</p>
+  </li>
+  <li>
+    <p>že jsem práci psal v rámci <em>de facto</em> uměnovědného oboru, nemohl jsem se pouštět do technických detailů - šlo o <em>představení</em> cypherpunku</p>
+  </li>
+  <li>
+    <p>že se můžete vyjádřit nebo doptat na mém <a href="http://twitter.com/jedenbod">Twitteru</a>, <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#106;&#097;&#107;&#117;&#098;&#064;&#106;&#101;&#100;&#101;&#110;&#098;&#111;&#100;&#046;&#099;&#122;">emailu</a> nebo dole v komentářích</p>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="section">#</h1>
+
+<h2 id="vod">Úvod</h2>
+
+<p>Milan Kundera ve své knize <em>Nesmrtelnost</em> připomíná, že v křesťanském desateru neexistuje přikázání <em>„Nezalžeš!“</em>. Je to velmi zvláštní poznatek, že křesťan nemá povinnost říkat pravdu. Ale je vcelku logický, pokud Bůh stejně všechno ví – a ostatní lidé <em>nemají právo</em> se na nic ptát. Museli by se nejdříve zeptat, aby mohli požadovat pravdu. Kundera dále tuto myšlenku rozpracovává na moderní žurnalismus, ale mě spíše zaujala skutečnost, že lidská společnost nikdy nebyla založena na <em>nutnosti říkat pravdu</em> – vynechme prosím dystopické, utopické a totalitní systémy. A pokud společnost nemá nárok na pravdu, vzniká soukromí – tedy možnost mít tajemství a možnost sdělit tajemství (jen komu uznám za vhodné).</p>
+
+<p>Ochrana soukromí je v nás však mnohem hlouběji než křesťanská nauka. Snad proto odedávna vznikaly technologie, které nás měly chránit pouze fyzicky, ale později sloužily i jako ochrana našeho soukromí a našich tajemství. Skrýše, dveře, zámky, sejfy a šifry – tyto a další technologie nás posunuly až k deklaraci práva na soukromí jako základního lidského práva ((Listina základních práv a svobod: Článek 7 : (1) Nedotknutelnost osoby a jejího soukromí je zaručena.)).</p>
+
+<p>Druhá půlka 20. století přichází s digitálními médii, která nás nutí přehodnotit dosavadní způsoby zajištění a ochrany soukromí. V této práci bych chtěl alespoň z části prozkoumat diskuze o soukromí a jejich aplikace ve věku výpočetní technologie.</p>
+
+<h2 id="strun-djiny-kryptografie-a-kryptoanalzy"> Stručné dějiny kryptografie a kryptoanalýzy</h2>
+
+<p>Jak jsem naznačil v úvodu, historie kryptografie zasahuje hluboko do minulosti, až někam do doby mezi 50 a 100 tisíci lety před naším letopočtem, kdy vzniklo abstraktní myšlení ((Modern human behaviour. In Wikipedia : the free encyclopedia [online]. St. Petersburg (Florida) : Wikipedia Foundation, [cit. 2011-06-26]. Dostupné z WWW: <a href="http://en.wikipedia.org/wiki/Modern_human_behaviour">http://en.wikipedia.org/wiki/Modern_human_behaviour</a>.)), které nám umožnilo uvažovat o vlastnictví. Něco co je jen vaše – jméno (které určuje váš vztah ke světu), myšlenka, předmět. Z vlastnictví vychází soukromí, tedy možnost jedince nebo skupiny selektivně odhalovat určitá vlastnictví – říct někomu své jméno, podělit se o nápad. Ve chvíli, kdy je tato úvaha možná, přichází čas pro další otázku – jak si své soukromí chránit? Jsou doloženy vaky a měchy pro ochranu osobního vlastnictví. Dalším důkazem jsou hroby a pohřebiště s osobními věcmi, které si zemřelí brali i do posmrtného života ((ELIADE, Marcea. Dějiny náboženského myšlení : Od doby kamenné po eleusinská mystéria. 3. opr. vyd. Praha : OIKOYMENH, 2008. 518 s.)). S domestifikací (okolo roku 10 000 př.n.l) vznikají ohrady, dveře a skrýše ((ELIADE, Dějiny náboženského myšlení)). Později přicházejí zámky, sejfy a bezpečnostní systémy. A kryptografie je pouze rozšíření snah o ochranu soukromí.</p>
+
+<p>Kryptografii jde v zásadě rozdělit na kryptografii klasickou a moderní. Ještě do roku 1949 jsme mohli mluvit o kryptografii klasické – tedy založené na čistě mechanickém principu. Moderní kryptografie pracuje s digitálními daty a bez použití výpočetních strojů je práce s ní téměř nereálná. Klasická kryptografie sahá několik tisíc let do minulosti – použití šifer v Mezopotánii a Egyptě není do dnes příliš jasné, ale od dob Řecka a Říma se můžeme skutečně bavit o kryptografii.</p>
+
+<h3 id="klasick-kryptografie">Klasická kryptografie</h3>
+
+<p>Historie šifer je od počátku silně provázaná s armádou. Šifry používali Sparťané ((YOUNG, Gary De. Dr. Gary De Young [online]. X [cit. 2011-06-19]. Spartan Scytale. Dostupné z WWW: <a href="http://courses.gdeyoung.com/pages.php?cdx=168">http://courses.gdeyoung.com/pages.php?cdx=168</a>.)), aby jimi předávali rozkazy a válečné zprávy. Jednalo se o jednoduchou transpoziční šifru, kdy se papír omotaný kolem válečku popsal a po jeho rozložení zůstala pouze řada náhodně vypadajících znaků. Dalším známým příkladem je klasická Caesarova šifra ((Caesar cipher. In Wikipedia : the free encyclopedia [online]. St. Petersburg (Florida) : Wikipedia Foundation, [cit. 2011-06-19]. Dostupné z WWW: <a href="http://en.wikipedia.org/wiki/Caesar_cipher">http://en.wikipedia.org/wiki/Caesar_cipher</a>.)), která je snadno použitelná (i prolomitelná), ale občas se používá dodnes – jde o posun písmene v abecedě, takže z A je B, z B je C atd. Další zájem o kryptografii přichází v 19. století. Není náhoda, že ze stejné doby pochází i Baggageho Difference Engine. Kryptografii se dostává jak systematického zájmu ze strany matematiků tak i pozornosti širší veřejnosti - o kryptografii píše například i Edgar Allan Poe ve své povídce Zlatý brouk ((POE, Edgar Allan. Zlatý brouk. Praha : Argo, 2010. 108 s.)) z roku 1843 (Kryptografie zde hraje klíčovou roli pro rozluštění případu).</p>
+
+<p>Větší zvrat nastává s příchodem druhé světové války. V této době již existovaly mnohé elektromechanické šifrovací systémy, avšak pozornost se věnovala především rozluštění Enigmy, která se používala již od 20. let 20. století. Právě její prolomení a praktické dopady práce kryptoanalytiků v Polsku a britském Bletchley Parku ukázaly na důležitost dobrého šifrování v armádě – nebo alespoň dobré kryptoanalýzy. Během války se toto potvrdilo ještě například v bitvě o Midway, kde prolomení japonské šifry ((Cipher Machines [online]. 2006 [cit. 2011-06-14]. Japanese Purple Cipher. Dostupné z WWW: <a href="http://ciphermachines.com/ciphermachines/purple.html">http://ciphermachines.com/ciphermachines/purple.html</a>.))znamenalo rozdíl mezi výhrou nebo porážkou.</p>
+
+<h3 id="modern-kryptografie">Moderní kryptografie</h3>
+
+<p>Od druhé světové války byly na tvorbu šifer (především v USA) vydávány obrovské sumy vládních peněz ((History of cryptography. In Wikipedia : the free encyclopedia [online]. St. Petersburg (Florida) : Wikipedia Foundation, [cit. 2011-06-20]. Dostupné z WWW: <a href="http://en.wikipedia.org/wiki/History_of_cryptography">http://en.wikipedia.org/wiki/History_of_cryptography</a>.)). Do kryptografie investuje především námořnictvo a tajná služba. V roce 1949 vzniká útvar AFSA (Armed Forces Security Agency), předchůdce dnešní National Security Agency (NSA), založené v roce 1952. V roce 1949 se však stala ještě jedna důležitá věc – vyšla kniha Communication Theory of Secrecy Systems ((SHANNON, Claude. Communication Theory of Secrecy Systems. New Jersey : Bell Labs, 1949. 60 s.)). Claude Shannon – „otec informačních technologií“ pracoval během Druhé světové války na projektech spojených s kryptografií a binární logikou. Jeho návrh řešení problémů booleanovy logiky v binárních systémech se stal základem pro práci pozdějších matematiků. Jeho práce je považována za počátek moderní kryptografie. Shannon navrhuje využití informačních technologií ((Je v tomto ohledu důležité si uvědomit v jaké fázi vývoje byly informační systémy v roce 1949)) pro lepší šifrování. Jeho výsledky velmi zaujaly AFSA – a tak se počítalo s tím, že (digitální) šifrování bude primárně armádní záležitostí. A skutečně tomu tak bylo – nejpokročilejší šifrování měla americká NSA a britská GCHQ (Government Communications Headquarters).</p>
+
+<p><img src="http://jedenbod.cz/wp-content/uploads/2011/12/0905-shh-dont-tell-sm1.jpg" alt="Shh" /></p>
+
+<p>Polovina 70. let však přinesla změnu, kterou pociťujeme až dodnes. Nejdříve v roce 1976 vznikl Data Encryption Standard ((SMID, Miles; BRANSTAD, Dennis. The Data Encryption Standard : Past and Future. Proceedings of the IEEE. 1988, s. 43-65.)) – veřejná šifra vyvinutá IBM a propagovaná vládou a Národním institutem standardů a technologie. Bohužel se nikdy ve velkém neuchytila ((Používala se pouze asi do poloviny 80. let)), částečně také ze strachu z backdooru ((Nedokumentovaná cesta, jak napadnout systém. V případě DES byl problém v _podezřelých _code blocích)), který by do ní teoreticky mohla umístit NSA, aby měla přístup k zašifrovaným datům. Důležité bylo, že sama vláda prosazovala standardizovanou šifru pro privátní sektor. Sama vláda chtěla, aby si občané alespoň nějak svá data (jako firemní tajemství atd.) šifrovali.</p>
+
+<p>Druhým, mnohem důležitějším, zvratem byl vynález asymetrické (public key) kryptografie. Whitfield Diffie a Martin Hellman ((Oba byli součastí hackerské komunity na MIT v 60. letech)) přišli se systémem veřejného a soukromého (asymetrického) klíče, který zaručoval bezpečnou komunikaci i když byl komunikační kanál celou dobu konverzace odposloucháván. Co bylo však důležitější, tento systém nevyvinula žádná vladní organizace ((I když Bobby Inman (bývalý ředitel NSA) oznámill, že NSA měla Public Key již v roce 1966 (viz. The Cyphernomicon níže) )), ale lidé z civilního/akademického sektoru. S příchodem RSA ((Algoritmy.net [online]. 2011 [cit. 2011-06-29]. Algoritmus RSA. Dostupné z WWW: <a href="http://www.algoritmy.net/article/4033/RSA">http://www.algoritmy.net/article/4033/RSA</a>.)) (aplikace asymetrické kryptografie) v roce 1978 měla veřejnost v ruce velmi silný nástroj pro ochranu soukromí. Dokonce tak silný, že jej nedokázaly prolomit ani vládní organizace. Což se samozřejmě vládě nelíbilo, uvalila tedy embargo na vývoz šifrovacích algoritmů delších než 40bitů (což už v roce 1978 byla slabá šifra). Zákaz trval v podstatě až do roku 2000.</p>
+
+<p>V tomto okamžiku je důležité si uvědomit, že v jednu dobu existovaly dva velmi protichůdné názory na použití kryptografie v civilním sektoru: na jedné straně vláda, která by ráda zamezila tomu, aby si kdokoliv mohl cokoliv zašifrovat tak, aby k tomu žádná vládní organizace neměla teoretický přístup. Na druhé straně je nově vznikajicí skupina, která by ráda měla kontrolu nad svým digitálním soukromím. Z druhé skupiny vznikne jakýsi odboj-hnutí:</p>
+
+<p>Cypherpunk</p>
+
+<h2 id="cypherpunkei">Cypherpunkeři</h2>
+
+<p>Cypherpunkeři byli většinou technicky znalí uživatelé, kteří měli aktivní vztah k matematice a výpočetním technologiím. Možnost aktivně participovat v boji proti policejnímu státu, jak jej ukazuje Orwell, pro ně byla revoluční myšlenkou. Studená válka nevypadala, že by měla skončit a s trochou fantazie se mohla přirovnat k Udržovací válce. Právě tito lidé a právě v takové době zničehonic disponovali nástroji, které jim dovolovaly obranu proti všemožným vládním aktivitám zaměřeným proti jejich soukromí.</p>
+
+<blockquote>
+  <p>I zákony proti kryptografii sahají pouze tak daleko, kam státní hranice a násilí.
+Eric Hughes - Cypherpunk’s manifesto ((HUGHES, Eric. Activism.net [online]. 1993 [cit. 2011-05-29]. A Cypherpunk’s Manifesto. Dostupné z WWW: <a href="http://www.activism.net/cypherpunk/manifesto.html">http://www.activism.net/cypherpunk/manifesto.html</a>.))&lt;/blockquote&gt;</p>
+
+  <p>Historii, důležité postavy a souboje cypherpunkerů a vlády popisuje Steven Levy v knize Crypto: How the Code Rebels Beat the Government Saving Privacy in the Digital Age ((LEVY, Steven. Crypto : How the Code Rebels Beat the Government Saving Privacy in the Digital Age. [s.l.] : Penguin, 2002. 368 s. ISBN 978-0140244328.)). Bylo to období skutečné války mezi cypherpunkery a NSA. NSA chránila monopol na kvalitní kryptografii a národní zájmy – cypherpunkeři bojovali spíše za ideály, než za nějaké konkrétní (revoluční) myšlenky. Mnoho prominentních cypherpunkerů skončilo ve vězení ((Například Jim Bell _(autor Assasination politics)_je v něm dodnes)). Cypherpunkeři nikdy nebyli nijak organizovaní a jejich názorové spektrum zasahovalo od krajní levice přes krajní pravici až po anarchismus ((Viz. Crypto-anarchismus jako ideologie postavená na kryptografii.)). Cypherpunkery ze začátku spojoval především zájem o civilní kryptografii, public key a možnosti nasazení kryptografie v reálném životě. Další témata přišla až na konci 80. let a začátku 90. Základní sdílená ideologie cypherpunkerů byla postavena na knihách jako Orwellův 1984, The Shockwave Rider, True Names ((Ačkoliv jsou na kvalitu Vingeho povídky různé názory, na cypherpunkery zapůsobila velmi podmanivě. Což lze doložit na častém odkazování k textu v cypherpunkových textech. To, že si musíme chránit naše Pravé jméno je to, co cypherpunkery velmi vystihuje.)), Ender’s Game, Snowcrash, The Cryptonomicon nebo The Puzzle Palace. A samozřejmě odborná literatura o kryptografii a matematice a velké množství čistě cyberpunkových textů.</p>
+
+  <p>Avšak na důležitosti cypherpunkeři skutečně získali až v roce 1992. Vznikl totiž Cypherpunk mailing list. Mailing list ((Mimochodem: dodnes funkční. Je to jeden z nejdéle funkčních mailing listů - cypherpunks@al-qaeda.net mailing list původně vznikl pod doménou toad.com – ano, web Johna Gilmora)), který svými tématy o několik let předběhl dobu. Vznikl v San Franciscu z iniciativy Erica Hughese ((Matematik z Berkeley a autor A cypherpunk’s manifesto)), Timothy C. Maye ((Matematik, výzkumník Intelu, autor The Cyphermoniconu, The crypto anarchist’s manifesto a True Nyms and Crypto Anarchy. Výčet jeho důležitých textů by však byl mnohem delší.)) a Johna Gillmora ((Zakladatel Electronic Frontier Foundation, výzkumník u Sun Microsystems a známý aktivista.)). Všichni 3 byli finačně zajištění a úspěšni ve svých oborech. Založili si malý diskuzní kroužek, který se scházel jednou měsíčně v kanceláři Johna Gilmora. Z těchto mítinků pochází i označení Cypherpunk ((Název je samozřejmě odvozen od populárního žánru: cyberpunk.)), který vymyslela Jude Milhon ((V hackerské komunitě známá také jako <em>St. Jude</em>. Editor časopisu Mondo 2000 (který zakládala) )). Brzy po prvním setkání vznikl Mailing list. Diskuze cypherpunkerů se stále točily kolem posledního vývoje v oblasti techniky, tím se nelišily od jiných technicky zaměřených mailing listů, rozdíl byl v přítomnosti diskuze o ochraně soukromí v digitální době, o nebezpečí policejního státu a o změnách, které mohou přijít. Přispěvatelé mailing listu ((http://www.cypherspace.org/adam/cp-stats.txt - seznam přispěvatelů mailing listu (nepodařilo se mi přímo zjistit data záznamu). Seznam obsahuje mnoho zajímavých jmen – Bruce Schneier, David Wagner, Adam Shostack, Steven Bellovin a samozřejmě i Julian Assange. Na listu lze najít i několik českých (ne však příliš důležitých) jmen.)) byli především odborníci, od čehož se odvíjela i úroveň diskuze.</p>
+
+  <p>Jak poznamenal Will Rodger:</p>
+
+  <blockquote>
+    <p>„Byla to směs revoluční politiky a pokročilé matematiky“
+- Will Rodger ((RODGER, Will. SecurityFocus [online]. 2001 [cit. 2011-06-21]. R.I.P. Cypherpunks. Dostupné z WWW:.))&lt;/blockquote&gt;</p>
+
+    <p>Mezi archaickými cypherpunkery existovaly v podstatě 2 možnosti, jak bude vypadat budoucnost ((MANNE, Robert. Cryptome [online]. 2011 [cit. 2011-06-14]. The Cypherpunk Revolutionary Julian Assange. Dostupné z WWW: <a href="http://cryptome.org/0003/assange-manne.htm">http://cryptome.org/0003/assange-manne.htm</a>.)):</p>
+
+    <ol>
+      <li>
+        <p>Stát pomocí digitálních technologií a neustálého sledování zničí osobní svobodu a soukromí.</p>
+      </li>
+      <li>
+        <p>Nebo stát bude zničen (nebo alespoň minimalizován) za pomoci digitálních technologií jako kryptografie.</p>
+      </li>
+    </ol>
+
+    <p>Ale témata se dotýkala i využití a zneužití technologií nebo úloha techniky pro běžného člověka. Nekompletní archiv mailing listu je stále k dohledání ((Mailing list ARChives [online]. 2001 [cit. 2011-06-21]. Dostupné z WWW: <a href="http://marc.info/?l=cypherpunks">http://marc.info/?l=cypherpunks</a>.)). Dodnes obsahuje zajímavé podněty. Zajímavý je i pohled na počet odběratelů, který už v roce 1994 dosáhl 700 lidí a v roce 1997 (vrchol) až 2000 čtenářů. Pokud uvážíme, jaká byla penetrace inernetovým připojením mezi obyvatelstvem (až od roku 1997 se jednalo o 11% populace 1. světa) ((Internet users per 100 inhabitants 1997-2007 ITU.png. In Wikipedia : the free encyclopedia [online]. St. Petersburg (Florida) : Wikipedia Foundation, [cit. 2011-06-29]. Dostupné z WWW: <a href="http://cs.wikipedia.org/wiki/Soubor:Internet_users_per_100_inhabitants_1997-2007_ITU.png">http://cs.wikipedia.org/wiki/Soubor:Internet_users_per_100_inhabitants_1997-2007_ITU.png</a>.)) a odbornost diskuze, jsou to čísla ukazující na opravdový zájem o tuto tématiku.</p>
+
+    <p>Kolem cypherpunku vzniklo několik velmi důležitých textů: předně The Cyphernomicon ((MIT Project on Mathematics and Computation [online]. 1994 [cit. 2011-06-10]. The Cyphernomicon. Dostupné z WWW: <a href="http://groups.csail.mit.edu/mac/classes/6.805/articles/crypto/cypherpunks/cyphernomicon/CP-FAQ">http://groups.csail.mit.edu/mac/classes/6.805/articles/crypto/cypherpunks/cyphernomicon/CP-FAQ</a>.)) – cypherpunkerský FAQ z roku 1994 o cypherpunku, cryptoanarchii a soukromí. Je to velmi obsáhlý a místy nepřehledný ((Přece jen, je to cypher_punkový_text)) dokument, který dává i po více než 15 letech možnost lépe se vcítit do jejich uvažování, kdy nikdo s nikým v podstatě nesouhlasí ((Mailing obsahoval z nemalé části i osobní útoky, hádky apod. – nutno říct, že si ale stejně udržovaly určitou úroveň)), ale všichni vědí, že přece jen sdílí určité ideály. Vcelku trefně poukazuje na cypherpunkery jako skupinu počítačových punkerů. The Cyphernomicon dále vysvětluje motivace pro vznik mailing listu atd. Obsahuje také rady ohledně kryptografie a etikety mailing listu.</p>
+
+    <p>A Cypherpunk’s Manifesto také přináší několik zajímavých názorů:</p>
+
+    <blockquote>
+      <p>Soukromí v otevřené společenosti vyžaduje kryptografii. Pokud něco řeknu, chci, aby to slyšeli jen ti, jimž je to určeno.
+Eric Hughes - Cypherpunk’s manifesto&lt;/blockquote&gt;</p>
+
+      <p>Cypherpunkeři skutečně dlouhou dobu věřili v rychlé vítězství individuálního nad státním. Podporovalo je v tom zjištění, že public-key je největší vynález v oblasti kryptografie od renesance. A vznik PGP na počátku 90. let, který měl přiblížit kryptografii masám, je dále podporoval v jejich snažení. Stejně tak se často ve svých textech oháněli až romantickými představami o korporacích, policejních státech apod. Z cypherpunku lze často cítit aktivistická rétorika 90. let. Naštěstí se nedrží jen té, ale posunují diskuzi konstruktivnějším směrem.</p>
+
+      <blockquote>
+        <p>Cypherpunkeři píší kód. Víme, že někdo musí psát software na ochranu soukromí. A nebudeme mít soukromí, dokud to nebudeme dělat všichni, a proto ho budeme psát.
+Eric Hughes - Cypherpunk’s manifesto&lt;/blockquote&gt;</p>
+
+        <p><em>„Cypherpunks write code“_se stalo jakýmsi heslem cypherpunkerů. Další důležitý text vycházející z cypherpunkerské ideologie je Assassination politics ((BELL, Jim. Outpost of Freedom [online]. 1997 [cit. 2011-06-14]. Assassination Politics. Dostupné z WWW: <a href="http://www.outpost-of-freedom.com/jimbellap.htm">http://www.outpost-of-freedom.com/jimbellap.htm</a>.)). Assassination politics Jima Bella je zajímavý myšlenkový experiment, který počítá se vznikem anonymního ((S použitím anonymních platebních metod, aby nebylo možno vystopovat účastníky)) _Dead Poolu</em> ((Seznam lidí, u kterých „tipujete“ kdy zemřou. Správné uhádnutí se rovná výhře.)), který nám v konečném důsledku má přinést otevřenou společnost, minimální stát apod. Zajímavostí je, že vznikl také pornofilm, který vyšel v malém nákladu a pro cypherpunkery – Cryptic seduction ((Mail-archive.com [online]. 2000 [cit. 2011-05-30]. CRYPTIC SEDUCTION – CYPHERPUNK SPECIAL. Dostupné z WWW: <a href="http://www.mail-archive.com/cypherpunks@algebra.com/msg04068.html">http://www.mail-archive.com/cypherpunks@algebra.com/msg04068.html</a>.)). Podle popisu je rozdíl mezi klasickým porno filmem a krypto porno filmem například v několika odkazech k backdoorům ((ORLOWSKI, Andrew. The Register [online]. 2002 [cit. 2011-05-30]. Alice, Bob and Eve too. Dostupné z WWW: <a href="http://www.theregister.co.uk/2002/03/16/alice_bob_and_eve/">http://www.theregister.co.uk/2002/03/16/alice_bob_and_eve/</a>.)).</p>
+
+        <p><img src="http://jedenbod.cz/wp-content/uploads/2011/12/Image-570x427.jpg" alt="WIRED - Crypto Rebels" /></p>
+
+        <p>Důležitým bodem byl také článek Crypto Rebels ((LEVY, Steven. Crypto Rebels. Wired 1.02. 1993, 1, 2. Dostupný také z WWW: <a href="http://www.wired.com/wired/archive/1.02/crypto.rebels_pr.html">http://www.wired.com/wired/archive/1.02/crypto.rebels_pr.html</a>.)) v tehdy začínajícím časopisu Wired – který cypherpunkerům přinesl větší podporu veřejnosti. Je to obsáhlý článek osvětlující důvody a způsob jejich vzniku. Obsahuje také vyjádření NSA k cypherpunkerům, informace o zatčení Johna Gillmora nebo zamyšlení nad budoucností cypherpunkerů v době přicházejících mobilních telefonů.</p>
+
+        <h2 id="souasn-cypherpunk">Současný cypherpunk</h2>
+
+        <p>Cypherpunk nezanikl. Mailing list je stále aktivní a vzhledem k tomu, jaká je základna jeho přispěvatelů a fakt, že je moderovaný, udržuje si určitou úroveň. Od konce 90. let se termín přestal používat, ale jejich myšlenky přetrvaly. Objevovaly se nové projekty, koncepty a postupy při využívání kryptografie ((Zajímavý je například Assangeho systém Marutukku - Rubberhose (file system). In Wikipedia : the free encyclopedia [online]. St. Petersburg (Florida) : Wikipedia Foundation, [cit. 2011-06-15]. Dostupné z WWW: <a href="http://en.wikipedia.org/wiki/Rubberhose_(file_system)">http://en.wikipedia.org/wiki/Rubberhose_(file_system)</a>.)). Co se primárně změnilo?</p>
+
+        <ol>
+          <li>Rozšířenost internetu (trochu paradoxně) vedla k tomu, že nemůže vzniknout centralizovaná diskuze o kryptografii:</li>
+        </ol>
+
+        <div class="highlighter-rouge"><pre class="highlight"><code>* a. buď bude skupina příliš malá, než aby měla nějaký hmatatelný efekt na globální diskuzi nebo snad i smýšlení.
+
+
+* b. nebo je tak velká, že se diskuze rozpadá a ztrácí koncentraci na jedno (i když rozsáhlé) téma.
+</code></pre>
+        </div>
+
+        <ol>
+          <li>
+            <p>Téma šifrování mimo-internet se přesunulo do pozadí ((Nemyslím šifrování v <em>meatspace</em>, ale šifrování pevných disků apod. zařízení, která nejsou online)). Může za to především kvalita dnes dostupných nástrojů pro šifrování ((Za mnohými z nich stáli právě cypherpunkeři)). Například svobodný software TrueCrypt je při správném použití v dnešní době neprolomitelný (neexistuje ani teoretická možnost prolomitelnosti šifry AES – navíc TrueCrypt umožňuje kombinovat více vrstev obrany)</p>
+          </li>
+          <li>
+            <p>Diskuze se také přenesla od policejního státu, který občany fyzicky kontroluje v jejich domech apod. k policejnímu/korporátnímu kyberprostoru – každý pokus o monitorování internetu přináší protesty a petice ((Jak se mimochodem nedávno stalo i v ČR)).</p>
+          </li>
+          <li>
+            <p>Poslední změnou je zjednodušení a zlevnění kryptografie. Jestliže v 90. letech byla kryptografie doménou armády, tajných služeb, matematiků a počítačových odborníků – dnes je šifrování přístupné i pro méně zasvěcené. A právě toto byl jeden z cílů cypherpunků – vytrhnout kryptografii vládě a dát ji uživatelům, aby se mohli bránit před kontrolou, opresemi nebo nátlakem. Kryptografie může být dnes velmi levná - pokročilý software jako TrueCrypt ((TrueCrypt [online]. 2011 [cit. 2011-06-10]. TrueCrypt. Dostupné z WWW: <a href="http://www.truecrypt.org/">http://www.truecrypt.org/</a>.)) je zdarma. Další šifrovací software je zdarma dostupný například pro OS Linux, který je také zdarma. I cena potřebného hardwaru klesla. Pro rychlou a bezpečnou práci se zašifrovanými soubory stačí i podprůměrný hardware. To samé platí i pro software, který nás má chránit na internetu – např. Vidalia ((Tor Project [online]. 2011 [cit. 2011-06-09]. Vidalia. Dostupné z WWW: <a href="https://www.torproject.org/projects/vidalia.html.en">https://www.torproject.org/projects/vidalia.html.en</a>.)) (Tor + Privoxy + Firefox) nebo I2P ((I2P [online]. 2011 [cit. 2011-06-10]. I2P Anonymous Network. Dostupné z WWW: <a href="http://www.i2p2.de/">http://www.i2p2.de/</a>.)).</p>
+          </li>
+        </ol>
+
+        <h3 id="cypherpunkei-v-kyberprostoru">Cypherpunkeři v kyberprostoru</h3>
+
+        <p>Prvně je nutné si uvědomit, před kým se vlastně máme v kyberprostoru bránit šifrováním. (1) Vlády, které cenzurují přístup k internetu ((Internet censorship by country. In Wikipedia : the free encyclopedia [online]. St. Petersburg (Florida) : Wikipedia Foundation, [cit. 2011-06-21]. Dostupné z WWW: <a href="http://en.wikipedia.org/wiki/Internet_censorship_by_country">http://en.wikipedia.org/wiki/Internet_censorship_by_country</a>.)). Každou chvíli se objeví návrh na sledování uživatelů, omezení přístupu k nebezpečným webům. Ať už se tak děje kvůli válce proti terorismu, pedofilům nebo jen kvůli zdanění internetových kasin (to se netýká jen ČR, podobné návrhy zaznívají i v USA, UK, Německu atd.) (2) Bezpečnostní složky, které chtějí vědět, co děláte.</p>
+
+        <blockquote>
+          <p>Pokud vážně chceš posílat všechny své zprávy nezašifrované a skrz veřejné kanály, dobře. Ale nestěžuj si prosím, až zjistíš, že já (nebo kdokoliv jiný) si je čteme.
+- MrKite ((Tachyon [online]. 2006 [cit. 2011-06-26]. [cspace-users] Re: Cspace. Dostupné z WWW:.))&lt;/blockquote&gt;</p>
+
+          <p>Mezi cypherpunkery platí, že pokud je komunikace nazašifrovaná, někdo cizí ji čte. Je to čistý racionální předpoklad, který počítá s tím, že číst nezašifrovanou komunikaci je velmi jednoduché (což skutečně je). A právě vlády mají zdroje monitorovat i velké objemy komunikace. Nebo si rovnou mohou zajistit přístup k vašim online službám ((ICAZA, Miguel de. Miguel de Icaza [online]. 2011 [cit. 2011-06-23]. Dropbox Lack of Security. Dostupné z WWW: <a href="http://tirania.org/blog/archive/2011/Apr-19.html">http://tirania.org/blog/archive/2011/Apr-19.html</a>.)). Samozřejmě to platí analogicky i pro nebezpečí v podobě black hat hackerů, malwarů apod.</p>
+
+          <p>Jak se tedy dnes aplikují cypherpunkerské postupy? Co hmatatelného nám poskytl cypherpunk? Předně vznikly projekty jako TrueCrypt nebo Tor.</p>
+
+          <h3 id="tor">Tor</h3>
+
+          <p>Tor je anonymní síť založená na technologii Onion Routingu ((Onion routing. In Wikipedia : the free encyclopedia [online]. St. Petersburg (Florida) : Wikipedia Foundation, [cit. 2011-06-28]. Dostupné z WWW: <a href="http://en.wikipedia.org/wiki/Onion_routing">http://en.wikipedia.org/wiki/Onion_routing</a>.)). Její důležitost spočívá především</p>
+
+          <ul>
+            <li>
+              <p>v (relativně) nízké odezvě, díky čemuž se dá použít i k anonymnímu používání aplikací</p>
+            </li>
+            <li>
+              <p>ve schopnosti spolupracovat v podstatě se všemi aplikacemi na všech důležitých operačních systémech</p>
+            </li>
+            <li>
+              <p>v jednoduchém a rychlém nastavení. Doslova během několika minut můžete obejít vládní cenzuru nebo pomoct jiným uživatelům obejít cenzuru</p>
+            </li>
+            <li>
+              <p>v ceně – je zdarma.</p>
+            </li>
+          </ul>
+
+          <p>Tor dovoluje komunikaci jak pouze v rámci Tor sítě (chová se v tomto ohledu jako <em>darknet</em> ((Zvenčí nepřístupná síť)) ), ale i anonymní komunikaci na klasickém internetu.</p>
+
+          <h4 id="uvnit-tor-st">Uvnitř Tor sítě</h4>
+
+          <p>V Tor síti se nacházejí tzv. Hidden services, což jsou technicky vzato klasické webové servery, pouze s přidanou vrstvou anonymity. Komunikace sama v rámci Tor sítě je anonymnější a teoreticky nelze sledovat ((Existují pouze modely sledování založené na statistických modelech sledování provozu a jeho rozložení. Stále se zkoumají.)).</p>
+
+          <p>Nabídka takových služeb je vcelku široká. Knihovny, nabízející knihy od klasických až po návody na sestrojení výbušnin. Diskuzní fóra a stránky aktivistů, kteří mají strach z perzekuce. Občas lze najít i diskuzní fóra disidentských skupin. Odbornější technické diskuze nejsou přístupné bez pozvánky ((Vzhledem k tvaru odkazů v Tor síti (např. The Hidden Wiki - http://kpvz7ki2v5agwt35.onion) je nepravděpodobné, že by někdo zvenčí náhodně objevil funkční web.)) – obvykle pozvánka znamená URL adresa. Vnitřní Tor síť je totiž v podstatě čistý hypertext, kdy se bez odkazu k dalšímu zdroji nikam nedostanete ((Existovaly pokusy zavést vyhledávací engine v Onionlandu (označení pro darknetovou složku Tor sítě), ale ty vždy zkrachovaly a k dnešnímu dni nefunguje ani jeden.)). Při prvním příchodu na Tor vidíte jen stránky, které se implicitně zviditelňují ((Na rozdíl od internetu, kde nejdou vidět ty weby, které se skrývají. Stránky, které se propagují, jsou často s pornografickým obsahem, proto mnoho lidí po příchodu do Onionlandu nabývá dojem, že Tor je jen síť pro sdílení (pedofilní) pornografie)). Takže získávání informací dostává, paradoxně k tomu, že je to anonymní síť, více lidský rozměr, kdy se často musíte zeptat někoho a ne mechanického vyhledávače. Vnitřní Tor síť je tedy výborným místem pro různé niché-skupiny, které si nepřejí být rušeny a pro které je anonymita jen další plus. O jaké skupiny se jedná? Často to jsou pedofilové a jejich uzavřené komunity. Dále určité množství webů v neevropských jazycích – což zahrnuje informační body několika teroristických organizací ((Na Tor fóru talk.masked se nějakou dobu diskutovalo o pravosti těchto webů – samozřejmě se ukázalo, že je nemožné to potvrdit nebo vyvrátit)), politické aktivisty a fóra s neznámým obsahem. V Onionlandu mají zastoupení také 2 české projekty: PirateLeaks.cz ((http://qyy2n2lqpc5l524q.onion:8080/)) a KinderPorno.cz ((http://n4k727nqnwkvb4g6.onion/d/)).</p>
+
+          <p>Podle několika zdrojů, které provedly analýzu provozu na Toru, je však většina provozu směřována ven ze sítě do normálního internetu. Jde tedy vidět, že většině uživatelů stačí normální internet, jen ho chtějí používat anonymně. Lepší odhady by však vyžadovaly výzkum Tor a I2P sítě v takovém rozsahu, v jakém doposud nebyly provedeny.</p>
+
+          <h2 id="co-pinesl-cypherpunk">Co přinesl cypherpunk?</h2>
+
+          <p>Jak stručně zhodnotit uplynulých 20 let cypherpunku?</p>
+
+          <p>Cypherpunkerům se rozhodně povedlo, alespoň částečně, zvrátit tlak NSA (i jiných vládních agentur) o omezení kryptografických nástrojů dostupných pro veřejnost ((Dnešní šifry nemají vládní backdoory, ani není limitované jejich použití nebo vývoz.)). Nezanedbatelný je také jejich přínos v ohledu ochrany soukromí na webu. Dalším podstatným důsledkem je tvorba ideového základu pro práce jako Assasination politics nebo WikiLeaks. Bez cypherpunkerů by nevznikla tato nová vlna digitálních revolucionářů, jako je Julian Assange.</p>
+
+          <p><img src="http://jedenbod.cz/wp-content/uploads/2011/12/assange.png" alt="" /></p>
+
+          <p>Nesmíme zapomínat také na to, že heslo cypherpunkerů bylo: „We write code“ – a tak také činili. Cypherpunk nebyl pouze myšlenkovým experimentem nebo kecacím pláckem. Během let vzniklo mnoho projektů, od malých a zaměřených přímo na odbornou komunitu ((Jako různé druhy pokročilých anonymních remailerů)), až po velmi praktické projekty s obrovským dopadem. Kupříkladu PGP ((Pretty good privacy – velmi populární program pro použití asymetrických klíčů – sice vyvinutý už na počátku 90. let, ale s myšlením blízkým cypherpunkerům.)), Tor a v poslední době BitCoin ((Systém anonymní měny – podobné, jakou popisoval Jim Bell ve své Assasination politics)).</p>
+
+          <p>Budoucnost cypherpunku?</p>
+
+          <p>Poslání cypherpunkerů nekončí. Technologicky je čeká hledání náhrady za public-key kryptografii například na poli kvantové matematiky. Ale hlavně je čeká boj se snahami o okleštění internetu. Boj o zavedení kryptografie jako něčeho běžného, co bude součástí softwaru. Je možné, že nás čeká boj o kyberprostor – Timothy C. May se v tomto smyslu vyjádřil ((MAY, Timothy C. Mail-Archive.org [online]. 2001 [cit. 2011-06-14]. Why I’m Not Writing Impassioned Essays in Defense of Crypto and Privacy. Dostupné z WWW: <a href="http://www.mail-archive.com/cypherpunks@minder.net/msg08217.html">http://www.mail-archive.com/cypherpunks@minder.net/msg08217.html</a>.)).</p>
+
+          <p>Je možné, že s příchodem cloud-computingu, kdy se naše data přesunou někam do mraků (lépe řečeno na něčí mrak) budeme opět potřebovat lidi jako cypherpunkery. O naše soukromí bude stále zájem.</p>
+
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+    </section>
+  </article>
+</main>
+
+  </body>
+</html>

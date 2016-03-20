@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jedenbod.cz</title>
+    <description>Blog Jedenbod.cz
+</description>
+    <link>http://jedenbod.cz/</link>
+    <atom:link href="http://jedenbod.cz/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 20 Mar 2016 03:30:11 +0100</pubDate>
+    <lastBuildDate>Sun, 20 Mar 2016 03:30:11 +0100</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Seznam.cz prohlížeč</title>
+        <description>&lt;p&gt;Nejspíše vám neuniklo, že Seznam.cz &lt;a href=&quot;http://seznam.seznamblog.cz/post/105271178401/seznam-cz-predstavuje-prvni-verzi-sveho-prohlizece&quot;&gt;oznámil&lt;/a&gt; &lt;a href=&quot;https://www.seznam.cz/prohlizec&quot;&gt;vydání vlastního prohlížeče&lt;/a&gt;. Zajímavé je, že nejde o &lt;em&gt;přebarvený&lt;/em&gt; Chrome/Firefox, ale o &lt;em&gt;vlastní prohlížeč&lt;/em&gt;. Na české poměry poněkud nezvyklý projekt. Podíváme se, z jakého je těsta a co umí.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-4.48.31.png&quot; alt=&quot;Seznam.cz Prohlížeč&quot; /&gt; Seznam.cz prohlížeč po spuštění&lt;/p&gt;
+
+&lt;p&gt;Prohlížeč je dostupný jak pro desktop Windows/Mac, tak i pro Android a &lt;em&gt;brzy&lt;/em&gt; i iOS. Zaměřím se na Mac verzi.&lt;/p&gt;
+
+&lt;p&gt;Jádro aplikace je postaveno na &lt;a href=&quot;https://github.com/rogerwang/node-webkit&quot;&gt;node-webkit&lt;/a&gt; - tudíž se jedná o vykreslovací jádro Blink - de facto shodné s aktuální verzí Google Chrome, což potvrzuje i HTML5 Test. Dobrou zprávou je, že uživatelům budou fungovat všechny moderní vychytávky.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-5.38.28.png&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-5.38.28-570x386.png&quot; alt=&quot;HTML5 test - Seznam.cz&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Jak vůbec fungují node-webkit aplikace? Mají v zásadě 2 vrstvy:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Blink&lt;/strong&gt; (webkit) jádro, díky kterému máte k dispozici všechny současné možnosti HTML5 (jako např. WebGL, WebSQL, WebRTC…) k vytvoření aplikace. Samozřejmostí je podpora všech JS frameworků. Pracujete s klasickým DOMem, jakoby se jednalo o normální webovou aplikaci.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Integrace s &lt;strong&gt;Node.js&lt;/strong&gt;, které se může starat o &lt;em&gt;nižší&lt;/em&gt; věci jako integrace se systémem (např. zápis do registrů) nebo práce se soubory aj.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Node-webkit aplikace se skládají z HTML a JS souborů, takže se můžeme podívat jak vypadá inicializační stránka init.html:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-6.20.22.png&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-6.20.22.png&quot; alt=&quot;init.html&quot; /&gt;&lt;/a&gt;
+Zde jsou moduly, které slouží jako globální objekty pro celý proces (historie, nastavení, autoupdate prohlížeče atd.). Lze vidět, že se při startu načítá i několik modulů, které ještě nejsou v současné verzi &lt;em&gt;(1.0.3)&lt;/em&gt; jako: synchronizace hesel, načítání favicon, registrace (?). Občas narazíte i na podivné kusy kódu jako:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;Favicon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prototype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$constructor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;favicoUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://www.minorit.com/favicon.ico&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// wat?&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// generování náhledu favicony&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Zajímavější kód najdeme na stránce nového (aplikačního) okna &lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-6.20.36.png&quot;&gt;win.html&lt;/a&gt;. Zaprvé: Seznam prohlížeč nevyužívá UI z node-webkit (které vypadá zkrátka jako defaultní prohlížeč), ale místo toho &lt;strong&gt;implementuje celé uživatelské rozhraní pomocí &lt;a href=&quot;https://angularjs.org&quot;&gt;AngularJS&lt;/a&gt;&lt;/strong&gt; (s rozdílným CSS pro Windows a Mac, aby ovládací prvky odpovídaly platformě).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/seznam-chrome.png&quot; alt=&quot;Seznam.cz prohlížeč s node-webkit chrome&quot; /&gt;
+Jak vidíte, je to vcelku rozsáhlá aplikace. Nechal jsem zdrojové kódy projet nástrojem &lt;a href=&quot;https://github.com/es-analysis/plato&quot;&gt;Plato&lt;/a&gt; pro analýzu JS kódu a výsledkem (po vynechání knihoven) je 12588 řádků s průměrem 143 řádků na soubor. Projevuje se, že aplikaci nejspíše psalo více týmů, které se neshodly, protože chybí jednotný styl zápisu. Používají se různé typy komentářů - většina funkcí je však úplně nekomentovaná. Občas se používají $constructory, občas ne. Občas se používá &lt;a href=&quot;http://jak.seznam.cz&quot;&gt;JAK&lt;/a&gt;, občas ne. Což se poté projevuje na &lt;a href=&quot;http://www.jslint.com&quot;&gt;JSLint&lt;/a&gt; chybách. Nejspíše se tlačilo na vydání k určitému datu.&lt;/p&gt;
+
+&lt;p&gt;[aesop_parallax height=”400px” img=”http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-7.01.04-e1419146497410.png” parallaxbg=”on” caption=”Plato report” captionposition=”top-right” lightbox=”off” floater=”off” floaterposition=”left” floaterdirection=”up”]&lt;/p&gt;
+
+&lt;p&gt;Jak jsem říkal, celé UI je vybudováno přes AngularJS, takže máte přístup i k Developer toolbaru (ctrl+shift+j) můžete se podívat, jak vše funguje. Většina ovládacích prvků je řešena přes Angular direktivy, místo UI routeru se používají node-webkit okna.&lt;/p&gt;
+
+&lt;p&gt;Samotná okna stránek využívají node-webkit nw.gui.window - což je speciální iframe, který umí několik triků - jako fejkování window.top, ignorování X-FRAME-OPTIONS (takže lze do iframe načítat i stránky, které to obvykle nepovolují) nebo oddělení od node-webkit, aby stránka nemohla přebrat kontrolu nad celou aplikací. Což se hned po vydání úplně nepovedlo. Stačil tento kód:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;nwDispatcher&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requireNwGui&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;alert(nwDispatcher.requireNwGui().Window.get().window.localStorage.favorites)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;https://twitter.com/jedenbod/status/544679528715804672&lt;/p&gt;
+
+&lt;p&gt;Seznam.cz dále vyzdvihuje bezpečnost prohlížeče - což dokazuje tím, že zakázal doplňky &lt;em&gt;(nikdo snad adblock nečekal)&lt;/em&gt;. Jenže tento prohlížeč je dle mého zatím jeden z nejnebezpečnějších, který si můžete nainstalovat. Část z jeho zranitelnosti vyplývá ze samotné platformy node-webkit. Tak například to, že jednotlivé záložky nejsou sandboxované, takže vám v systému běží jeden proces, ale jakmile ho sestřelíte, například tímto JS kódem na stránce, tak přijdete o všechny záložky.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;[video width=”800” height=”370” mp4=” webm=”http://jedenbod.cz/wp-content/uploads/2014/12/crash-small.webm”][/video]&lt;/p&gt;
+
+&lt;video src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/crash-small.mp4&quot; loop=&quot;true&quot; autoplay=&quot;true&quot; preload=&quot;auto&quot;&gt;&lt;/video&gt;
+
+&lt;p&gt;Například v Chrome, díky sandboxu vás pád jedné neohrozí a ostatní záložky bez problému fungují dále.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-7.57.37.png&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-7.57.37-570x391.png&quot; alt=&quot;Chrome Sandbox&quot; /&gt;&lt;/a&gt; Chrome Sandbox&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;Ale tím největším nebezpečím, na které jsem v současné verzi Seznam.cz prohlížeče narazil, je &lt;strong&gt;neomezený přístup k uživatelským datům&lt;/strong&gt;. Přes HTML5 API, má stránka přístup k webkameře, mikrofonu atd. Prohlížeč na to nijak neupozorní, ani uživatele nevyzve k potvrzení přístupu.&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;Takže zatímco ve všech ostatních prohlížečích JavaScript čeká, zdali dostane povolení k přístupu k webkameře, Seznam.cz prohlížeč ho automaticky stránce vydá, aniž by něco řekl. A pokud vás na to neupozorní něco jiného (software webkamery, dioda na stroji), tak to ani nezjistíte.&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;Takže stránka může na pozadí dělat screenshoty, zatímco si ji čtete. Což tato stránka dělá, pokud si ji čtete v Seznam.cz prohlížeči :)&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/1583-seznam-cz-prohlizec.html#comment-82237&quot;&gt;Přístup k getUserMedia je podle všeho už opravený&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Stejně snadno stránka vydá vaši pozici přes HTML5 geolocation API. Stažení prohlížeče je omezeno pouze na uživatele v České republice - otázkou je, jestli vycestování za hranice zablokuje automatické aktualizace, což by mohlo znamenat ještě další bezpečnostní riziko.&lt;/p&gt;
+
+&lt;p&gt;Webkit/Blink jádro samo o sobě uživatele chrání před různými typy útoků - ale implementace v node-webkit některé věci obchází pro snadnější vývoj desktop aplikací. Tak například můžete simulovat click pro jakýkoliv element. &lt;a href=&quot;http://jsfiddle.net/0104bhnc/1/&quot;&gt;Třeba filepicker s display:none&lt;/a&gt;, což je věc, kterou vám žádný jiný prohlížeč nepovolí (z dobrých důvodů). Seznam prohlížeč poslušně otevře dialog pro výběr souborů, aniž by ho uživatel nějak inicializoval. A takovýchto změn je bohužel vcelku dost.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-16.24.20-570x360.png&quot; alt=&quot;Seznam.cz prohlížeč - filepicker&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;Verdikt: jedná se o &lt;strong&gt;nebezpečný, nedokončený produkt&lt;/strong&gt; a jeho vydání je spíše hrozbou pro uživatele, než zárukou bezpečí a rychlosti. Jeho spásou můžou být rychlé a časté aktualizace, ale Seznam má co dohánět.&lt;/del&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 22 Dec 2014 10:37:38 +0100</pubDate>
+        <link>http://jedenbod.cz/1583-seznam-cz-prohlizec.html</link>
+        <guid isPermaLink="true">http://jedenbod.cz/1583-seznam-cz-prohlizec.html</guid>
+        
+        <category>AngularJS</category>
+        
+        <category>Bezpečnost</category>
+        
+        <category>browser</category>
+        
+        <category>Google Chrome</category>
+        
+        <category>HTML5</category>
+        
+        <category>javascript</category>
+        
+        <category>Seznam.cz</category>
+        
+        
+        <category>Bezpečnost</category>
+        
+        <category>Internet</category>
+        
+        <category>Software</category>
+        
+      </item>
+    
+      <item>
+        <title>Úvod do SVG</title>
+        <description>&lt;p&gt;Video mé prezentace na srazu &lt;a href=&quot;http://frontendisti.cz&quot;&gt;Frontendisti.cz&lt;/a&gt; - Úvod do SVG.&lt;/p&gt;
+
+&lt;amp-youtube data-videoid=&quot;gGO0hjSlHis&quot; layout=&quot;responsive&quot; width=&quot;480&quot; height=&quot;270&quot;&gt;&lt;/amp-youtube&gt;
+</description>
+        <pubDate>Fri, 28 Nov 2014 13:09:18 +0100</pubDate>
+        <link>http://jedenbod.cz/1752-uvod-do-svg.html</link>
+        <guid isPermaLink="true">http://jedenbod.cz/1752-uvod-do-svg.html</guid>
+        
+        <category>CSS</category>
+        
+        <category>HTML</category>
+        
+        <category>prezentace</category>
+        
+        <category>SVG</category>
+        
+        
+        <category>Nezařazené</category>
+        
+      </item>
+    
+      <item>
+        <title>Knihovny třetích stran v Angularu</title>
+        <description>&lt;p&gt;Při stavění &lt;a href=&quot;http://clickandstudy.com&quot;&gt;Click and Study&lt;/a&gt; s &lt;a href=&quot;https://www.dwgroup.cz&quot;&gt;Digital Wizards&lt;/a&gt; jsem narazil na to, že moje Angular aplikace závisela na hned několika knihovnách 3. strany. Firebase, Facebook SDK, Keen.io, Recurly atd.&lt;/p&gt;
+
+&lt;p&gt;Žádná z nich není nutná pro start aplikace, takže nemá smysl je přidávat hned na začátku nebo je mít součástí build procesu. Angular takovou funkci defaultně nemá, takže si musíme vytvořit vlastní službu.&lt;/p&gt;
+
+&lt;h2 id=&quot;minimlneen&quot;&gt;Minimální řešení&lt;/h2&gt;
+
+&lt;p&gt;Vždycky rád začínám s minimálním řešením/mockem, abych vůbec věděl, jak ho budu používat.&lt;/p&gt;
+
+&lt;p&gt;Každou knihovnu budeme chtít načíst pouze jednou, což zajistíme tím, že budeme kontrolovat, jestli už je v okně zaregistrován její globální objekt, načež spustíme callback. Nevyužívám &lt;a href=&quot;https://docs.angularjs.org/api/ng/service/$document&quot;&gt;$document&lt;/a&gt;, protože neumí createElement a volání přes &lt;a href=&quot;https://docs.angularjs.org/api/ng/function/angular.element&quot;&gt;angular.element&lt;/a&gt; se mi moc nelíbil.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/**
+     * Load JavaScript file, if his global name isn&#39;t registered already
+     * @param  {string}   scriptUrl   URL to JS file
+     * @param  {string}   nameToCheck Name that should be checked in global scope
+     * @param  {Function} callback    Callback function on success
+     */&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;loadJS&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scriptUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nameToCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nameToCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;undefined&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    		&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;script&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    		&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;scriptUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    		&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    		&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    	&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Použití je potom přímočaré:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;loadJS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;//cdn.firebase.com/js/client/1.0.21/firebase.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Firebase&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;loadNotifications&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Jenže, pro takovéto asynchronní operace se více hodí promise a Angular služba $q.&lt;/p&gt;
+
+&lt;h2 id=&quot;een-s-q&quot;&gt;Řešení s $q&lt;/h2&gt;
+
+&lt;p&gt;Předělání na &lt;a href=&quot;https://docs.angularjs.org/api/ng/service/$q&quot;&gt;promise&lt;/a&gt; je jednoduchá záležitost. Navíc získáme jednodušší error handling a možnost navazovat další větve s konstruktem .then(). Takže je například jednodušší načíst knihovnu, inicializovat a až potom použít.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/**
+     * Load JavaScript file, if his global name isn&#39;t registered already
+     * @param  {string}   scriptUrl   URL to JS file
+     * @param  {string}   nameToCheck Name that should be checked in global scope
+     * @return {promise}              Promise
+     */&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;service&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;loadJS&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scriptUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nameToCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    		&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deferred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$q&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;defer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+    		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nameToCheck&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;undefined&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    			&lt;span class=&quot;nx&quot;&gt;deferred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    		&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;script&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    		&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;scriptUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    		&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    			&lt;span class=&quot;nx&quot;&gt;deferred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    		&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+    		&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onerror&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    			&lt;span class=&quot;nx&quot;&gt;$log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;warn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Failed to load script: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attributes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    			&lt;span class=&quot;nx&quot;&gt;deferred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    		&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;deferred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    	&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Což nám umožní knihovny volat takto:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;loadJS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;//cdn.firebase.com/js/client/1.0.21/firebase.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Firebase&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    	&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setupFirebase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    	&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loadNotifications&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    	&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    		&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;warn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Failed to load script: &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attributes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    	&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;unit-test&quot;&gt;Unit test&lt;/h2&gt;
+
+&lt;p&gt;Jasmine test pro $q je také &lt;em&gt;skoro&lt;/em&gt; přímočará záležitost. Stačí si jen dát pozor na to, že Angular dělá resolve při &lt;code class=&quot;highlighter-rouge&quot;&gt;$rootScope.$apply();&lt;/code&gt; a že zaregistrování &lt;code class=&quot;highlighter-rouge&quot;&gt;onerror&lt;/code&gt; chyby potřebuje obalit vyhodnocení do &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout()&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;
+  &lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;loadJS service&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;loadJS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;$window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;nx&quot;&gt;beforeEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;app&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;nx&quot;&gt;inject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_$q_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$rootScope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_$window_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_loadJS_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;handler&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;na&quot;&gt;thenPromise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;
+                    &lt;span class=&quot;na&quot;&gt;catchPromise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;loadJS&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_loadJS_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;$window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;_$window_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;$scope&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$rootScope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$controller&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;mainController&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;s1&quot;&gt;&#39;$scope&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$scope&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;nx&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Service loaded&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loadJS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toBeDefined&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;nx&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Reject promise&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;spyOn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;catchPromise&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;loadJS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;xxx&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;TEST&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// this should throw onerror call&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;catchPromise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// let&#39;s wait for deferred call, so code coverage is happy&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;$scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;catchPromise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toHaveBeenCalled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+        &lt;span class=&quot;nx&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Resolve promise&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;spyOn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;thenPromise&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;$window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;TEST&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;loadJS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://example.com/script.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;TEST&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;thenPromise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;$scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$root&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;expect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;thenPromise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toHaveBeenCalled&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Tento test také zajistí 100% code coverage v &lt;a href=&quot;http://gotwarlost.github.io/istanbul/&quot;&gt;Istanbulu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-23.57.02.png&quot; alt=&quot;AngularJS - loadJS code coverage&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 22 Nov 2014 20:31:34 +0100</pubDate>
+        <link>http://jedenbod.cz/1703-knihovny-tretich-stran-v-angularu.html</link>
+        <guid isPermaLink="true">http://jedenbod.cz/1703-knihovny-tretich-stran-v-angularu.html</guid>
+        
+        <category>AngularJS</category>
+        
+        <category>HTML5</category>
+        
+        <category>javascript</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
+    
+      <item>
+        <title>HTML5 video na responsivním webu</title>
+        <description>&lt;p&gt;Záznam z mé prezentace na srazu &lt;a href=&quot;http://www.frontendisti.cz&quot;&gt;Frontendisti.cz&lt;/a&gt; o &lt;video&gt; elementu.&lt;/video&gt;&lt;/p&gt;
+
+&lt;amp-youtube data-videoid=&quot;LLmbOVOLGQA&quot; layout=&quot;responsive&quot; width=&quot;480&quot; height=&quot;270&quot;&gt;&lt;/amp-youtube&gt;
+</description>
+        <pubDate>Sun, 05 Oct 2014 14:37:08 +0200</pubDate>
+        <link>http://jedenbod.cz/1761-html5-video-na-responsivnim-webu.html</link>
+        <guid isPermaLink="true">http://jedenbod.cz/1761-html5-video-na-responsivnim-webu.html</guid>
+        
+        <category>CSS</category>
+        
+        <category>HTML5</category>
+        
+        <category>javascript</category>
+        
+        <category>responsive</category>
+        
+        <category>video</category>
+        
+        <category>webdesign</category>
+        
+        
+        <category>JavaScript</category>
+        
+      </item>
+    
+      <item>
+        <title>Hacktivisté, hackeři a ti ostatní</title>
+        <description>&lt;p&gt;Při úklidu jsem našel něco, co původně měl být základ mé bakalářky. Jedna z posledních částí. Možná se to někomu bude hodit - shrnuje hacktivismus, LulzSec apod.&lt;/p&gt;
+
+&lt;p&gt;Plný text s odkazy a &lt;em&gt;obrázky&lt;/em&gt; na konci.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hacktivismus není vždy o “hacku”. DDoS útok není hack jako takový. Jak se v roce 1998 vyjádřil člen cDc “Omega” při popisu NetStrike: použil termín “virtual sit-in”. Ale připojit se k DDoS útoku nevyžaduje téměř žádné technické znalosti. Což je na jednu stranu pozitivum pro organizátory DDoS, díky jednoduchým nástrojům jako LOIC se může zapojit co nejvíce lidí (což je pointa). Na druhou stranu nízký práh vede v digitálním světě k slacktivismu. Mám pocit, že slacktivismus bude velmi brzy důležitější termín, než samotný hacktivismus.&lt;/p&gt;
+
+  &lt;p&gt;Když jsem na začátku psal o tom, že být digitálním aktivistou bude znamenat více, než psát protivládní blog a přispívat na uzavřené fórum - má tento jev i druhou stranu. Hacktivismus v dnešní podobě počítá s účastí širší digitální veřejnosti. Proto dochází ke zjednodušování témat a jejich převodu na lépe stravitelné a šiřitelné myšlenky. Heslovitost se stává hybatelem - myslím, že pro vývoj internetu blízké budoucnosti se musíme blíže podívat na to, jak fungují např. internetové memy a virální videa. Musíme více vnímat propojení politiky a marketingu.&lt;/p&gt;
+
+  &lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/12/299518_284472554896297_127225913954296_1198766_348298041_n-250x187.jpg&quot; alt=&quot;coyote catching roadrunner&quot; /&gt;Když se podíváme na výše zmíněné události, uvidíme, že kolem všech se vybudoval velmi jednoduchý étos a příběh o boji za pravdu (Wikileaks) spravedlnost (#occupy a protesty proti SOPA/PIPA) a svobodu (Arabské jaro). Jednoduché příběhy - avšak jen na pohled, protože všechny z nich přesahují internet. Stejně tak #occupy protesty stojí za změnu, avšak neví jakou.&lt;/p&gt;
+
+  &lt;p&gt;Hacktivismus se snaží nostalgicky napodobovat hackerskou symboliku: LulzSec používali ve svých zprávách ASCII art. Často se také odkazovali k Anonymous. Dříve však Anonymous byla spíše myšlenka, společný a prázdný virtuální štít, který byl právě díky své prázdnotě tak stěží uchopitelný. Neexistovalo žádné „patřit do Anonymous“ - všichni byli Anonymous, jak říká heslo ‚WE are Anonymous‘. Dnes se o Anonymous hovoří jako o skupině. Někdo může patřit k #AntiSec, ale nepatřit k Anonymous.&lt;/p&gt;
+
+  &lt;p&gt;K současnému hacktivismu dnes velmi často patří populistické slogany a jejich tupé opakování. A hlavní témata? Desítky let stará hesla o svobodě informací. Současný západní hacktivismus, ačkoliv prezentován jako mladý prvek na politické scéně (někde se tak daleko zatím nedostal), je neprogresivní plácání se v bezpečném rybníčku digitálních práv. Je to hraní na hrdiny a padouchy. Jeho autenticita pramení pouze z toho, že pochází z temně vypadajících krajin hackerství, které si pouze půjčuje. Je to de facto populární zábava. Slacktivistická hra na politiku.&amp;lt;/blockquote&amp;gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2012/12/cyberwarfare.pdf&quot;&gt;Kyberválka ve veřejném prostoru (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Wed, 26 Dec 2012 14:07:36 +0100</pubDate>
+        <link>http://jedenbod.cz/1524-hacktiviste-hackeri-a-ti-ostatni.html</link>
+        <guid isPermaLink="true">http://jedenbod.cz/1524-hacktiviste-hackeri-a-ti-ostatni.html</guid>
+        
+        <category>#Occupy</category>
+        
+        <category>Arab spring</category>
+        
+        <category>Arabské jaro</category>
+        
+        <category>Assange</category>
+        
+        <category>digerati</category>
+        
+        <category>hacker</category>
+        
+        <category>hacking</category>
+        
+        <category>hacktivism</category>
+        
+        <category>kyberkultura</category>
+        
+        <category>kyberprostor</category>
+        
+        <category>lulz</category>
+        
+        <category>LulzSec</category>
+        
+        <category>slacktivism</category>
+        
+        <category>slacktivismus</category>
+        
+        <category>WikiLeaks</category>
+        
+        
+        <category>Bezpečnost</category>
+        
+        <category>Internet</category>
+        
+        <category>Úvaha</category>
+        
+      </item>
+    
+      <item>
+        <title>Mobyklik - Sklik pro iPhone, iPad, Android i desktop</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://mobyklik.jedenbod.cz/&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/08/mobyklik2-570x236.jpg&quot; alt=&quot;Sklik.cz pro iPhone, iPad, Android, Windows, Linux, OS X&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Mobyklik se naučil vypisovat reklamy a pracovat s dalšími systémy. Takže je nyní otevřený nejen iOS, ale i Androidu, Windows Phone, ale hlavně desktopům.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mobyklik.jedenbod.cz/&quot;&gt;mobyklik.jedenbod.cz&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Aug 2012 14:37:18 +0200</pubDate>
+        <link>http://jedenbod.cz/1504-mobyklik-sklik-pro-iphone-ipad-android-i-desktop.html</link>
+        <guid isPermaLink="true">http://jedenbod.cz/1504-mobyklik-sklik-pro-iphone-ipad-android-i-desktop.html</guid>
+        
+        <category>Android</category>
+        
+        <category>iOS</category>
+        
+        <category>iPad</category>
+        
+        <category>iPhone</category>
+        
+        <category>jQuery</category>
+        
+        <category>Mobyklik</category>
+        
+        <category>PHP</category>
+        
+        <category>Seznam.cz</category>
+        
+        <category>web</category>
+        
+        <category>Windows</category>
+        
+        <category>Windows Phone</category>
+        
+        
+        <category>Internet</category>
+        
+        <category>Software</category>
+        
+      </item>
+    
+      <item>
+        <title>Mobyklik - mobilní aplikace pro Sklik</title>
+        <description>&lt;p&gt;Sklik.cz nemá mobilní verzi? Ani žádnou aplikaci?&lt;/p&gt;
+
+&lt;p&gt;To už není pravda:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mobyklik.jedenbod.cz/&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/08/mobyklik1.jpg&quot; alt=&quot;Mobyklik - mobilní rozhraní pro Sklik&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mobyklik.jedenbod.cz&quot;&gt;mobyklik.jedenbod.cz&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;o-aplikaci&quot;&gt;O aplikaci&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Aplikace využívá &lt;a href=&quot;http://api.sklik.cz/&quot;&gt;Sklik API&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Zatím funguje pouze na iOS. Android musím nejdříve ještě otestovat (pokud mi chcete pomoc s testováním, &lt;a href=&quot;http://jakub.jedenbod.cz/&quot;&gt;ozvěte se&lt;/a&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://mobyklik.jedenbod.cz/&quot;&gt;Více na webu&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 12 Aug 2012 12:21:48 +0200</pubDate>
+        <link>http://jedenbod.cz/1493-mobyklik-mobilni-aplikace-pro-sklik.html</link>
+        <guid isPermaLink="true">http://jedenbod.cz/1493-mobyklik-mobilni-aplikace-pro-sklik.html</guid>
+        
+        <category>HTML5</category>
+        
+        <category>iOS</category>
+        
+        <category>iPhone</category>
+        
+        <category>javascript</category>
+        
+        <category>jQuery</category>
+        
+        <category>Mobyklik</category>
+        
+        <category>PHP</category>
+        
+        <category>responsive</category>
+        
+        <category>Sklik API</category>
+        
+        <category>webapp</category>
+        
+        <category>XML</category>
+        
+        <category>XML-RPC</category>
+        
+        
+        <category>Internet</category>
+        
+        <category>Software</category>
+        
+      </item>
+    
+      <item>
+        <title>In Google, no one can hear you scream</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.businessinsider.com/googles-chrome-browser-is-coming-for-ios-says-macquarie-2012-5&quot;&gt;Google’s Chrome Browser Is Coming For iOS, Says Macquarie&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[caption id=”attachment_1456” align=”aligncenter”]&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/05/Google-Chrome-ios.jpg&quot; alt=&quot;Google Chrome for iOS Beta&quot; /&gt; Google Chrome for iOS Beta[/caption]&lt;/p&gt;
+
+&lt;p&gt;Google zbožňuje webaplikace…&lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 May 2012 18:51:39 +0200</pubDate>
+        <link>http://jedenbod.cz/1455-in-google-no-one-can-hear-you-scream.html</link>
+        <guid isPermaLink="true">http://jedenbod.cz/1455-in-google-no-one-can-hear-you-scream.html</guid>
+        
+        <category>Apple</category>
+        
+        <category>browser</category>
+        
+        <category>Google</category>
+        
+        <category>Google Chrome</category>
+        
+        <category>GUI</category>
+        
+        <category>iOS</category>
+        
+        <category>UI</category>
+        
+        <category>User interface</category>
+        
+        
+        <category>Nezařazené</category>
+        
+      </item>
+    
+      <item>
+        <title>Noční můra</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;If my nightmare is a culture inhabited by posthumans who regard their bodies as fashion accessories rather than the ground of being, my dream is aversion of the posthuman that embraces the possibilities of information technologies without being seduced by fantasies of unlimited power and disembodied immortality, that recognizes and celebrates finitude as a condition of human being, and that understands human life is embedded in a material world of great complexity, one on which we depend for our continued survival. &lt;a href=&quot;http://www.amazon.com/How-Became-Posthuman-Cybernetics-ebook/dp/B0026REAF6/ref=tmm_kin_title_0?ie=UTF8&amp;amp;m=A2M9W3KSQUCQTK&quot;&gt;Hayles, N. Katherine (1999-02-15). How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics (Kindle Locations 283-287). University of Chicago Press - A. Kindle Edition.&lt;/a&gt;&amp;lt;/blockquote&amp;gt;&lt;/p&gt;
+
+  &lt;p&gt;Nějakou dobu jsem vymýšlel distribuovanou úložnou síť. Síť, která by respektovala naše zklamání hypertextem.&lt;/p&gt;
+
+  &lt;h2 id=&quot;zklamn&quot;&gt;Zklamání&lt;/h2&gt;
+
+  &lt;p&gt;Hypertext je skvělý. Ať už myslíme odkaz encyklopedistů nebo Bushův memex. Ale jsme s ním v koncích. Zkracovače URL zde nebudou věčně. Odkazy přestanou fungovat. Nemluvě o informacích na uzavřených sítích, které vyhnijí dříve, než je bude někdo schopen zaindexovat. &lt;a href=&quot;http://jedenbod.cz/1165-socialni-kanal.html&quot;&gt;O problémech a nástinu řešení jsem se už zmínil v článku o sociálním webu&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;p&gt;Na jednu stranu se jedná o úžasnou příležitost pro kybertext - kulturní obsahy se odehrávají pouze v jednom momentu - fluxu. Nový text vzniká i samotným čtením, participace je otevřená, můžeme narazit na &lt;a href=&quot;http://jedenbod.cz/1349-b-je-ztracena-umelecka-komunita.html&quot;&gt;komunity, které se definitivně zbavily autora&lt;/a&gt;. Bezbřehá textualita - na internetu nic nekončí&lt;a href=&quot;https://plus.google.com/103336973914351575814/posts&quot;&gt;tm&lt;/a&gt;. I &lt;em&gt;Odysseus&lt;/em&gt; má konec. Umíráme na bezbřehou souvislost. Ničíme se na neustálém individuálním kopírování. Kopírujeme si osobnosti ((paranoia v sociálních sítích)).&lt;/p&gt;
+
+  &lt;h2 id=&quot;mamray&quot;&gt;Mamray&lt;/h2&gt;
+
+  &lt;p&gt;Představuji vám Mamray - absolutní platforma sdílení lidských dat. Decentralizovaná, bezpečná, neomylná. Služby jako &lt;strong&gt;Pinterest &lt;/strong&gt;možná ukazují cestu - embedování informace. Kopírování nic neznamená. Je přečtení bráno za vytvoření kopie? Technicky ano, jakýkoliv _text _se někam nakopíruje. Alespoň do RAM. Každý přístup znamená kopii. Která sice zmizí, ale možná nemusí.&lt;/p&gt;
+
+  &lt;p&gt;[caption id=”attachment_1422” align=”aligncenter” width=”570”]&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/05/fight_club_edward_norton_3-570x239.jpg&quot; alt=&quot;Everything is a copy of a copy of a copy.&quot; /&gt; Everything is a copy of a copy of a copy.[/caption]&lt;/p&gt;
+
+  &lt;p&gt;Proč Haylesová na začátku? Jestliže díky &lt;em&gt;cloudu&lt;/em&gt; přestáváme být závislí na fyzickém stroji (( vždyť &lt;em&gt;i Windows 8&lt;/em&gt; bude v základní verzi obsahovat synchronizaci přes SkyDrive. Po přihlášení na jiném PC se vám přenesou soubory z &lt;em&gt;cloudu&lt;/em&gt;. )) Dostáváme se zpět k terminálové technologii. &lt;em&gt;Nezáleží nám na fyzické stránce našeho virtuálna.&lt;/em&gt; Je načase přestat být &lt;em&gt;závislý na informacích&lt;/em&gt;. Přestat kopírovat kopírované. Nemít možnost remixovat. Zapomínat. &lt;strong&gt;Absolutní datový systém Mamray počítá s vytvořením lidského informačního fondu.&lt;/strong&gt; Memetický genofond. Transcendentální systém pro cestování věděním a časem. Veškeré informace a zdroje jsou decentralizovaně a rozeseté po síti. Jedná se o nový informační věk.&lt;/p&gt;
+
+  &lt;h3 id=&quot;funkn&quot;&gt;Funkční&lt;/h3&gt;
+
+  &lt;p&gt;Informace neexistuje v miliónech nezávislých kopiích na nepropojených discích, ale v kopiích, které se samy dokážou množit. Informace se stává živelnou a dynamickou. Části jsou rozesety na koncových stanicích lidí, kteří album neslyšeli. Na nekonečných serverových polích. Konec debat o stahování - data, alespoň část lidského fondu by měl každý u sebe a v závislosti na jeho požadavcích by se měnil obsah cache. Šlo by o přidání obsahu do &lt;em&gt;katalogu dohledatelnosti&lt;/em&gt; - ne do &lt;em&gt;katalogu vlastněných souborů na disku&lt;/em&gt;.** Z remixové kultury se stává mutace.**&lt;/p&gt;
+
+  &lt;p&gt;Nač se bavit v 21. století o autorech? &lt;strong&gt;Informace jsou předávány a přijímány bez autorů&lt;/strong&gt; - předávají se v kontextech. V čase, médiu… pojďme se bavit o těchto vlastnostech. Mamray zvládá vše. Každá nová iterace se uloží do systému. Každá změna. Existuje někde, rozsekána, možná zapomenuta. Veškeré informace v Mamray jsou okamžitě přístupné všem, sdílené napříč sítí. Informace nezanikají, přesouvají se dál, mutují, jsou využívány.   V době crowdsourcingu a decentralizovaných sociálních sítí se vracíme ke konceptu &lt;em&gt;pay-as-you-go&lt;/em&gt; - nebo snad_ goes as you pay. _&lt;/p&gt;
+
+  &lt;h3 id=&quot;absolutn&quot;&gt;Absolutní&lt;/h3&gt;
+
+  &lt;p&gt;Mamray nás rychle zbaví konceptu duševního vlastnictví. Díky sdílenému fondu obecného vědění nebudeme dálet potřeba kapitalismu - kapitalismus zemře sám, když někoho napadne, že stačí vytvořit něco &lt;em&gt;beze jména&lt;/em&gt;. Něco neuchopitelného, nepojmenovatelného, nevyčíslitelného. To je Mamray. Když se bavíme o &lt;em&gt;univerzální dostupnosti&lt;/em&gt;, nebavíme se o homogenitě informací.&lt;/p&gt;
+
+  &lt;h2 id=&quot;mrtv-mrak&quot;&gt;Mrtvý mrak&lt;/h2&gt;
+
+  &lt;p&gt;Věříme v nadřazený server, kam předáme vše. &lt;a href=&quot;http://www.spacemonkey.com/&quot;&gt;Věříme v rozšiřování kapacit, neomezená data.&lt;/a&gt; Vrací se jasné vymezení mezi terminálem a serverem. Vracíme se k náboženskému uspořádání světa. Je načase přestat být &lt;em&gt;závislý na informacích&lt;/em&gt;. V budoucnosti zapomeňte na singularitu. Zapomeňte na nesmrtelnost z ní plynoucí. Budeme se mnohem více bavit o &lt;em&gt;kontrole&lt;/em&gt;.&lt;/p&gt;
+
+  &lt;p&gt;[caption id=”attachment_1444” align=”aligncenter” width=”570”]&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/05/videodrome-brian-570x349.png&quot; alt=&quot;Brian O&#39;Blivion&quot; /&gt; Brian O’Blivion[/caption]&lt;/p&gt;
+
+  &lt;p&gt;Kontrola hladiny informací. 21. století ji patří.
+Mamray je utopie i má noční můra. Obsah bez formy.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Wed, 09 May 2012 22:23:08 +0200</pubDate>
+        <link>http://jedenbod.cz/1394-nocni-mura.html</link>
+        <guid isPermaLink="true">http://jedenbod.cz/1394-nocni-mura.html</guid>
+        
+        <category>4chan</category>
+        
+        <category>Crowdsourcing</category>
+        
+        <category>cybertext</category>
+        
+        <category>futurologie</category>
+        
+        <category>Hayles</category>
+        
+        <category>hypertext</category>
+        
+        <category>informace</category>
+        
+        <category>informační teorie</category>
+        
+        <category>Internet</category>
+        
+        <category>Joyce</category>
+        
+        <category>kapitalismus</category>
+        
+        <category>kybertext</category>
+        
+        <category>Mamray</category>
+        
+        <category>meme</category>
+        
+        <category>memex</category>
+        
+        <category>memy</category>
+        
+        <category>posthuman</category>
+        
+        
+        <category>Bezpečnost</category>
+        
+        <category>Internet</category>
+        
+        <category>Sociologie</category>
+        
+        <category>Úvaha</category>
+        
+      </item>
+    
+      <item>
+        <title>/b/ je ztracená umělecká komunita</title>
+        <description>&lt;p&gt;Dlouhou dobu jsem přemýšlel, jak vás přesvědčit, že /b/ je umělecká komunita. Naštěstí to už někdo stihnul: &lt;a href=&quot;http://www.artfagcity.com/2010/09/09/img-mgmt-what-relational-aesthetics-can-learn-from-4chan/&quot;&gt;What Relational Aesthetics Can Learn From 4Chan&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;you-do-not-talk-about-b&quot;&gt;You do not talk about /b/&lt;/h2&gt;
+
+&lt;p&gt;4chan sleduju asi od začátku roku 2009. Kromě toho, že to bylo jedno z nejvtipnějších míst na internetu, byla tam ona zvláštní elitářská nálada uzavřeného systému - memy, beroucí se &lt;em&gt;odnikud&lt;/em&gt;, nepochopitelné mimo okruh zainteresovaných. Nelze dále rozlišit mezi autorem a divákem (kritikem).&lt;/p&gt;
+
+&lt;p&gt;Nebavíme se už pouze o zahození konceptu &lt;em&gt;bílé krychle&lt;/em&gt; a přechodu k fluxu. Anonymní sémionauté si poradili se vším - Photoshopem budovali z japonské/masové/&lt;em&gt;jakékoliv&lt;/em&gt; kultury svou vlastní. Nástrojem, který absolutně zničil hranici mezi virtuálním a reálným na masové úrovni, si stvořili novodobou strukturu bez struktury. Proměnlivá. Absolutně závislá na divácích, kteří si předávají kulturní materiál. To vše nefyzicky, se sdílenou pseudoidentitou skrytou za proxy - Anonymous.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/04/1325641956381-570x712.jpg&quot; alt=&quot;4chan place where friends meet&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;4chan byl Černý čtverec na počátku digitálního věku. Raidy a operace byly happeningy - nádherně nekontrolované a zmatené.  4chan předvedl slabost současného konceptu hypertextu - bez uchovávání historie je přenos _memů, _ve významu kulturní jednotky, závislý na uživatelské participaci. &lt;strong&gt;Centrálním&lt;/strong&gt; a společným úložištěm a lá Wikipedia (v případě memů snad &lt;a href=&quot;http://knowyourmeme.com/&quot;&gt;KnowYourMeme&lt;/a&gt;) nelze zachytit okamžik. O ten v případě /b/ šlo - jednotlivé fragmenty ve formě zachycených screenshotů nemohou fungovat - jakou vypovídací hodnotu snad mají fotky z happeningů?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/04/1248972006309-570x497.jpg&quot; alt=&quot;4chan smash face on keyboard post results&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;#&lt;/h1&gt;
+
+&lt;h2 id=&quot;troll-thread&quot;&gt;Troll thread&lt;/h2&gt;
+
+&lt;p&gt;Uživatelé byli vycvičení v rozpoznávání trollů - připraveni kriticky posuzovat vlastní výtvory. Kontrolní mechanismus vzniklý ze samotné umělecké tvorby - viz. &lt;em&gt;forced meme&lt;/em&gt;. Nebyl to pouhý hive mind, ale ukázka toho, jak budou muset přežívat další generace - budou těžit z ad hoc kulturního potenciálu. Budou muset vyžít z vlastního chápání dějin i současnosti. O to těžší pro ně bude rozhodovat o budoucnosti.&lt;/p&gt;
+
+&lt;p&gt;Podstatnou pravdou je, že historie /b/ částečně opisuje historii umění ((nebijte mě!)) v postmoderně ((ať už je to cokoliv)). Narazili na nudící se davy &lt;em&gt;střední digitální třídy&lt;/em&gt;. Na opurtunisty. Zkrátka na kýč.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/04/13343563802631-570x1282.png&quot; alt=&quot;meme kitsch&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nemohli konkurovat kýči - musí se rozhodnout jít cestou, která pro masy nebude zajímavá - naprostá primitivnost memů, jejich &lt;em&gt;nesdíletelnost&lt;/em&gt; a další obranné prvky. &lt;strong&gt;Lze vůbec bránit kulturní informaci před šířením?&lt;/strong&gt; Je to opak všeho, co nám mají přinést sociální média. Na jedné straně sociální kýč - na druhé pseudohumanističtí hacktivisté, kteří nehackují.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/04/600px-milhouse_van_houten-570x570.png&quot; alt=&quot;Milhouse is not a meme&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;/b/ nám dalo pohled do budoucnosti morálního relativismu jako od Nietzscheho, sémionautů a kulturního dědictví přenášeného dobrovolníky. O ukázce přenosu kýče a balastu ani nemluvě.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Apr 2012 16:55:53 +0200</pubDate>
+        <link>http://jedenbod.cz/1349-b-je-ztracena-umelecka-komunita.html</link>
+        <guid isPermaLink="true">http://jedenbod.cz/1349-b-je-ztracena-umelecka-komunita.html</guid>
+        
+        <category>/b/</category>
+        
+        <category>4chan</category>
+        
+        <category>anonymous</category>
+        
+        <category>budoucnost</category>
+        
+        <category>Internet</category>
+        
+        <category>kultura</category>
+        
+        <category>meme</category>
+        
+        <category>memy</category>
+        
+        <category>sociální sítě</category>
+        
+        <category>Sociologie</category>
+        
+        <category>Úvaha</category>
+        
+        <category>web</category>
+        
+        
+        <category>Internet</category>
+        
+        <category>Sociologie</category>
+        
+      </item>
+    
+  </channel>
+</rss>
