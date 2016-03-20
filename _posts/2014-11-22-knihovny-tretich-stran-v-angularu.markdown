@@ -170,4 +170,4 @@ Tento test také zajistí 100% code coverage v [Istanbulu](http://gotwarlost.git
 
 
 
-![AngularJS - loadJS code coverage](http://jedenbod.cz/wp-content/uploads/2014/12/Snímek-obrazovky-2014-12-21-v-23.57.02.png)
+![AngularJS - loadJS code coverage](http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-23.57.02.png)
