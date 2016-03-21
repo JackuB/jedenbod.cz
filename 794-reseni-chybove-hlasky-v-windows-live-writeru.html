@@ -521,10 +521,6 @@ pre {
     <header class="site-header">
   <h1 class="blog-title"><a href="/">JedenBod</a></h1>
 
-  <div class="page-notice">
-    Tento blog je opuštěn a přežívá pouze záloha. Většina informací zde je nejspíše zastaralých.
-  </div>
-
   <div class="page-links">
     <a class="page-link" href="/">Domů</a>
     • <a class="page-link" href="http://mikul.as">Jakub Mikuláš</a>
@@ -558,9 +554,14 @@ pre {
 
 
     <main class="content" role="main">
+  <div class="page-notice">
+    Tento blog je opuštěn a přežívá pouze záloha. Většina informací zde je nejspíše zastaralých.
+  </div>
+
   <article class="post">
     <div class="post-meta">
       <h1 class="post-title">Řešení chybové hlášky v Windows Live Writeru</h1>
+      <time datetime="10 December 2009">2009-12-10</time>
     </div>
 
     <section class="post-content">
@@ -568,35 +569,30 @@ pre {
       <p>O <a href="http://jedenbod.cz/709-windows-live-writer-a-wordpress.html">Windows Live Writeru</a> jsem psal již dříve, od té doby jej používám, ale narazil jsem na problém, u článku s <a href="http://jedenbod.cz/786-chilli-kruta.html">receptem na chilli krůtu</a>, jsem měl několik větších obrázků a při publikaci mi Live Writer vrátil chybovou hlášku:</p>
 
 <blockquote>
-  <blockquote>
+  <p>Odpověď na metodu metaWeblog.newMediaObject přijatá ze serveru blogu byla neplatná:</p>
 
-    <p>Odpověď na metodu metaWeblog.newMediaObject přijatá ze serveru blogu byla neplatná:</p>
-
-    <p>Invalid response document returned from XmlRpc server</p>
-
-    <p>&lt;/blockquote&gt;</p>
-  </blockquote>
-
-  <h2 id="een">Řešení</h2>
-
-  <p>V hlavním okně Windows Live Writeru zvolte <strong>Nástroje –&gt; Účty</strong>. Otevře se vám následující okno:</p>
-
-  <p><img src="http://jedenbod.cz/wp-content/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/01.png" alt="Možnosti Writeru" /></p>
-
-  <p>Zde si vyberte svůj blog a zvolte <strong>Upravit</strong>.</p>
-
-  <p><img src="http://jedenbod.cz/wp-content/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/02.png" alt="Konfigurace" /></p>
-
-  <p>V dalším okně vyberte záložku <strong>Obrázky</strong> a <strong>Odeslat obrázky na server FTP</strong>.</p>
-
-  <p><img src="http://jedenbod.cz/wp-content/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/03.png" alt="Nastavení FTP" /></p>
-
-  <p>Zde již pouze zadáte přihlašovací údaje na svůj server a zvolíte složku, kam se budou obrázky ukládat <em>(klidně může být mimo instalaci Wordpressu)</em>.</p>
-
-  <p>Potvrdíte a obrázky se budou nahrávat bez problémů.</p>
-
-  <p><em>Inspirováno z <a href="http://www.troublefixers.com/solved-live-writer-error-the-response-to-the-metaweblog-newmediaobject-method-received-from-the-weblog-server-was-invalid-invalid-response-document-returned-from-xmlrpc-server/#comment-4879">troublefixers.com</a>.</em></p>
+  <p>Invalid response document returned from XmlRpc server</p>
 </blockquote>
+
+<h2 id="een">Řešení</h2>
+
+<p>V hlavním okně Windows Live Writeru zvolte <strong>Nástroje –&gt; Účty</strong>. Otevře se vám následující okno:</p>
+
+<p><img src="http://jedenbod.cz/wp-content/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/01.png" alt="Možnosti Writeru" /></p>
+
+<p>Zde si vyberte svůj blog a zvolte <strong>Upravit</strong>.</p>
+
+<p><img src="http://jedenbod.cz/wp-content/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/02.png" alt="Konfigurace" /></p>
+
+<p>V dalším okně vyberte záložku <strong>Obrázky</strong> a <strong>Odeslat obrázky na server FTP</strong>.</p>
+
+<p><img src="http://jedenbod.cz/wp-content/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/03.png" alt="Nastavení FTP" /></p>
+
+<p>Zde již pouze zadáte přihlašovací údaje na svůj server a zvolíte složku, kam se budou obrázky ukládat <em>(klidně může být mimo instalaci Wordpressu)</em>.</p>
+
+<p>Potvrdíte a obrázky se budou nahrávat bez problémů.</p>
+
+<p><em>Inspirováno z <a href="http://www.troublefixers.com/solved-live-writer-error-the-response-to-the-metaweblog-newmediaobject-method-received-from-the-weblog-server-was-invalid-invalid-response-document-returned-from-xmlrpc-server/#comment-4879">troublefixers.com</a>.</em></p>
 
     </section>
   </article>
