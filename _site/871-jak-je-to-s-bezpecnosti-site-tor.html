@@ -521,10 +521,6 @@ pre {
     <header class="site-header">
   <h1 class="blog-title"><a href="/">JedenBod</a></h1>
 
-  <div class="page-notice">
-    Tento blog je opuštěn a přežívá pouze záloha. Většina informací zde je nejspíše zastaralých.
-  </div>
-
   <div class="page-links">
     <a class="page-link" href="/">Domů</a>
     • <a class="page-link" href="http://mikul.as">Jakub Mikuláš</a>
@@ -558,9 +554,14 @@ pre {
 
 
     <main class="content" role="main">
+  <div class="page-notice">
+    Tento blog je opuštěn a přežívá pouze záloha. Většina informací zde je nejspíše zastaralých.
+  </div>
+
   <article class="post">
     <div class="post-meta">
       <h1 class="post-title">Jak je to s bezpečností sítě Tor</h1>
+      <time datetime="27 June 2010">2010-06-27</time>
     </div>
 
     <section class="post-content">
@@ -632,58 +633,58 @@ pre {
 <p>To, že vláda, podle všeho zatím pouze ta americká, a v menší míře i čínská, dokáže kontrolovat odchozí provoz, je velmi limitující představa. Na The Hidden Wiki <em>(už podle názvu pochopíte, že ji nemohu přímo linkovat, je zkrátka ‘Hidden’ – naleznete ji na Tor síti)</em> se píše dokonce o možnosti editovat přeposílanou zprávu. Tuto myšlenku podporuje také existence projektu <a href="http://www.metasploit.com/">Metasploit</a> – více info v článku na ZDNetu o <a href="http://www.zdnet.com/blog/security/hacker-builds-tracking-system-to-nab-tor-pedophiles/114">chytání pedofilů na Toru</a>.</p>
 
 <blockquote>
-  <p><strong>2.</strong> When child porn-related keywords are seen (either the Web request, or the response), inject a little extra HTML code into the response going back to the Web browser. This HTML code would connect to my decloaking engine.&lt;/blockquote&gt;</p>
-
-  <p>Do odpovědi se zakomponuje například kousek <a href="http://cs.wikipedia.org/wiki/Java_(programovac%C3%AD_jazyk)">Javy</a>, která se na koncovém počítači připojí k serveru útočníka, čímž odhalí pravou IP adresu uživatele Toru. Samozřejmě, lze to obejít routováním <strong>všech</strong> připojení skrze Tor.</p>
-
-  <p>I v článku o <a href="http://en.wikipedia.org/wiki/Tor_(anonymity_network)#Weaknesses">Toru na wikipedii</a> naleznete jeho další slabiny.</p>
-
-  <h2 id="je-tedy-tor-nebezpen">Je tedy Tor nebezpečný?</h2>
-
-  <p><strong>Odpověd je: Může být.</strong></p>
-
-  <p>Pokud z Exit Nodu odcházejí nešifrovaná data, je možnost odposlouchávání stejná, jako že vás odposlouchává váš ISP. Správcům Exit Nodů (<a href="http://www.omninerd.com/articles/What_Traffic_is_on_a_TOR_Relay">podle této analýzy provozu Tor Exit Nodu</a>) se každou chvíli podaří zachytit nějaké to heslo, či zprávu <em>(například z IRC).</em></p>
-
-  <p>Pokud však používáte end-to-end šifrování <em>(<a href="http://cs.wikipedia.org/wiki/Transport_Layer_Security">SSL</a>),</em> <a href="https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#CanexitnodeseavesdroponcommunicationsIsntthatbad">které byste používat měli</a> <em>(jdeli vám o bezpečnost tak moc, že používáte Tor),</em> jste relativně v bezpečí.</p>
-
-  <p>Pokud navíc směrujete všechen provoz skrz Tor Proxy bránu, měli byste být téměř nevystopovatelní.</p>
-
-  <p>Občas se mluví o analýze provozu nebo o napadení Tor Nodů, ale i tak je bezpečnost Tor sítě, co se vystopovatelnosti týče, velmi velká. Více v <a href="https://svn.torproject.org/svn/tor/trunk/doc/design-paper/tor-design.html#sec:attacks">dokumentaci v sekci o útocích</a>. I když lze těžko zjistit, <strong>kdo</strong> daný obsah požadoval, je však relativně snadno možné monitorovat jaký obsah se po darknetu ((Skrytá část internetu)) pohybuje.</p>
-
-  <p>Záleží tedy primárně na:</p>
-
-  <ol>
-    <li>
-      <p>Zabezpečení vašeho PC – přesměrování DNS, používání nebezpečných ActiveX prvků, které se na vlastní pěst připojují mimo proxy, Spyware, Keyloggery atd.</p>
-    </li>
-    <li>
-      <p>Šifrování posílaných informací – zabráníte odposlechu</p>
-    </li>
-    <li>
-      <p>Možnosti útočníka – Má prostředky na sledování částí sítě? Může infikovat Tor Nody?</p>
-    </li>
-  </ol>
-
-  <p>Samozřejmě záleží také na tom, co útočník chce. Buď si pouze ověřit, že s druhou stranou komunikujete <em>(toto, by se mu mohlo podařit, viz dokumentace Toru výše)</em> nebo jaká data po síti přenášíte. Zkrátka záleží hodně na okolnostech. Avšak platí, že útoky, které by vás mohly na Toru ohrozit jsou mimo bezpečností rizika většiny uživatelů.</p>
-
-  <p>Samozřejmě existují i alternativy k Toru, ale ty jsou na tom s bezpečností <em>(z praktického pohledu)</em> velmi podobně.</p>
-
-  <ul>
-    <li>
-      <p><a href="http://freenetproject.org/">Freenet</a> – <a href="http://en.wikipedia.org/wiki/Freenet">wiki</a> – skvělý na přenos souborů</p>
-    </li>
-    <li>
-      <p><a href="http://www.i2p2.de">I2P</a> – <a href="http://en.wikipedia.org/wiki/I2P">wiki</a> – podobný na Tor <em>(viz. <a href="http://www.i2p2.de/how_networkcomparisons">srovnání I2P s Torem</a>)</em></p>
-    </li>
-    <li>
-      <p>Případně menší <a href="http://www.planetpeer.de/wiki/index.php/Main_Page">srovnání různých anonymních sítí</a></p>
-    </li>
-  </ul>
-
-  <p>Další materiály naleznete především na The Hidden Wiki a Onion Forum – pokud je máte pochopit, tak věřím, že si je bude schopni nalézt sami.</p>
-
-  <p>Hodně štěstí</p>
+  <p><strong>2.</strong> When child porn-related keywords are seen (either the Web request, or the response), inject a little extra HTML code into the response going back to the Web browser. This HTML code would connect to my decloaking engine.</p>
 </blockquote>
+
+<p>Do odpovědi se zakomponuje například kousek <a href="http://cs.wikipedia.org/wiki/Java_(programovac%C3%AD_jazyk)">Javy</a>, která se na koncovém počítači připojí k serveru útočníka, čímž odhalí pravou IP adresu uživatele Toru. Samozřejmě, lze to obejít routováním <strong>všech</strong> připojení skrze Tor.</p>
+
+<p>I v článku o <a href="http://en.wikipedia.org/wiki/Tor_(anonymity_network)#Weaknesses">Toru na wikipedii</a> naleznete jeho další slabiny.</p>
+
+<h2 id="je-tedy-tor-nebezpen">Je tedy Tor nebezpečný?</h2>
+
+<p><strong>Odpověd je: Může být.</strong></p>
+
+<p>Pokud z Exit Nodu odcházejí nešifrovaná data, je možnost odposlouchávání stejná, jako že vás odposlouchává váš ISP. Správcům Exit Nodů (<a href="http://www.omninerd.com/articles/What_Traffic_is_on_a_TOR_Relay">podle této analýzy provozu Tor Exit Nodu</a>) se každou chvíli podaří zachytit nějaké to heslo, či zprávu <em>(například z IRC).</em></p>
+
+<p>Pokud však používáte end-to-end šifrování <em>(<a href="http://cs.wikipedia.org/wiki/Transport_Layer_Security">SSL</a>),</em> <a href="https://trac.torproject.org/projects/tor/wiki/TheOnionRouter/TorFAQ#CanexitnodeseavesdroponcommunicationsIsntthatbad">které byste používat měli</a> <em>(jdeli vám o bezpečnost tak moc, že používáte Tor),</em> jste relativně v bezpečí.</p>
+
+<p>Pokud navíc směrujete všechen provoz skrz Tor Proxy bránu, měli byste být téměř nevystopovatelní.</p>
+
+<p>Občas se mluví o analýze provozu nebo o napadení Tor Nodů, ale i tak je bezpečnost Tor sítě, co se vystopovatelnosti týče, velmi velká. Více v <a href="https://svn.torproject.org/svn/tor/trunk/doc/design-paper/tor-design.html#sec:attacks">dokumentaci v sekci o útocích</a>. I když lze těžko zjistit, <strong>kdo</strong> daný obsah požadoval, je však relativně snadno možné monitorovat jaký obsah se po darknetu ((Skrytá část internetu)) pohybuje.</p>
+
+<p>Záleží tedy primárně na:</p>
+
+<ol>
+  <li>
+    <p>Zabezpečení vašeho PC – přesměrování DNS, používání nebezpečných ActiveX prvků, které se na vlastní pěst připojují mimo proxy, Spyware, Keyloggery atd.</p>
+  </li>
+  <li>
+    <p>Šifrování posílaných informací – zabráníte odposlechu</p>
+  </li>
+  <li>
+    <p>Možnosti útočníka – Má prostředky na sledování částí sítě? Může infikovat Tor Nody?</p>
+  </li>
+</ol>
+
+<p>Samozřejmě záleží také na tom, co útočník chce. Buď si pouze ověřit, že s druhou stranou komunikujete <em>(toto, by se mu mohlo podařit, viz dokumentace Toru výše)</em> nebo jaká data po síti přenášíte. Zkrátka záleží hodně na okolnostech. Avšak platí, že útoky, které by vás mohly na Toru ohrozit jsou mimo bezpečností rizika většiny uživatelů.</p>
+
+<p>Samozřejmě existují i alternativy k Toru, ale ty jsou na tom s bezpečností <em>(z praktického pohledu)</em> velmi podobně.</p>
+
+<ul>
+  <li>
+    <p><a href="http://freenetproject.org/">Freenet</a> – <a href="http://en.wikipedia.org/wiki/Freenet">wiki</a> – skvělý na přenos souborů</p>
+  </li>
+  <li>
+    <p><a href="http://www.i2p2.de">I2P</a> – <a href="http://en.wikipedia.org/wiki/I2P">wiki</a> – podobný na Tor <em>(viz. <a href="http://www.i2p2.de/how_networkcomparisons">srovnání I2P s Torem</a>)</em></p>
+  </li>
+  <li>
+    <p>Případně menší <a href="http://www.planetpeer.de/wiki/index.php/Main_Page">srovnání různých anonymních sítí</a></p>
+  </li>
+</ul>
+
+<p>Další materiály naleznete především na The Hidden Wiki a Onion Forum – pokud je máte pochopit, tak věřím, že si je bude schopni nalézt sami.</p>
+
+<p>Hodně štěstí</p>
 
     </section>
   </article>

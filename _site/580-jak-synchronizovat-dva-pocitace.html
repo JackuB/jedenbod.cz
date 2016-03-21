@@ -521,10 +521,6 @@ pre {
     <header class="site-header">
   <h1 class="blog-title"><a href="/">JedenBod</a></h1>
 
-  <div class="page-notice">
-    Tento blog je opuštěn a přežívá pouze záloha. Většina informací zde je nejspíše zastaralých.
-  </div>
-
   <div class="page-links">
     <a class="page-link" href="/">Domů</a>
     • <a class="page-link" href="http://mikul.as">Jakub Mikuláš</a>
@@ -558,9 +554,14 @@ pre {
 
 
     <main class="content" role="main">
+  <div class="page-notice">
+    Tento blog je opuštěn a přežívá pouze záloha. Většina informací zde je nejspíše zastaralých.
+  </div>
+
   <article class="post">
     <div class="post-meta">
       <h1 class="post-title">Jak synchronizovat dva počítače</h1>
+      <time datetime="28 September 2009">2009-09-28</time>
     </div>
 
     <section class="post-content">
@@ -576,91 +577,91 @@ pre {
 <p>Při synchronizaci nám jde o to, aby se změny, které provedem na jednom PC, okamžitě, bez uživatelského zásahu, přenesly na druhé PC.</p>
 
 <blockquote>
-  <p><em>Zkrátka</em>: na PC číslo 1 napíšete odstavec do nějakého dokumentu, dáte uložit změny, a během několika vteřin se změny v dokumentu projeví na PC číslo 2.&lt;/blockquote&gt;</p>
-
-  <p>Přenos dat mezi synchronizovanými počítači může být proveden:</p>
-
-  <ul>
-    <li>
-      <p><strong><a href="http://cs.wikipedia.org/wiki/Local_Area_Network">LAN </a></strong>- síťovým kabelem</p>
-    </li>
-    <li>
-      <p><strong><a href="http://cs.wikipedia.org/wiki/WAN">WAN </a></strong></p>
-
-      <ul>
-        <li>
-          <p>Přes server 3. strany - data z PC1 se nahrají nejdříve na server poskytovatele služeb a poté se stáhnou do PC2</p>
-        </li>
-        <li>
-          <p>Pomocí P2P protokolu - zde je také potřeba serveru 3. strany, ale ten působí pouze jako prostředník, k vašim datům se nedostane</p>
-        </li>
-      </ul>
-    </li>
-  </ul>
-
-  <p>LAN samozřejmě vede stabilitou a rychlostí, bohužel PC musí být, logicky, propojeny kabelem, což je</p>
-
-  <ol>
-    <li>
-      <p>Na dálku nemožné</p>
-    </li>
-    <li>
-      <p>Nepraktické</p>
-    </li>
-  </ol>
-
-  <p>Naopak WAN - Internet je sice pomalejší, ale vhodnější pro menší soubory.</p>
-
-  <h3 id="alternativy-k-synchronizaci-dat-mezi-pc">Alternativy k synchronizaci dat mezi PC</h3>
-
-  <p>Mít vše online.</p>
-
-  <p>Díky <a href="http://www.thinkgos.com">gOS</a>, <a href="http://g.ho.st/">G.ho.st</a> nebo <a href="http://docs.google.com/">Google Docs</a> si můžete být jisti, že dokumenty se kterými pracujete, jsou aktuální. Nevýhoda je zřejmá - žádný internet, žádné dokumenty.</p>
-
-  <p>[caption id=”attachment_584” align=”aligncenter” width=”570” caption=”G.ho.st”]<img src="http://jedenbod.cz/wp-content/uploads/2009/09/ghost-570x442.jpg" alt="G.ho.st" />[/caption]</p>
-
-  <h2 id="synchronizujeme-men-data---dokumenty">Synchronizujeme menší data - dokumenty</h2>
-
-  <p>Nejlepší volbou pro snadné a rychlé synchronizování menšího objemu dat je <a href="http://www.mesh.com">Live Mesh</a> od Microsoftu. Dokáže synchronizovat složku mezi několika PC a online úložištěm - <strong>Live Desktop</strong>, takže se k souborům kdykoliv dostanete i z jiného PC.</p>
-
-  <p>[caption id=”attachment_585” align=”aligncenter” width=”570” caption=”Live Mesh Beta”]<img src="http://jedenbod.cz/wp-content/uploads/2009/09/live-mesh-570x441.jpg" alt="Live Mesh Beta" />[/caption]</p>
-
-  <p>Do každého PC, které chcete synchronizovat, nainstalujete malou aplikaci, která se o vše postará automaticky a na pozadí. Výhodou je, že díky Live Desktop ani nemusí být druhé synchronizované PC online.</p>
-
-  <p><img src="http://jedenbod.cz/wp-content/uploads/2009/09/live-mesh-taskbar.PNG" alt="Live Mesh Beta" /></p>
-
-  <p>Nejlepší řešení je v rámci Dokumentů vytvořit složku, kterou chcete mít synchronizovanou a do ní pak ukládat vše důležité.</p>
-
-  <p>Synchronizace je skutečně rychlá, a i přes nálepku <em>Beta</em>, jsem nezaznamenal žádný problém. Navíc můžete využít i funkci vzdáleného přístupu, takže můžete používat druhé PC na dálku.</p>
-
-  <p>Microsoft ještě nabízí <a href="http://www.foldershare.com/">Live Sync</a> a <a href="http://skydrive.live.com/">SkyDrive</a>. SkyDrive je pouhé online úložiště, ale Live Sync v teorii vypadá lépe než Live Mesh, bohužel, měl jsem s ním jen problémy.</p>
-
-  <p>Jiné služby blížící se kvalitou Live Mesh jsem nenašel.</p>
-
-  <h2 id="synchronizujeme-ve-velkm---hudba-filmy">Synchronizujeme ve velkém - hudba, filmy</h2>
-
-  <p>Tady je už synchronizace přes internet vyloučena. Přenášet desítky gigabajtů dat na dálku není příjemné. Je to pomalé, spojení se může přerušit atd.</p>
-
-  <p>Zde musíme přistoupit k síťovému _(<a href="http://cs.wikipedia.org/wiki/Local_Area_Network">LAN</a>) _připojení. Stačí použít síťový kabel <a href="http://cs.wikipedia.org/wiki/RJ-45">RJ-45</a>. Ten koupíte všude, kde se prodává něco s technikou.</p>
-
-  <p>[caption id=”attachment_601” align=”aligncenter” width=”570” caption=”RJ-45”]<a href="http://cs.wikipedia.org/wiki/RJ-45"><img src="http://jedenbod.cz/wp-content/uploads/2009/09/rj45-570x313.jpg" alt="RJ-45" /></a>[/caption]</p>
-
-  <p>Pro základní synchronizaci, stačí soubory pouze zkopírovat po síti, ale pokud hledáte poněkud sofistikovanější způsob, který zkontroluje verze souborů, je tady <a href="http://www.goodsync.com/">GoodSync</a>.</p>
-
-  <p>Vyberete pouze cesty k synchronizovaným složkám a stisknete <em>Sync</em>. <a href="http://www.goodsync.com/">GoodSync</a> automaticky porovná verze <em>(čas poslední změny)</em> a vše synchronizuje.</p>
-
-  <p>[caption id=”attachment_605” align=”aligncenter” width=”570” caption=”GoodSync”]<img src="http://jedenbod.cz/wp-content/uploads/2009/09/sync2.jpg" alt="GoodSync" />[/caption]</p>
-
-  <p>Například první synchronizace mé hudební knihovny <em>(skoro 50 Gb a 11 000 souborů)</em> trvala něco málo přes hodinu a půl. Příště už bude čas znatelně kratší, protože se budou přenášet jen nové skladby.</p>
-
-  <p><img src="http://jedenbod.cz/wp-content/uploads/2009/09/good-sync.PNG" alt="GoodSync" /></p>
-
-  <h2 id="zvrem">Závěrem</h2>
-
-  <p>Kombinace neustálé synchronizace dokumentů s <a href="http://www.mesh.com/">Live Mesh</a> a občasné manuální synchronizace pomocí <a href="http://www.goodsync.com/">GoodSync</a> se mi jeví jako nejlepší možnost.</p>
-
-  <p>Synchronizujete PC? Jaké nástroje používáte?</p>
+  <p><em>Zkrátka</em>: na PC číslo 1 napíšete odstavec do nějakého dokumentu, dáte uložit změny, a během několika vteřin se změny v dokumentu projeví na PC číslo 2.</p>
 </blockquote>
+
+<p>Přenos dat mezi synchronizovanými počítači může být proveden:</p>
+
+<ul>
+  <li>
+    <p><strong><a href="http://cs.wikipedia.org/wiki/Local_Area_Network">LAN </a></strong>- síťovým kabelem</p>
+  </li>
+  <li>
+    <p><strong><a href="http://cs.wikipedia.org/wiki/WAN">WAN </a></strong></p>
+
+    <ul>
+      <li>
+        <p>Přes server 3. strany - data z PC1 se nahrají nejdříve na server poskytovatele služeb a poté se stáhnou do PC2</p>
+      </li>
+      <li>
+        <p>Pomocí P2P protokolu - zde je také potřeba serveru 3. strany, ale ten působí pouze jako prostředník, k vašim datům se nedostane</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>LAN samozřejmě vede stabilitou a rychlostí, bohužel PC musí být, logicky, propojeny kabelem, což je</p>
+
+<ol>
+  <li>
+    <p>Na dálku nemožné</p>
+  </li>
+  <li>
+    <p>Nepraktické</p>
+  </li>
+</ol>
+
+<p>Naopak WAN - Internet je sice pomalejší, ale vhodnější pro menší soubory.</p>
+
+<h3 id="alternativy-k-synchronizaci-dat-mezi-pc">Alternativy k synchronizaci dat mezi PC</h3>
+
+<p>Mít vše online.</p>
+
+<p>Díky <a href="http://www.thinkgos.com">gOS</a>, <a href="http://g.ho.st/">G.ho.st</a> nebo <a href="http://docs.google.com/">Google Docs</a> si můžete být jisti, že dokumenty se kterými pracujete, jsou aktuální. Nevýhoda je zřejmá - žádný internet, žádné dokumenty.</p>
+
+<p>[caption id=”attachment_584” align=”aligncenter” width=”570” caption=”G.ho.st”]<img src="http://jedenbod.cz/wp-content/uploads/2009/09/ghost-570x442.jpg" alt="G.ho.st" />[/caption]</p>
+
+<h2 id="synchronizujeme-men-data---dokumenty">Synchronizujeme menší data - dokumenty</h2>
+
+<p>Nejlepší volbou pro snadné a rychlé synchronizování menšího objemu dat je <a href="http://www.mesh.com">Live Mesh</a> od Microsoftu. Dokáže synchronizovat složku mezi několika PC a online úložištěm - <strong>Live Desktop</strong>, takže se k souborům kdykoliv dostanete i z jiného PC.</p>
+
+<p>[caption id=”attachment_585” align=”aligncenter” width=”570” caption=”Live Mesh Beta”]<img src="http://jedenbod.cz/wp-content/uploads/2009/09/live-mesh-570x441.jpg" alt="Live Mesh Beta" />[/caption]</p>
+
+<p>Do každého PC, které chcete synchronizovat, nainstalujete malou aplikaci, která se o vše postará automaticky a na pozadí. Výhodou je, že díky Live Desktop ani nemusí být druhé synchronizované PC online.</p>
+
+<p><img src="http://jedenbod.cz/wp-content/uploads/2009/09/live-mesh-taskbar.PNG" alt="Live Mesh Beta" /></p>
+
+<p>Nejlepší řešení je v rámci Dokumentů vytvořit složku, kterou chcete mít synchronizovanou a do ní pak ukládat vše důležité.</p>
+
+<p>Synchronizace je skutečně rychlá, a i přes nálepku <em>Beta</em>, jsem nezaznamenal žádný problém. Navíc můžete využít i funkci vzdáleného přístupu, takže můžete používat druhé PC na dálku.</p>
+
+<p>Microsoft ještě nabízí <a href="http://www.foldershare.com/">Live Sync</a> a <a href="http://skydrive.live.com/">SkyDrive</a>. SkyDrive je pouhé online úložiště, ale Live Sync v teorii vypadá lépe než Live Mesh, bohužel, měl jsem s ním jen problémy.</p>
+
+<p>Jiné služby blížící se kvalitou Live Mesh jsem nenašel.</p>
+
+<h2 id="synchronizujeme-ve-velkm---hudba-filmy">Synchronizujeme ve velkém - hudba, filmy</h2>
+
+<p>Tady je už synchronizace přes internet vyloučena. Přenášet desítky gigabajtů dat na dálku není příjemné. Je to pomalé, spojení se může přerušit atd.</p>
+
+<p>Zde musíme přistoupit k síťovému _(<a href="http://cs.wikipedia.org/wiki/Local_Area_Network">LAN</a>) _připojení. Stačí použít síťový kabel <a href="http://cs.wikipedia.org/wiki/RJ-45">RJ-45</a>. Ten koupíte všude, kde se prodává něco s technikou.</p>
+
+<p>[caption id=”attachment_601” align=”aligncenter” width=”570” caption=”RJ-45”]<a href="http://cs.wikipedia.org/wiki/RJ-45"><img src="http://jedenbod.cz/wp-content/uploads/2009/09/rj45-570x313.jpg" alt="RJ-45" /></a>[/caption]</p>
+
+<p>Pro základní synchronizaci, stačí soubory pouze zkopírovat po síti, ale pokud hledáte poněkud sofistikovanější způsob, který zkontroluje verze souborů, je tady <a href="http://www.goodsync.com/">GoodSync</a>.</p>
+
+<p>Vyberete pouze cesty k synchronizovaným složkám a stisknete <em>Sync</em>. <a href="http://www.goodsync.com/">GoodSync</a> automaticky porovná verze <em>(čas poslední změny)</em> a vše synchronizuje.</p>
+
+<p>[caption id=”attachment_605” align=”aligncenter” width=”570” caption=”GoodSync”]<img src="http://jedenbod.cz/wp-content/uploads/2009/09/sync2.jpg" alt="GoodSync" />[/caption]</p>
+
+<p>Například první synchronizace mé hudební knihovny <em>(skoro 50 Gb a 11 000 souborů)</em> trvala něco málo přes hodinu a půl. Příště už bude čas znatelně kratší, protože se budou přenášet jen nové skladby.</p>
+
+<p><img src="http://jedenbod.cz/wp-content/uploads/2009/09/good-sync.PNG" alt="GoodSync" /></p>
+
+<h2 id="zvrem">Závěrem</h2>
+
+<p>Kombinace neustálé synchronizace dokumentů s <a href="http://www.mesh.com/">Live Mesh</a> a občasné manuální synchronizace pomocí <a href="http://www.goodsync.com/">GoodSync</a> se mi jeví jako nejlepší možnost.</p>
+
+<p>Synchronizujete PC? Jaké nástroje používáte?</p>
 
     </section>
   </article>

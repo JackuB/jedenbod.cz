@@ -6,8 +6,8 @@
 </description>
     <link>http://jedenbod.cz/</link>
     <atom:link href="http://jedenbod.cz/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Mar 2016 04:30:25 +0100</pubDate>
-    <lastBuildDate>Sun, 20 Mar 2016 04:30:25 +0100</lastBuildDate>
+    <pubDate>Mon, 21 Mar 2016 14:51:48 +0100</pubDate>
+    <lastBuildDate>Mon, 21 Mar 2016 14:51:48 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -35,7 +35,7 @@
 
 &lt;p&gt;Node-webkit aplikace se skládají z HTML a JS souborů, takže se můžeme podívat jak vypadá inicializační stránka init.html:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.22.png&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.22.png&quot; alt=&quot;init.html&quot; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.22.png&quot;&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.22.png&quot; alt=&quot;init.html&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
 Zde jsou moduly, které slouží jako globální objekty pro celý proces (historie, nastavení, autoupdate prohlížeče atd.). Lze vidět, že se při startu načítá i několik modulů, které ještě nejsou v současné verzi &lt;em&gt;(1.0.3)&lt;/em&gt; jako: synchronizace hesel, načítání favicon, registrace (?). Občas narazíte i na podivné kusy kódu jako:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;
@@ -53,7 +53,7 @@ Zde jsou moduly, které slouží jako globální objekty pro celý proces (histo
 
 &lt;p&gt;Zajímavější kód najdeme na stránce nového (aplikačního) okna &lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.36.png&quot;&gt;win.html&lt;/a&gt;. Zaprvé: Seznam prohlížeč nevyužívá UI z node-webkit (které vypadá zkrátka jako defaultní prohlížeč), ale místo toho &lt;strong&gt;implementuje celé uživatelské rozhraní pomocí &lt;a href=&quot;https://angularjs.org&quot;&gt;AngularJS&lt;/a&gt;&lt;/strong&gt; (s rozdílným CSS pro Windows a Mac, aby ovládací prvky odpovídaly platformě).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/seznam-chrome.png&quot; alt=&quot;Seznam.cz prohlížeč s node-webkit chrome&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/seznam-chrome.png&quot; alt=&quot;Seznam.cz prohlížeč s node-webkit chrome&quot; /&gt;&lt;br /&gt;
 Jak vidíte, je to vcelku rozsáhlá aplikace. Nechal jsem zdrojové kódy projet nástrojem &lt;a href=&quot;https://github.com/es-analysis/plato&quot;&gt;Plato&lt;/a&gt; pro analýzu JS kódu a výsledkem (po vynechání knihoven) je 12588 řádků s průměrem 143 řádků na soubor. Projevuje se, že aplikaci nejspíše psalo více týmů, které se neshodly, protože chybí jednotný styl zápisu. Používají se různé typy komentářů - většina funkcí je však úplně nekomentovaná. Občas se používají $constructory, občas ne. Občas se používá &lt;a href=&quot;http://jak.seznam.cz&quot;&gt;JAK&lt;/a&gt;, občas ne. Což se poté projevuje na &lt;a href=&quot;http://www.jslint.com&quot;&gt;JSLint&lt;/a&gt; chybách. Nejspíše se tlačilo na vydání k určitému datu.&lt;/p&gt;
 
 &lt;p&gt;[aesop_parallax height=”400px” img=”http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-7.01.04-e1419146497410.png” parallaxbg=”on” caption=”Plato report” captionposition=”top-right” lightbox=”off” floater=”off” floaterposition=”left” floaterdirection=”up”]&lt;/p&gt;
@@ -352,18 +352,15 @@ Jak vidíte, je to vcelku rozsáhlá aplikace. Nechal jsem zdrojové kódy proje
 &lt;p&gt;Plný text s odkazy a &lt;em&gt;obrázky&lt;/em&gt; na konci.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Hacktivismus není vždy o “hacku”. DDoS útok není hack jako takový. Jak se v roce 1998 vyjádřil člen cDc “Omega” při popisu NetStrike: použil termín “virtual sit-in”. Ale připojit se k DDoS útoku nevyžaduje téměř žádné technické znalosti. Což je na jednu stranu pozitivum pro organizátory DDoS, díky jednoduchým nástrojům jako LOIC se může zapojit co nejvíce lidí (což je pointa). Na druhou stranu nízký práh vede v digitálním světě k slacktivismu. Mám pocit, že slacktivismus bude velmi brzy důležitější termín, než samotný hacktivismus.&lt;/p&gt;
-
-  &lt;p&gt;Když jsem na začátku psal o tom, že být digitálním aktivistou bude znamenat více, než psát protivládní blog a přispívat na uzavřené fórum - má tento jev i druhou stranu. Hacktivismus v dnešní podobě počítá s účastí širší digitální veřejnosti. Proto dochází ke zjednodušování témat a jejich převodu na lépe stravitelné a šiřitelné myšlenky. Heslovitost se stává hybatelem - myslím, že pro vývoj internetu blízké budoucnosti se musíme blíže podívat na to, jak fungují např. internetové memy a virální videa. Musíme více vnímat propojení politiky a marketingu.&lt;/p&gt;
-
-  &lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/12/299518_284472554896297_127225913954296_1198766_348298041_n-250x187.jpg&quot; alt=&quot;coyote catching roadrunner&quot; /&gt;Když se podíváme na výše zmíněné události, uvidíme, že kolem všech se vybudoval velmi jednoduchý étos a příběh o boji za pravdu (Wikileaks) spravedlnost (#occupy a protesty proti SOPA/PIPA) a svobodu (Arabské jaro). Jednoduché příběhy - avšak jen na pohled, protože všechny z nich přesahují internet. Stejně tak #occupy protesty stojí za změnu, avšak neví jakou.&lt;/p&gt;
-
-  &lt;p&gt;Hacktivismus se snaží nostalgicky napodobovat hackerskou symboliku: LulzSec používali ve svých zprávách ASCII art. Často se také odkazovali k Anonymous. Dříve však Anonymous byla spíše myšlenka, společný a prázdný virtuální štít, který byl právě díky své prázdnotě tak stěží uchopitelný. Neexistovalo žádné „patřit do Anonymous“ - všichni byli Anonymous, jak říká heslo ‚WE are Anonymous‘. Dnes se o Anonymous hovoří jako o skupině. Někdo může patřit k #AntiSec, ale nepatřit k Anonymous.&lt;/p&gt;
-
-  &lt;p&gt;K současnému hacktivismu dnes velmi často patří populistické slogany a jejich tupé opakování. A hlavní témata? Desítky let stará hesla o svobodě informací. Současný západní hacktivismus, ačkoliv prezentován jako mladý prvek na politické scéně (někde se tak daleko zatím nedostal), je neprogresivní plácání se v bezpečném rybníčku digitálních práv. Je to hraní na hrdiny a padouchy. Jeho autenticita pramení pouze z toho, že pochází z temně vypadajících krajin hackerství, které si pouze půjčuje. Je to de facto populární zábava. Slacktivistická hra na politiku.&amp;lt;/blockquote&amp;gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2012/12/cyberwarfare.pdf&quot;&gt;Kyberválka ve veřejném prostoru (PDF)&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;Hacktivismus není vždy o “hacku”. DDoS útok není hack jako takový. Jak se v roce 1998 vyjádřil člen cDc “Omega” při popisu NetStrike: použil termín “virtual sit-in”. Ale připojit se k DDoS útoku nevyžaduje téměř žádné technické znalosti. Což je na jednu stranu pozitivum pro organizátory DDoS, díky jednoduchým nástrojům jako LOIC se může zapojit co nejvíce lidí (což je pointa). Na druhou stranu nízký práh vede v digitálním světě k slacktivismu. Mám pocit, že slacktivismus bude velmi brzy důležitější termín, než samotný hacktivismus.&lt;br /&gt;
+Když jsem na začátku psal o tom, že být digitálním aktivistou bude znamenat více, než psát protivládní blog a přispívat na uzavřené fórum - má tento jev i druhou stranu. Hacktivismus v dnešní podobě počítá s účastí širší digitální veřejnosti. Proto dochází ke zjednodušování témat a jejich převodu na lépe stravitelné a šiřitelné myšlenky. Heslovitost se stává hybatelem - myslím, že pro vývoj internetu blízké budoucnosti se musíme blíže podívat na to, jak fungují např. internetové memy a virální videa. Musíme více vnímat propojení politiky a marketingu.&lt;br /&gt;
+&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/12/299518_284472554896297_127225913954296_1198766_348298041_n-250x187.jpg&quot; alt=&quot;coyote catching roadrunner&quot; /&gt;&lt;br /&gt;
+Když se podíváme na výše zmíněné události, uvidíme, že kolem všech se vybudoval velmi jednoduchý étos a příběh o boji za pravdu (Wikileaks) spravedlnost (#occupy a protesty proti SOPA/PIPA) a svobodu (Arabské jaro). Jednoduché příběhy - avšak jen na pohled, protože všechny z nich přesahují internet. Stejně tak #occupy protesty stojí za změnu, avšak neví jakou.&lt;br /&gt;
+Hacktivismus se snaží nostalgicky napodobovat hackerskou symboliku: LulzSec používali ve svých zprávách ASCII art. Často se také odkazovali k Anonymous. Dříve však Anonymous byla spíše myšlenka, společný a prázdný virtuální štít, který byl právě díky své prázdnotě tak stěží uchopitelný. Neexistovalo žádné „patřit do Anonymous“ - všichni byli Anonymous, jak říká heslo ‚WE are Anonymous‘. Dnes se o Anonymous hovoří jako o skupině. Někdo může patřit k #AntiSec, ale nepatřit k Anonymous.&lt;br /&gt;
+K současnému hacktivismu dnes velmi často patří populistické slogany a jejich tupé opakování. A hlavní témata? Desítky let stará hesla o svobodě informací. Současný západní hacktivismus, ačkoliv prezentován jako mladý prvek na politické scéně (někde se tak daleko zatím nedostal), je neprogresivní plácání se v bezpečném rybníčku digitálních práv. Je to hraní na hrdiny a padouchy. Jeho autenticita pramení pouze z toho, že pochází z temně vypadajících krajin hackerství, které si pouze půjčuje. Je to de facto populární zábava. Slacktivistická hra na politiku.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jedenbod.cz/wp-content/uploads/2012/12/cyberwarfare.pdf&quot;&gt;Kyberválka ve veřejném prostoru (PDF)&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Dec 2012 14:07:36 +0100</pubDate>
         <link>http://jedenbod.cz/1524-hacktiviste-hackeri-a-ti-ostatni.html</link>
@@ -545,43 +542,43 @@ Jak vidíte, je to vcelku rozsáhlá aplikace. Nechal jsem zdrojové kódy proje
       <item>
         <title>Noční můra</title>
         <description>&lt;blockquote&gt;
-  &lt;p&gt;If my nightmare is a culture inhabited by posthumans who regard their bodies as fashion accessories rather than the ground of being, my dream is aversion of the posthuman that embraces the possibilities of information technologies without being seduced by fantasies of unlimited power and disembodied immortality, that recognizes and celebrates finitude as a condition of human being, and that understands human life is embedded in a material world of great complexity, one on which we depend for our continued survival. &lt;a href=&quot;http://www.amazon.com/How-Became-Posthuman-Cybernetics-ebook/dp/B0026REAF6/ref=tmm_kin_title_0?ie=UTF8&amp;amp;m=A2M9W3KSQUCQTK&quot;&gt;Hayles, N. Katherine (1999-02-15). How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics (Kindle Locations 283-287). University of Chicago Press - A. Kindle Edition.&lt;/a&gt;&amp;lt;/blockquote&amp;gt;&lt;/p&gt;
-
-  &lt;p&gt;Nějakou dobu jsem vymýšlel distribuovanou úložnou síť. Síť, která by respektovala naše zklamání hypertextem.&lt;/p&gt;
-
-  &lt;h2 id=&quot;zklamn&quot;&gt;Zklamání&lt;/h2&gt;
-
-  &lt;p&gt;Hypertext je skvělý. Ať už myslíme odkaz encyklopedistů nebo Bushův memex. Ale jsme s ním v koncích. Zkracovače URL zde nebudou věčně. Odkazy přestanou fungovat. Nemluvě o informacích na uzavřených sítích, které vyhnijí dříve, než je bude někdo schopen zaindexovat. &lt;a href=&quot;http://jedenbod.cz/1165-socialni-kanal.html&quot;&gt;O problémech a nástinu řešení jsem se už zmínil v článku o sociálním webu&lt;/a&gt;.&lt;/p&gt;
-
-  &lt;p&gt;Na jednu stranu se jedná o úžasnou příležitost pro kybertext - kulturní obsahy se odehrávají pouze v jednom momentu - fluxu. Nový text vzniká i samotným čtením, participace je otevřená, můžeme narazit na &lt;a href=&quot;http://jedenbod.cz/1349-b-je-ztracena-umelecka-komunita.html&quot;&gt;komunity, které se definitivně zbavily autora&lt;/a&gt;. Bezbřehá textualita - na internetu nic nekončí&lt;a href=&quot;https://plus.google.com/103336973914351575814/posts&quot;&gt;tm&lt;/a&gt;. I &lt;em&gt;Odysseus&lt;/em&gt; má konec. Umíráme na bezbřehou souvislost. Ničíme se na neustálém individuálním kopírování. Kopírujeme si osobnosti ((paranoia v sociálních sítích)).&lt;/p&gt;
-
-  &lt;h2 id=&quot;mamray&quot;&gt;Mamray&lt;/h2&gt;
-
-  &lt;p&gt;Představuji vám Mamray - absolutní platforma sdílení lidských dat. Decentralizovaná, bezpečná, neomylná. Služby jako &lt;strong&gt;Pinterest &lt;/strong&gt;možná ukazují cestu - embedování informace. Kopírování nic neznamená. Je přečtení bráno za vytvoření kopie? Technicky ano, jakýkoliv _text _se někam nakopíruje. Alespoň do RAM. Každý přístup znamená kopii. Která sice zmizí, ale možná nemusí.&lt;/p&gt;
-
-  &lt;p&gt;[caption id=”attachment_1422” align=”aligncenter” width=”570”]&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/05/fight_club_edward_norton_3-570x239.jpg&quot; alt=&quot;Everything is a copy of a copy of a copy.&quot; /&gt; Everything is a copy of a copy of a copy.[/caption]&lt;/p&gt;
-
-  &lt;p&gt;Proč Haylesová na začátku? Jestliže díky &lt;em&gt;cloudu&lt;/em&gt; přestáváme být závislí na fyzickém stroji (( vždyť &lt;em&gt;i Windows 8&lt;/em&gt; bude v základní verzi obsahovat synchronizaci přes SkyDrive. Po přihlášení na jiném PC se vám přenesou soubory z &lt;em&gt;cloudu&lt;/em&gt;. )) Dostáváme se zpět k terminálové technologii. &lt;em&gt;Nezáleží nám na fyzické stránce našeho virtuálna.&lt;/em&gt; Je načase přestat být &lt;em&gt;závislý na informacích&lt;/em&gt;. Přestat kopírovat kopírované. Nemít možnost remixovat. Zapomínat. &lt;strong&gt;Absolutní datový systém Mamray počítá s vytvořením lidského informačního fondu.&lt;/strong&gt; Memetický genofond. Transcendentální systém pro cestování věděním a časem. Veškeré informace a zdroje jsou decentralizovaně a rozeseté po síti. Jedná se o nový informační věk.&lt;/p&gt;
-
-  &lt;h3 id=&quot;funkn&quot;&gt;Funkční&lt;/h3&gt;
-
-  &lt;p&gt;Informace neexistuje v miliónech nezávislých kopiích na nepropojených discích, ale v kopiích, které se samy dokážou množit. Informace se stává živelnou a dynamickou. Části jsou rozesety na koncových stanicích lidí, kteří album neslyšeli. Na nekonečných serverových polích. Konec debat o stahování - data, alespoň část lidského fondu by měl každý u sebe a v závislosti na jeho požadavcích by se měnil obsah cache. Šlo by o přidání obsahu do &lt;em&gt;katalogu dohledatelnosti&lt;/em&gt; - ne do &lt;em&gt;katalogu vlastněných souborů na disku&lt;/em&gt;.** Z remixové kultury se stává mutace.**&lt;/p&gt;
-
-  &lt;p&gt;Nač se bavit v 21. století o autorech? &lt;strong&gt;Informace jsou předávány a přijímány bez autorů&lt;/strong&gt; - předávají se v kontextech. V čase, médiu… pojďme se bavit o těchto vlastnostech. Mamray zvládá vše. Každá nová iterace se uloží do systému. Každá změna. Existuje někde, rozsekána, možná zapomenuta. Veškeré informace v Mamray jsou okamžitě přístupné všem, sdílené napříč sítí. Informace nezanikají, přesouvají se dál, mutují, jsou využívány.   V době crowdsourcingu a decentralizovaných sociálních sítí se vracíme ke konceptu &lt;em&gt;pay-as-you-go&lt;/em&gt; - nebo snad_ goes as you pay. _&lt;/p&gt;
-
-  &lt;h3 id=&quot;absolutn&quot;&gt;Absolutní&lt;/h3&gt;
-
-  &lt;p&gt;Mamray nás rychle zbaví konceptu duševního vlastnictví. Díky sdílenému fondu obecného vědění nebudeme dálet potřeba kapitalismu - kapitalismus zemře sám, když někoho napadne, že stačí vytvořit něco &lt;em&gt;beze jména&lt;/em&gt;. Něco neuchopitelného, nepojmenovatelného, nevyčíslitelného. To je Mamray. Když se bavíme o &lt;em&gt;univerzální dostupnosti&lt;/em&gt;, nebavíme se o homogenitě informací.&lt;/p&gt;
-
-  &lt;h2 id=&quot;mrtv-mrak&quot;&gt;Mrtvý mrak&lt;/h2&gt;
-
-  &lt;p&gt;Věříme v nadřazený server, kam předáme vše. &lt;a href=&quot;http://www.spacemonkey.com/&quot;&gt;Věříme v rozšiřování kapacit, neomezená data.&lt;/a&gt; Vrací se jasné vymezení mezi terminálem a serverem. Vracíme se k náboženskému uspořádání světa. Je načase přestat být &lt;em&gt;závislý na informacích&lt;/em&gt;. V budoucnosti zapomeňte na singularitu. Zapomeňte na nesmrtelnost z ní plynoucí. Budeme se mnohem více bavit o &lt;em&gt;kontrole&lt;/em&gt;.&lt;/p&gt;
-
-  &lt;p&gt;[caption id=”attachment_1444” align=”aligncenter” width=”570”]&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/05/videodrome-brian-570x349.png&quot; alt=&quot;Brian O&#39;Blivion&quot; /&gt; Brian O’Blivion[/caption]&lt;/p&gt;
-
-  &lt;p&gt;Kontrola hladiny informací. 21. století ji patří.
-Mamray je utopie i má noční můra. Obsah bez formy.&lt;/p&gt;
+  &lt;p&gt;If my nightmare is a culture inhabited by posthumans who regard their bodies as fashion accessories rather than the ground of being, my dream is aversion of the posthuman that embraces the possibilities of information technologies without being seduced by fantasies of unlimited power and disembodied immortality, that recognizes and celebrates finitude as a condition of human being, and that understands human life is embedded in a material world of great complexity, one on which we depend for our continued survival. &lt;a href=&quot;http://www.amazon.com/How-Became-Posthuman-Cybernetics-ebook/dp/B0026REAF6/ref=tmm_kin_title_0?ie=UTF8&amp;amp;m=A2M9W3KSQUCQTK&quot;&gt;Hayles, N. Katherine (1999-02-15). How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics (Kindle Locations 283-287). University of Chicago Press - A. Kindle Edition.&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;Nějakou dobu jsem vymýšlel distribuovanou úložnou síť. Síť, která by respektovala naše zklamání hypertextem.&lt;/p&gt;
+
+&lt;h2 id=&quot;zklamn&quot;&gt;Zklamání&lt;/h2&gt;
+
+&lt;p&gt;Hypertext je skvělý. Ať už myslíme odkaz encyklopedistů nebo Bushův memex. Ale jsme s ním v koncích. Zkracovače URL zde nebudou věčně. Odkazy přestanou fungovat. Nemluvě o informacích na uzavřených sítích, které vyhnijí dříve, než je bude někdo schopen zaindexovat. &lt;a href=&quot;http://jedenbod.cz/1165-socialni-kanal.html&quot;&gt;O problémech a nástinu řešení jsem se už zmínil v článku o sociálním webu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Na jednu stranu se jedná o úžasnou příležitost pro kybertext - kulturní obsahy se odehrávají pouze v jednom momentu - fluxu. Nový text vzniká i samotným čtením, participace je otevřená, můžeme narazit na &lt;a href=&quot;http://jedenbod.cz/1349-b-je-ztracena-umelecka-komunita.html&quot;&gt;komunity, které se definitivně zbavily autora&lt;/a&gt;. Bezbřehá textualita - na internetu nic nekončí&lt;a href=&quot;https://plus.google.com/103336973914351575814/posts&quot;&gt;tm&lt;/a&gt;. I &lt;em&gt;Odysseus&lt;/em&gt; má konec. Umíráme na bezbřehou souvislost. Ničíme se na neustálém individuálním kopírování. Kopírujeme si osobnosti ((paranoia v sociálních sítích)).&lt;/p&gt;
+
+&lt;h2 id=&quot;mamray&quot;&gt;Mamray&lt;/h2&gt;
+
+&lt;p&gt;Představuji vám Mamray - absolutní platforma sdílení lidských dat. Decentralizovaná, bezpečná, neomylná. Služby jako &lt;strong&gt;Pinterest &lt;/strong&gt;možná ukazují cestu - embedování informace. Kopírování nic neznamená. Je přečtení bráno za vytvoření kopie? Technicky ano, jakýkoliv _text _se někam nakopíruje. Alespoň do RAM. Každý přístup znamená kopii. Která sice zmizí, ale možná nemusí.&lt;/p&gt;
+
+&lt;p&gt;[caption id=”attachment_1422” align=”aligncenter” width=”570”]&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/05/fight_club_edward_norton_3-570x239.jpg&quot; alt=&quot;Everything is a copy of a copy of a copy.&quot; /&gt; Everything is a copy of a copy of a copy.[/caption]&lt;/p&gt;
+
+&lt;p&gt;Proč Haylesová na začátku? Jestliže díky &lt;em&gt;cloudu&lt;/em&gt; přestáváme být závislí na fyzickém stroji (( vždyť &lt;em&gt;i Windows 8&lt;/em&gt; bude v základní verzi obsahovat synchronizaci přes SkyDrive. Po přihlášení na jiném PC se vám přenesou soubory z &lt;em&gt;cloudu&lt;/em&gt;. )) Dostáváme se zpět k terminálové technologii. &lt;em&gt;Nezáleží nám na fyzické stránce našeho virtuálna.&lt;/em&gt; Je načase přestat být &lt;em&gt;závislý na informacích&lt;/em&gt;. Přestat kopírovat kopírované. Nemít možnost remixovat. Zapomínat. &lt;strong&gt;Absolutní datový systém Mamray počítá s vytvořením lidského informačního fondu.&lt;/strong&gt; Memetický genofond. Transcendentální systém pro cestování věděním a časem. Veškeré informace a zdroje jsou decentralizovaně a rozeseté po síti. Jedná se o nový informační věk.&lt;/p&gt;
+
+&lt;h3 id=&quot;funkn&quot;&gt;Funkční&lt;/h3&gt;
+
+&lt;p&gt;Informace neexistuje v miliónech nezávislých kopiích na nepropojených discích, ale v kopiích, které se samy dokážou množit. Informace se stává živelnou a dynamickou. Části jsou rozesety na koncových stanicích lidí, kteří album neslyšeli. Na nekonečných serverových polích. Konec debat o stahování - data, alespoň část lidského fondu by měl každý u sebe a v závislosti na jeho požadavcích by se měnil obsah cache. Šlo by o přidání obsahu do &lt;em&gt;katalogu dohledatelnosti&lt;/em&gt; - ne do &lt;em&gt;katalogu vlastněných souborů na disku&lt;/em&gt;.** Z remixové kultury se stává mutace.**&lt;/p&gt;
+
+&lt;p&gt;Nač se bavit v 21. století o autorech? &lt;strong&gt;Informace jsou předávány a přijímány bez autorů&lt;/strong&gt; - předávají se v kontextech. V čase, médiu… pojďme se bavit o těchto vlastnostech. Mamray zvládá vše. Každá nová iterace se uloží do systému. Každá změna. Existuje někde, rozsekána, možná zapomenuta. Veškeré informace v Mamray jsou okamžitě přístupné všem, sdílené napříč sítí. Informace nezanikají, přesouvají se dál, mutují, jsou využívány.   V době crowdsourcingu a decentralizovaných sociálních sítí se vracíme ke konceptu &lt;em&gt;pay-as-you-go&lt;/em&gt; - nebo snad_ goes as you pay. _&lt;/p&gt;
+
+&lt;h3 id=&quot;absolutn&quot;&gt;Absolutní&lt;/h3&gt;
+
+&lt;p&gt;Mamray nás rychle zbaví konceptu duševního vlastnictví. Díky sdílenému fondu obecného vědění nebudeme dálet potřeba kapitalismu - kapitalismus zemře sám, když někoho napadne, že stačí vytvořit něco &lt;em&gt;beze jména&lt;/em&gt;. Něco neuchopitelného, nepojmenovatelného, nevyčíslitelného. To je Mamray. Když se bavíme o &lt;em&gt;univerzální dostupnosti&lt;/em&gt;, nebavíme se o homogenitě informací.&lt;/p&gt;
+
+&lt;h2 id=&quot;mrtv-mrak&quot;&gt;Mrtvý mrak&lt;/h2&gt;
+
+&lt;p&gt;Věříme v nadřazený server, kam předáme vše. &lt;a href=&quot;http://www.spacemonkey.com/&quot;&gt;Věříme v rozšiřování kapacit, neomezená data.&lt;/a&gt; Vrací se jasné vymezení mezi terminálem a serverem. Vracíme se k náboženskému uspořádání světa. Je načase přestat být &lt;em&gt;závislý na informacích&lt;/em&gt;. V budoucnosti zapomeňte na singularitu. Zapomeňte na nesmrtelnost z ní plynoucí. Budeme se mnohem více bavit o &lt;em&gt;kontrole&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2012/05/videodrome-brian-570x349.png&quot; alt=&quot;Brian O&#39;Blivion&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Kontrola hladiny informací. 21. století ji patří.&lt;br /&gt;
+Mamray je utopie i má noční můra. Obsah bez formy.&lt;/p&gt;
 </description>
         <pubDate>Wed, 09 May 2012 22:23:08 +0200</pubDate>
         <link>http://jedenbod.cz/1394-nocni-mura.html</link>

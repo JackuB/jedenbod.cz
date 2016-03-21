@@ -521,10 +521,6 @@ pre {
     <header class="site-header">
   <h1 class="blog-title"><a href="/">JedenBod</a></h1>
 
-  <div class="page-notice">
-    Tento blog je opuštěn a přežívá pouze záloha. Většina informací zde je nejspíše zastaralých.
-  </div>
-
   <div class="page-links">
     <a class="page-link" href="/">Domů</a>
     • <a class="page-link" href="http://mikul.as">Jakub Mikuláš</a>
@@ -558,9 +554,14 @@ pre {
 
 
     <main class="content" role="main">
+  <div class="page-notice">
+    Tento blog je opuštěn a přežívá pouze záloha. Většina informací zde je nejspíše zastaralých.
+  </div>
+
   <article class="post">
     <div class="post-meta">
       <h1 class="post-title">Seznam.cz prohlížeč</h1>
+      <time datetime="22 December 2014">2014-12-22</time>
     </div>
 
     <section class="post-content">
@@ -588,7 +589,7 @@ pre {
 
 <p>Node-webkit aplikace se skládají z HTML a JS souborů, takže se můžeme podívat jak vypadá inicializační stránka init.html:</p>
 
-<p><a href="http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.22.png"><img src="http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.22.png" alt="init.html" /></a>
+<p><a href="http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.22.png"><img src="http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.22.png" alt="init.html" /></a><br />
 Zde jsou moduly, které slouží jako globální objekty pro celý proces (historie, nastavení, autoupdate prohlížeče atd.). Lze vidět, že se při startu načítá i několik modulů, které ještě nejsou v současné verzi <em>(1.0.3)</em> jako: synchronizace hesel, načítání favicon, registrace (?). Občas narazíte i na podivné kusy kódu jako:</p>
 
 <figure class="highlight">
@@ -606,7 +607,7 @@ Zde jsou moduly, které slouží jako globální objekty pro celý proces (histo
 
 <p>Zajímavější kód najdeme na stránce nového (aplikačního) okna <a href="http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-6.20.36.png">win.html</a>. Zaprvé: Seznam prohlížeč nevyužívá UI z node-webkit (které vypadá zkrátka jako defaultní prohlížeč), ale místo toho <strong>implementuje celé uživatelské rozhraní pomocí <a href="https://angularjs.org">AngularJS</a></strong> (s rozdílným CSS pro Windows a Mac, aby ovládací prvky odpovídaly platformě).</p>
 
-<p><img src="http://jedenbod.cz/wp-content/uploads/2014/12/seznam-chrome.png" alt="Seznam.cz prohlížeč s node-webkit chrome" />
+<p><img src="http://jedenbod.cz/wp-content/uploads/2014/12/seznam-chrome.png" alt="Seznam.cz prohlížeč s node-webkit chrome" /><br />
 Jak vidíte, je to vcelku rozsáhlá aplikace. Nechal jsem zdrojové kódy projet nástrojem <a href="https://github.com/es-analysis/plato">Plato</a> pro analýzu JS kódu a výsledkem (po vynechání knihoven) je 12588 řádků s průměrem 143 řádků na soubor. Projevuje se, že aplikaci nejspíše psalo více týmů, které se neshodly, protože chybí jednotný styl zápisu. Používají se různé typy komentářů - většina funkcí je však úplně nekomentovaná. Občas se používají $constructory, občas ne. Občas se používá <a href="http://jak.seznam.cz">JAK</a>, občas ne. Což se poté projevuje na <a href="http://www.jslint.com">JSLint</a> chybách. Nejspíše se tlačilo na vydání k určitému datu.</p>
 
 <p>[aesop_parallax height=”400px” img=”http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-7.01.04-e1419146497410.png” parallaxbg=”on” caption=”Plato report” captionposition=”top-right” lightbox=”off” floater=”off” floaterposition=”left” floaterdirection=”up”]</p>
