@@ -36,23 +36,12 @@ Last.fm má dnes něco kolem 30 000 000 uživatelů. Polovina úspěchu vždy st
 Když v březnu 2009 Last.fm oznámilo na svém blogu, že [musí přejít na placené rádio](http://blog.last.fm/2009/03/30/radio-announcement-revisited) _(tedy, zdarma si již nic neposlechnete)_, byla to rána. Mnoho lidí bylo přesvědčeno, že se jedná o konec Last.fm.
 
 
-<blockquote>Mimochodem:
-
+> Mimochodem:
 Toto omezení se netýkalo všech zemí.
-
->
->
-
 >   * USA
->
-
 >   * Velká Británie
->
-
 >   * a Německo
->
-
-Měli dále přístup k rádio zdarma. Určitě si dokážete představit, jaká vlna nevole se proti tomu zdvihla.</blockquote>
+Měli dále přístup k rádio zdarma. Určitě si dokážete představit, jaká vlna nevole se proti tomu zdvihla.
 
 
 Last.fm přechod přežilo, dokonce prý neztratilo ani příliš velkou část uživatelské základny. Situace je tedy, po přechodu na placené Last.fm, taková, že jako neplatící uživatel:

@@ -40,8 +40,8 @@ _Pravou pravdou_ myslím pravdu _absolutní_. Je to pravda, která nepřipoušt�
 Když už jsem tak zabrousil k Bohu, vzpomněl jsem si na jednu hlášku z Červeného trpaslíka:
 
 
-<blockquote>Good evening. Here is the news on Friday, the 27th of Geldof. Archeologists near mount Sinai have discovered what is believed to be a missing page from the Bible. The page is currently being carbon dated in Bonn. If genuine it belongs at the beginning of the Bible and is believed to read "To my darling Candy. All characters portrayed within this book are fictitous and any resemblance to persons living or dead is purely coincidental." The page has been universally condemned by church leaders.
---Newsreader, Better than Life - [Youtube.com](http://cz.youtube.com/watch?v=Ir1-A209boQ)</blockquote>
+> Good evening. Here is the news on Friday, the 27th of Geldof. Archeologists near mount Sinai have discovered what is believed to be a missing page from the Bible. The page is currently being carbon dated in Bonn. If genuine it belongs at the beginning of the Bible and is believed to read "To my darling Candy. All characters portrayed within this book are fictitous and any resemblance to persons living or dead is purely coincidental." The page has been universally condemned by church leaders.
+--Newsreader, Better than Life - [Youtube.com](http://cz.youtube.com/watch?v=Ir1-A209boQ)
 
 
 Hledači absolutní pravdy o vesmíru, často přezdívaní filosofové, jsou uzavřeni ve svých tělech, na jedné malé bezvýznamné planetě a snaží se pochopit, jak to celé funguje. Snaží se pochopit _stvořitele_. Synkrezí mých předchozích zkušeností docházím k tomu, že se jedná pouze o ztrátu času.

@@ -41,7 +41,7 @@ Když jsem se poprvé setkal s tímto![Live Mesh preview](http://jedenbod.cz/wp-
 Při synchronizaci nám jde o to, aby se změny, které provedem na jednom PC, okamžitě, bez uživatelského zásahu, přenesly na druhé PC.
 
 
-<blockquote>_Zkrátka_: na PC číslo 1 napíšete odstavec do nějakého dokumentu, dáte uložit změny, a během několika vteřin se změny v dokumentu projeví na PC číslo 2.</blockquote>
+> _Zkrátka_: na PC číslo 1 napíšete odstavec do nějakého dokumentu, dáte uložit změny, a během několika vteřin se změny v dokumentu projeví na PC číslo 2.
 
 
 Přenos dat mezi synchronizovanými počítači může být proveden:

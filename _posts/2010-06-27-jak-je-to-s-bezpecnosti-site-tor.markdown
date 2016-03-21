@@ -108,7 +108,7 @@ Ale samotný Tor nám ukazuje lepší stránku věci: [Kdo používá Tor](https
 To, že vláda, podle všeho zatím pouze ta americká, a v menší míře i čínská, dokáže kontrolovat odchozí provoz, je velmi limitující představa. Na The Hidden Wiki _(už podle názvu pochopíte, že ji nemohu přímo linkovat, je zkrátka ‘Hidden’ – naleznete ji na Tor síti)_ se píše dokonce o možnosti editovat přeposílanou zprávu. Tuto myšlenku podporuje také existence projektu [Metasploit](http://www.metasploit.com/) – více info v článku na ZDNetu o [chytání pedofilů na Toru](http://www.zdnet.com/blog/security/hacker-builds-tracking-system-to-nab-tor-pedophiles/114).
 
 
-<blockquote>**2.** When child porn-related keywords are seen (either the Web request, or the response), inject a little extra HTML code into the response going back to the Web browser. This HTML code would connect to my decloaking engine.</blockquote>
+> **2.** When child porn-related keywords are seen (either the Web request, or the response), inject a little extra HTML code into the response going back to the Web browser. This HTML code would connect to my decloaking engine.
 
 
 Do odpovědi se zakomponuje například kousek [Javy](http://cs.wikipedia.org/wiki/Java_(programovac%C3%AD_jazyk)), která se na koncovém počítači připojí k serveru útočníka, čímž odhalí pravou IP adresu uživatele Toru. Samozřejmě, lze to obejít routováním **všech** připojení skrze Tor.

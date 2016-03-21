@@ -39,7 +39,7 @@ Pokud ji _vážně_ budete číst, berte na vědomí,
   * že jsem práci psal v rámci _de facto_ uměnovědného oboru, nemohl jsem se pouštět do technických detailů - šlo o _představení_ cypherpunku
 
 
-  * že se můžete vyjádřit nebo doptat na mém [Twitteru](http://twitter.com/jedenbod), [emailu](mailto:jakub@jedenbod.cz) nebo dole v komentářích
+  * že se můžete vyjádřit nebo doptat na mém [Twitteru](http://twitter.com/jedenbod), [emailu](mailto:jakub@jedenbod.cz)
 
 
 
@@ -108,8 +108,8 @@ Cypherpunk
 Cypherpunkeři byli většinou technicky znalí uživatelé, kteří měli aktivní vztah k matematice a výpočetním technologiím. Možnost aktivně participovat v boji proti policejnímu státu, jak jej ukazuje Orwell, pro ně byla revoluční myšlenkou. Studená válka nevypadala, že by měla skončit a s trochou fantazie se mohla přirovnat k Udržovací válce. Právě tito lidé a právě v takové době zničehonic disponovali nástroji, které jim dovolovaly obranu proti všemožným vládním aktivitám zaměřeným proti jejich soukromí.
 
 
-<blockquote>I zákony proti kryptografii sahají pouze tak daleko, kam státní hranice a násilí.
-Eric Hughes - Cypherpunk’s manifesto ((HUGHES, Eric. Activism.net [online]. 1993 [cit. 2011-05-29]. A Cypherpunk's Manifesto. Dostupné z WWW: <http://www.activism.net/cypherpunk/manifesto.html>.))</blockquote>
+> I zákony proti kryptografii sahají pouze tak daleko, kam státní hranice a násilí.
+Eric Hughes - Cypherpunk’s manifesto ((HUGHES, Eric. Activism.net [online]. 1993 [cit. 2011-05-29]. A Cypherpunk's Manifesto. Dostupné z WWW: <http://www.activism.net/cypherpunk/manifesto.html>.))
 
 
 Historii, důležité postavy a souboje cypherpunkerů a vlády popisuje Steven Levy v knize Crypto: How the Code Rebels Beat the Government Saving Privacy in the Digital Age ((LEVY, Steven. Crypto : How the Code Rebels Beat the Government Saving Privacy in the Digital Age. [s.l.] : Penguin, 2002. 368 s. ISBN 978-0140244328.)). Bylo to období skutečné války mezi cypherpunkery a NSA. NSA chránila monopol na kvalitní kryptografii a národní zájmy – cypherpunkeři bojovali spíše za ideály, než za nějaké konkrétní (revoluční) myšlenky. Mnoho prominentních cypherpunkerů skončilo ve vězení ((Například Jim Bell _(autor Assasination politics)_je v něm dodnes)). Cypherpunkeři nikdy nebyli nijak organizovaní a jejich názorové spektrum zasahovalo od krajní levice přes krajní pravici až po anarchismus ((Viz. Crypto-anarchismus jako ideologie postavená na kryptografii.)). Cypherpunkery ze začátku spojoval především zájem o civilní kryptografii, public key a možnosti nasazení kryptografie v reálném životě. Další témata přišla až na konci 80. let a začátku 90. Základní sdílená ideologie cypherpunkerů byla postavena na knihách jako Orwellův 1984, The Shockwave Rider, True Names ((Ačkoliv jsou na kvalitu Vingeho povídky různé názory, na cypherpunkery zapůsobila velmi podmanivě. Což lze doložit na častém odkazování k textu v cypherpunkových textech. To, že si musíme chránit naše Pravé jméno je to, co cypherpunkery velmi vystihuje.)), Ender's Game, Snowcrash, The Cryptonomicon nebo The Puzzle Palace. A samozřejmě odborná literatura o kryptografii a matematice a velké množství čistě cyberpunkových textů.
@@ -119,8 +119,8 @@ Avšak na důležitosti cypherpunkeři skutečně získali až v roce 1992. Vzni
 Jak poznamenal Will Rodger:
 
 
-<blockquote>„Byla to směs revoluční politiky a pokročilé matematiky“
-- Will Rodger ((RODGER, Will. SecurityFocus [online]. 2001 [cit. 2011-06-21]. R.I.P. Cypherpunks. Dostupné z WWW:.))</blockquote>
+> „Byla to směs revoluční politiky a pokročilé matematiky“
+- Will Rodger ((RODGER, Will. SecurityFocus [online]. 2001 [cit. 2011-06-21]. R.I.P. Cypherpunks. Dostupné z WWW:.))
 
 
 Mezi archaickými cypherpunkery existovaly v podstatě 2 možnosti, jak bude vypadat budoucnost ((MANNE, Robert. Cryptome [online]. 2011 [cit. 2011-06-14]. The Cypherpunk Revolutionary Julian Assange. Dostupné z WWW: <http://cryptome.org/0003/assange-manne.htm>.)):
@@ -141,15 +141,15 @@ Kolem cypherpunku vzniklo několik velmi důležitých textů: předně The Cyph
 A Cypherpunk's Manifesto také přináší několik zajímavých názorů:
 
 
-<blockquote>Soukromí v otevřené společenosti vyžaduje kryptografii. Pokud něco řeknu, chci, aby to slyšeli jen ti, jimž je to určeno.
-Eric Hughes - Cypherpunk’s manifesto</blockquote>
+> Soukromí v otevřené společenosti vyžaduje kryptografii. Pokud něco řeknu, chci, aby to slyšeli jen ti, jimž je to určeno.
+Eric Hughes - Cypherpunk’s manifesto
 
 
 Cypherpunkeři skutečně dlouhou dobu věřili v rychlé vítězství individuálního nad státním. Podporovalo je v tom zjištění, že public-key je největší vynález v oblasti kryptografie od renesance. A vznik PGP na počátku 90. let, který měl přiblížit kryptografii masám, je dále podporoval v jejich snažení. Stejně tak se často ve svých textech oháněli až romantickými představami o korporacích, policejních státech apod. Z cypherpunku lze často cítit aktivistická rétorika 90. let. Naštěstí se nedrží jen té, ale posunují diskuzi konstruktivnějším směrem.
 
 
-<blockquote>Cypherpunkeři píší kód. Víme, že někdo musí psát software na ochranu soukromí. A nebudeme mít soukromí, dokud to nebudeme dělat všichni, a proto ho budeme psát.
-Eric Hughes - Cypherpunk’s manifesto</blockquote>
+> Cypherpunkeři píší kód. Víme, že někdo musí psát software na ochranu soukromí. A nebudeme mít soukromí, dokud to nebudeme dělat všichni, a proto ho budeme psát.
+Eric Hughes - Cypherpunk’s manifesto
 
 
 _„Cypherpunks write code“_se stalo jakýmsi heslem cypherpunkerů. Další důležitý text vycházející z cypherpunkerské ideologie je Assassination politics ((BELL, Jim. Outpost of Freedom [online]. 1997 [cit. 2011-06-14]. Assassination Politics. Dostupné z WWW: <http://www.outpost-of-freedom.com/jimbellap.htm>.)). Assassination politics Jima Bella je zajímavý myšlenkový experiment, který počítá se vznikem anonymního ((S použitím anonymních platebních metod, aby nebylo možno vystopovat účastníky)) _Dead Poolu_ ((Seznam lidí, u kterých „tipujete“ kdy zemřou. Správné uhádnutí se rovná výhře.)), který nám v konečném důsledku má přinést otevřenou společnost, minimální stát apod. Zajímavostí je, že vznikl také pornofilm, který vyšel v malém nákladu a pro cypherpunkery – Cryptic seduction ((Mail-archive.com [online]. 2000 [cit. 2011-05-30]. CRYPTIC SEDUCTION -- CYPHERPUNK SPECIAL. Dostupné z WWW: <http://www.mail-archive.com/cypherpunks@algebra.com/msg04068.html>.)). Podle popisu je rozdíl mezi klasickým porno filmem a krypto porno filmem například v několika odkazech k backdoorům ((ORLOWSKI, Andrew. The Register [online]. 2002 [cit. 2011-05-30]. Alice, Bob and Eve too. Dostupné z WWW: <http://www.theregister.co.uk/2002/03/16/alice_bob_and_eve/>.)).
@@ -197,8 +197,8 @@ Cypherpunk nezanikl. Mailing list je stále aktivní a vzhledem k tomu, jaká je
 Prvně je nutné si uvědomit, před kým se vlastně máme v kyberprostoru bránit šifrováním. (1) Vlády, které cenzurují přístup k internetu ((Internet censorship by country. In Wikipedia : the free encyclopedia [online]. St. Petersburg (Florida) : Wikipedia Foundation, [cit. 2011-06-21]. Dostupné z WWW: <http://en.wikipedia.org/wiki/Internet_censorship_by_country>.)). Každou chvíli se objeví návrh na sledování uživatelů, omezení přístupu k nebezpečným webům. Ať už se tak děje kvůli válce proti terorismu, pedofilům nebo jen kvůli zdanění internetových kasin (to se netýká jen ČR, podobné návrhy zaznívají i v USA, UK, Německu atd.) (2) Bezpečnostní složky, které chtějí vědět, co děláte.
 
 
-<blockquote>Pokud vážně chceš posílat všechny své zprávy nezašifrované a skrz veřejné kanály, dobře. Ale nestěžuj si prosím, až zjistíš, že já (nebo kdokoliv jiný) si je čteme.
-- MrKite ((Tachyon [online]. 2006 [cit. 2011-06-26]. [cspace-users] Re: Cspace. Dostupné z WWW:.))</blockquote>
+> Pokud vážně chceš posílat všechny své zprávy nezašifrované a skrz veřejné kanály, dobře. Ale nestěžuj si prosím, až zjistíš, že já (nebo kdokoliv jiný) si je čteme.
+- MrKite ((Tachyon [online]. 2006 [cit. 2011-06-26]. [cspace-users] Re: Cspace. Dostupné z WWW:.))
 
 
 Mezi cypherpunkery platí, že pokud je komunikace nazašifrovaná, někdo cizí ji čte. Je to čistý racionální předpoklad, který počítá s tím, že číst nezašifrovanou komunikaci je velmi jednoduché (což skutečně je). A právě vlády mají zdroje monitorovat i velké objemy komunikace. Nebo si rovnou mohou zajistit přístup k vašim online službám ((ICAZA, Miguel de. Miguel de Icaza [online]. 2011 [cit. 2011-06-23]. Dropbox Lack of Security. Dostupné z WWW: <http://tirania.org/blog/archive/2011/Apr-19.html>.)). Samozřejmě to platí analogicky i pro nebezpečí v podobě black hat hackerů, malwarů apod.

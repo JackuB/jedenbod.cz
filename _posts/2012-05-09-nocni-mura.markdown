@@ -31,7 +31,7 @@ tags:
 - posthuman
 ---
 
-<blockquote>If my nightmare is a culture inhabited by posthumans who regard their bodies as fashion accessories rather than the ground of being, my dream is aversion of the posthuman that embraces the possibilities of information technologies without being seduced by fantasies of unlimited power and disembodied immortality, that recognizes and celebrates finitude as a condition of human being, and that understands human life is embedded in a material world of great complexity, one on which we depend for our continued survival. [Hayles, N. Katherine (1999-02-15). How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics (Kindle Locations 283-287). University of Chicago Press - A. Kindle Edition.](http://www.amazon.com/How-Became-Posthuman-Cybernetics-ebook/dp/B0026REAF6/ref=tmm_kin_title_0?ie=UTF8&m=A2M9W3KSQUCQTK)</blockquote>
+> If my nightmare is a culture inhabited by posthumans who regard their bodies as fashion accessories rather than the ground of being, my dream is aversion of the posthuman that embraces the possibilities of information technologies without being seduced by fantasies of unlimited power and disembodied immortality, that recognizes and celebrates finitude as a condition of human being, and that understands human life is embedded in a material world of great complexity, one on which we depend for our continued survival. [Hayles, N. Katherine (1999-02-15). How We Became Posthuman: Virtual Bodies in Cybernetics, Literature, and Informatics (Kindle Locations 283-287). University of Chicago Press - A. Kindle Edition.](http://www.amazon.com/How-Became-Posthuman-Cybernetics-ebook/dp/B0026REAF6/ref=tmm_kin_title_0?ie=UTF8&m=A2M9W3KSQUCQTK)
 
 
 Nějakou dobu jsem vymýšlel distribuovanou úložnou síť. Síť, která by respektovala naše zklamání hypertextem.
@@ -74,7 +74,7 @@ Mamray nás rychle zbaví konceptu duševního vlastnictví. Díky sdílenému f
 
 Věříme v nadřazený server, kam předáme vše. [Věříme v rozšiřování kapacit, neomezená data.](http://www.spacemonkey.com/) Vrací se jasné vymezení mezi terminálem a serverem. Vracíme se k náboženskému uspořádání světa. Je načase přestat být _závislý na informacích_. V budoucnosti zapomeňte na singularitu. Zapomeňte na nesmrtelnost z ní plynoucí. Budeme se mnohem více bavit o _kontrole_.
 
-[caption id="attachment_1444" align="aligncenter" width="570"]![Brian O'Blivion](http://jedenbod.cz/wp-content/uploads/2012/05/videodrome-brian-570x349.png) Brian O'Blivion[/caption]
+![Brian O'Blivion](http://jedenbod.cz/wp-content/uploads/2012/05/videodrome-brian-570x349.png)
 
 Kontrola hladiny informací. 21. století ji patří.
 Mamray je utopie i má noční můra. Obsah bez formy.

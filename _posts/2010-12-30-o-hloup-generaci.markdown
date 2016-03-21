@@ -55,8 +55,8 @@ Proč? Byly snad předchozí generace lepší? Byl edukační systém na lepší
 Toto je fakt. Axiom. Postmodernistická společnost a globální kapitalismus nás zahlcují informacemi, podobně jako to v knize [Konec civilizace](http://cs.wikipedia.org/wiki/Konec_civilizace) předpovídal [Aldous Huxley](http://cs.wikipedia.org/wiki/Aldous_Huxley).
 
 
-<blockquote>_Velký bratr zpívá a tančí a nám zbylo jen se dívat
-- PALAHNIUK, Chuck. Ukolébavka_</blockquote>
+> _Velký bratr zpívá a tančí a nám zbylo jen se dívat
+- PALAHNIUK, Chuck. Ukolébavka_
 
 
 Žijeme v době, kdy **díky digitalizaci a hypertextu nemáme o informace nikdy nouzi**. Žijeme na informační vlně. Na hraně.
@@ -73,8 +73,8 @@ Toto je fakt. Axiom. Postmodernistická společnost a globální kapitalismus n�
 Například omílaný Facebooku:
 
 
-<blockquote>_Average user creates 90 pieces of content each month
-- _[_Facebook statistiky_](http://www.facebook.com/press/info.php?statistics)</blockquote>
+> _Average user creates 90 pieces of content each month
+- _[_Facebook statistiky_](http://www.facebook.com/press/info.php?statistics)
 
 
 Pokud máte 100 přátel ((přičemž průměrný počet je 130)) - náhle jste na informační dálnici s 300 objekty ((nejsou zde myšleny pouze statusy, ale i fotografie apod.)) denně. Informace jsou všude. Ve školách učíme primárně matematiku, jazyky a vědy. Základy. Vědní obory, při své komplexnosti zasahují i do oborů, se kterými na první pohled nesouvisí. Pavučina toho, co byste měli vědět, narůstá. Dnešní svět je zkrátka příliš komplexní. Komplikovaný. Dokud si sami nevyvinete vlastní posuzovací aparát, podle kterého přikládáte některým věcem a aktivitám větší váhu než jiným - jste ztraceni.
@@ -94,9 +94,8 @@ Mozek nové - nativně digitální - generace, **neměl čas změnit princip sv�
 ![J R R Tolkien](http://jedenbod.cz/wp-content/uploads/2010/12/3247205-570x383.jpg)
 
 
-<blockquote>_Fantasy is escapist, and that is its glory. If a soldier is imprisioned by the enemy, don't we consider it his duty to escape?
+> Fantasy is escapist, and that is its glory. If a soldier is imprisioned by the enemy, don't we consider it his duty to escape?
 - J. R. R. Tolkien
-_</blockquote>
 
 
 Například Tolkien nikdy nechápal eskapismus, jako něco negativního – naopak, spatřoval v něm možnost nalezení nových společenských proudů, které mohou řešit problémy reálného světa, či přinejmenším vnést do světa nový pohled.
@@ -112,7 +111,7 @@ Růst obsahu už nejde zastavit. Bude ho stále více. Nápady na zpoplatnění 
 Celá situace mi připomíná jeden vtip:
 
 
-<blockquote>_Pračlověk čte synovo vysvědčení: "To, že máš trojku z lovu, chápu, jsi ještě malý. Ale že jsi propadl z dějepisu, který má jen dvě strany, to je hanba!"_</blockquote>
+> Pračlověk čte synovo vysvědčení: "To, že máš trojku z lovu, chápu, jsi ještě malý. Ale že jsi propadl z dějepisu, který má jen dvě strany, to je hanba!"
 
 
 Nechci v žádném případě říkat, že by to minulé generace měly jednodušší, ale množství _(dnes dostupného) _obsahu je ohromné.

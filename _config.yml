@@ -29,6 +29,8 @@ markdown: kramdown
 kramdown:
   parse_block_html: true
   input: GFM
+  hard_wrap: true
 
 gems:
   - jekyll-paginate
+  - jekyll-sitemap

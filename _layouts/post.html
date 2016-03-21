@@ -2,9 +2,14 @@
 layout: default
 ---
 <main class="content" role="main">
+  <div class="page-notice">
+    Tento blog je opuštěn a přežívá pouze záloha. Většina informací zde je nejspíše zastaralých.
+  </div>
+
   <article class="post">
     <div class="post-meta">
       <h1 class="post-title">{{ page.title }}</h1>
+      <time datetime="{{ page.date | date_to_long_string }}">{{ page.date | date: "%Y-%m-%d" }}</time>
     </div>
 
     <section class="post-content">

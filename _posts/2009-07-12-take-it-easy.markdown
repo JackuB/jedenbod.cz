@@ -21,14 +21,8 @@ tags:
 - Windows Vista
 ---
 
-<blockquote>
-
->
 > Easing - Přechod z jednoho stavu do druhého
->
->
-
--[Merriam-Webster Online Dictionary](http://www.merriam-webster.com/dictionary/easing)</blockquote>
+- [Merriam-Webster Online Dictionary](http://www.merriam-webster.com/dictionary/easing)
 
 
 **Easing **není na webu, ani v UI obecně, žádná novinka. Najdete jej například ve Windows. Je to v podstatě jen drobnůstka. Můžete si to sami vyzkoušet _(pokud nepoužíváte (styl) Windows 95). _Klikněte pravým tlačítkem kamkoliv na lištu. Vyskočila nabídka. Všimli jste si toho? Nabídka nevyskočila okamžitě, ale doprovázela ji kratičká _animace. _Toto je easing. Já vím, pitomost, ale není to bezdůvodné.

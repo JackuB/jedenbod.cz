@@ -22,17 +22,9 @@ tags:
 O [Windows Live Writeru](http://jedenbod.cz/709-windows-live-writer-a-wordpress.html) jsem psal již dříve, od té doby jej používám, ale narazil jsem na problém, u článku s [receptem na chilli krůtu](http://jedenbod.cz/786-chilli-kruta.html), jsem měl několik větších obrázků a při publikaci mi Live Writer vrátil chybovou hlášku:
 
 
-
-<blockquote>
->
 > Odpověď na metodu metaWeblog.newMediaObject přijatá ze serveru blogu byla neplatná:
 >
->
->
 > Invalid response document returned from XmlRpc server
->
-> </blockquote>
-
 
 
 ## Řešení
