@@ -6,8 +6,8 @@
 </description>
     <link>http://jedenbod.cz/</link>
     <atom:link href="http://jedenbod.cz/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 24 Mar 2016 15:05:28 +0100</pubDate>
-    <lastBuildDate>Thu, 24 Mar 2016 15:05:28 +0100</lastBuildDate>
+    <pubDate>Thu, 24 Mar 2016 15:27:20 +0100</pubDate>
+    <lastBuildDate>Thu, 24 Mar 2016 15:27:20 +0100</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -56,7 +56,7 @@ Zde jsou moduly, které slouží jako globální objekty pro celý proces (histo
 &lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/seznam-chrome.png&quot; alt=&quot;Seznam.cz prohlížeč s node-webkit chrome&quot; /&gt;&lt;br /&gt;
 Jak vidíte, je to vcelku rozsáhlá aplikace. Nechal jsem zdrojové kódy projet nástrojem &lt;a href=&quot;https://github.com/es-analysis/plato&quot;&gt;Plato&lt;/a&gt; pro analýzu JS kódu a výsledkem (po vynechání knihoven) je 12588 řádků s průměrem 143 řádků na soubor. Projevuje se, že aplikaci nejspíše psalo více týmů, které se neshodly, protože chybí jednotný styl zápisu. Používají se různé typy komentářů - většina funkcí je však úplně nekomentovaná. Občas se používají $constructory, občas ne. Občas se používá &lt;a href=&quot;http://jak.seznam.cz&quot;&gt;JAK&lt;/a&gt;, občas ne. Což se poté projevuje na &lt;a href=&quot;http://www.jslint.com&quot;&gt;JSLint&lt;/a&gt; chybách. Nejspíše se tlačilo na vydání k určitému datu.&lt;/p&gt;
 
-&lt;p&gt;[aesop_parallax height=”400px” img=”http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-7.01.04-e1419146497410.png” parallaxbg=”on” caption=”Plato report” captionposition=”top-right” lightbox=”off” floater=”off” floaterposition=”left” floaterdirection=”up”]&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/SnÃ­mek-obrazovky-2014-12-21-v-7.01.04-e1419146497410.png&quot; alt=&quot;Plato report&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Jak jsem říkal, celé UI je vybudováno přes AngularJS, takže máte přístup i k Developer toolbaru (ctrl+shift+j) můžete se podívat, jak vše funguje. Většina ovládacích prvků je řešena přes Angular direktivy, místo UI routeru se používají node-webkit okna.&lt;/p&gt;
 
@@ -77,8 +77,6 @@ Jak vidíte, je to vcelku rozsáhlá aplikace. Nechal jsem zdrojové kódy proje
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
     &lt;/code&gt;&lt;/pre&gt;
 &lt;/figure&gt;
-
-&lt;p&gt;[video width=”800” height=”370” mp4=” webm=”http://jedenbod.cz/wp-content/uploads/2014/12/crash-small.webm”][/video]&lt;/p&gt;
 
 &lt;video src=&quot;http://jedenbod.cz/wp-content/uploads/2014/12/crash-small.mp4&quot; loop=&quot;true&quot; autoplay=&quot;true&quot; preload=&quot;auto&quot;&gt;&lt;/video&gt;
 
