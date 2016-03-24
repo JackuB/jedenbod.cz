@@ -21,11 +21,11 @@ tags:
 ---
 
 Dnes jsem řešil jak rychle stáhnout celé album fotek z Facebooku. Manuální stahování nepřicházelo v úvahu, naštěstí jsem našel malou a velmi povedenou aplikaci [Album Downloader](http://rajitss.com/albumdownloader/). Stačí si ji stáhnout, přihlásit se k Facebooku a můžete snadno stahovat.
-![login](http://jedenbod.cz/wp-content/uploads/2009/11/login.jpg)
+![login](/uploads/2009/11/login.jpg)
 
 Stahovat můžete všechny fotky na kterých jste vy, všechny fotky uživatele nebo jednotlivá alba.
 
-![Album downloader](http://jedenbod.cz/wp-content/uploads/2009/11/album-downloader.jpg)
+![Album downloader](/uploads/2009/11/album-downloader.jpg)
 
 Ovládání je velmi jednoduché, zvládnete ho i bez znalosti angličtiny.
 

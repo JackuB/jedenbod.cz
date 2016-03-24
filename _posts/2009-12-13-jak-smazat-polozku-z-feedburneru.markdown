@@ -37,14 +37,14 @@ Stačí ho jen skrýt nebo ho můžete rovnou smazat.
 ### 2, Atomovku na ně!
 
 
-Ve Feedburneru se navigujte do záložky Troubleshootize.![Troubleshootize](http://jedenbod.cz/wp-content/uploads/livewriter/JaksmazatpolokuzFeedburneru_137DA/Troubleshootize.jpg)
+Ve Feedburneru se navigujte do záložky Troubleshootize.![Troubleshootize](/uploads/livewriter/JaksmazatpolokuzFeedburneru_137DA/Troubleshootize.jpg)
 
 Zde zvolte možnost **Resync** _(dole)_
 
-![resync-now](http://jedenbod.cz/wp-content/uploads/livewriter/JaksmazatpolokuzFeedburneru_137DA/resyncnow.jpg)
+![resync-now](/uploads/livewriter/JaksmazatpolokuzFeedburneru_137DA/resyncnow.jpg)
 
 A je hotovo. RSS Feed se nahraje celý znovu, bez onoho _špatného_ článku.
 
-![resync](http://jedenbod.cz/wp-content/uploads/livewriter/JaksmazatpolokuzFeedburneru_137DA/resync.jpg)
+![resync](/uploads/livewriter/JaksmazatpolokuzFeedburneru_137DA/resync.jpg)
 
 _Zdroj: [gulati.info](http://gulati.info/2009/11/deleting-a-feedburner-feed-item/)_

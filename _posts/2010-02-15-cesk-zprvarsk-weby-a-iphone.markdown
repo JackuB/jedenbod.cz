@@ -19,7 +19,7 @@ tags:
 - zprávy
 ---
 
-![iPhone Safari icon](http://jedenbod.cz/wp-content/uploads/2010/02/1314251273_469dffaf0d-e1266272901539.jpg)Jaký český zprávařský web je nejlépe připravený servírovat zprávy pro iPhone?
+![iPhone Safari icon](/uploads/2010/02/1314251273_469dffaf0d-e1266272901539.jpg)Jaký český zprávařský web je nejlépe připravený servírovat zprávy pro iPhone?
 
 Čtení zpráv je výborná ztráta času - kolikrát mě už tyto weby zachránily od skonání nudou snad ani nejde spočítat. Jenže jak si vybrat, které zprávy pro iPhone používat? Udělal jsem menší srovnání. _(nebudu hodnotit obsah webu)_
 
@@ -32,9 +32,9 @@ tags:
 ### Screenshoty
 
 
-![IMG_0447](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0447.png)
+![IMG_0447](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0447.png)
 
-![IMG_0449](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0449.png) ![IMG_0448](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0448.png)
+![IMG_0449](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0449.png) ![IMG_0448](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0448.png)
 
 
 ### Hodnocení
@@ -53,10 +53,10 @@ Menu jsou odporně naházená, takže bývá problém trefit tu kategorii, ktero
 ### Screenshoty
 
 
-![IMG_0454](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0454.png)
+![IMG_0454](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0454.png)
 
 
-[![Zobrazit album iHNed.cz](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/InlineRepresentation443a43a188c94819a7a7ecd2a835b4ac.jpg)](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1343&ct=photos)
+[![Zobrazit album iHNed.cz](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/InlineRepresentation443a43a188c94819a7a7ecd2a835b4ac.jpg)](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1343&ct=photos)
 
 
 [Zobrazit celé album](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1343&ct=photos)
@@ -83,10 +83,10 @@ Co se týče mobilní verze, jedná se o dobrou práci, až na příliš malé p
 ### Screenshoty
 
 
-![IMG_0450](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0450.png)
+![IMG_0450](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0450.png)
 
 
-[![Zobrazit album iDnes.cz](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/InlineRepresentationc8c1a776fa9f4aaeaa779d2b2949d25f.jpg)](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1347&ct=photos)
+[![Zobrazit album iDnes.cz](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/InlineRepresentationc8c1a776fa9f4aaeaa779d2b2949d25f.jpg)](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1347&ct=photos)
 
 
 [Zobrazit celé album](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1347&ct=photos)
@@ -111,9 +111,9 @@ Mobilní web iDnes.cz vypadá dobře. Nenarazil jsem na žádné větší probl�
 ### Screenshoty
 
 
-![IMG_0438](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0438.png)
+![IMG_0438](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0438.png)
 
-![IMG_0440](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0440.png)![IMG_0439](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0439.png)
+![IMG_0440](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0440.png)![IMG_0439](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0439.png)
 
 
 ### Hodnocení
@@ -132,10 +132,10 @@ Problémem snad je jen to, že po kliknutí na článek občas skončíte na web
 ### Screenshoty
 
 
-![IMG_0441](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0441.png)
+![IMG_0441](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/IMG_0441.png)
 
 
-[![Zobrazit album Novinky.cz](http://jedenbod.cz/wp-content/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/InlineRepresentation14eb13a309e2459b86f504ea1096f04b.jpg)](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1351&ct=photos)
+[![Zobrazit album Novinky.cz](/uploads/livewriter/eskzprvaskwebyaiPhone_13DC2/InlineRepresentation14eb13a309e2459b86f504ea1096f04b.jpg)](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1351&ct=photos)
 
 
 [Zobrazit celé album](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1351&ct=photos)

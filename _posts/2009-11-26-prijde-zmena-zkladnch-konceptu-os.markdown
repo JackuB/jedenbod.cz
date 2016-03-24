@@ -26,7 +26,7 @@ tags:
 
 Určitě vám neunikly zprávy o uvedení nového systému [Google](http://www.lupa.cz/clanky/google-chce-mit-z-chrome-os-jednoduchy-os/) [Chrome](http://www.varlog.cz/google-chrome-os-prvni-dojmy/) [OS](http://www.zive.cz/clanky/google-predstavil-chrome-os-system-nove-generace/sc-3-a-149817/default.aspx). Již dříve jsem také psal o zajímavém systému [Moblin](http://jedenbod.cz/487-moblin.html). Přeskočíme diskuze o užitelnosti Chrome OS, o možnosti rozšíření Moblinu nebo o tom, že se z PC opět stanou [terminály](http://cs.wikipedia.org/wiki/Termin%C3%A1l_(informatika)), přesně tak jak tomu bylo při vzniku internetu.
 
-![Google Chrome OS](http://jedenbod.cz/wp-content/uploads/2009/11/Chrome_OS_screenshot_sdres_0001_AppMenu.png)
+![Google Chrome OS](/uploads/2009/11/Chrome_OS_screenshot_sdres_0001_AppMenu.png)
 
 
 ## Minimalizovat?
@@ -34,7 +34,7 @@ Určitě vám neunikly zprávy o uvedení nového systému [Google](http://www.l
 
 Nedávno jsem si vzpomněl na své začátky s Windows. Předtím byl samozřejmě DOS a podobné systémy, ale rád bych se zaměřil na jeden prvek, typický pro _netextové_ systémy.
 
-![Minimalizovat, maximalizovat, zavřít](http://jedenbod.cz/wp-content/uploads/2009/11/all.jpg)
+![Minimalizovat, maximalizovat, zavřít](/uploads/2009/11/all.jpg)
 
 Vzpomínám si, že jsem relativně dlouho, bylo mi asi 11, nedokázal pochopit jak vůbec funguje princip oné minimalizace/maximalizace. Tehdy to bylo snad jen několik minut, ale až nedávno jsem pochopil, proč mě tento koncept, v dnešním návrhu GUI používaný naprosto běžně, tak mátl.
 
@@ -54,7 +54,7 @@ Při návrhu UI musíme počítat s tím, že pro mnoho uživatelů to bude nov�
 
 Pokud tedy chcete dosáhnout skutečně _dobré použitelnosti-intuitivnosti_, měli byste používat nějaký model, který bude srozumitelný pro co nejvíce uživatelů. Dobrým příkladem můžou být **_Záložky_**. Jsou srozumitelné pro většinu uživatelů, především protože je znají i z reálného života – jako skutečné záložky.
 
-![Záložky](http://jedenbod.cz/wp-content/uploads/2009/11/tabbednavigationfinal.gif) Příklad z [javascriptly.com](http://javascriptly.com/2008/09/unobtrusive-draggable-tabbed-navigation/)
+![Záložky](/uploads/2009/11/tabbednavigationfinal.gif) Příklad z [javascriptly.com](http://javascriptly.com/2008/09/unobtrusive-draggable-tabbed-navigation/)
 
 
 ## Minimalizovat, maximalizovat a zavřít

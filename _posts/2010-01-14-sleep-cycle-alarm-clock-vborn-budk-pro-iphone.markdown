@@ -42,7 +42,7 @@ Vše jsem nastavil podle instrukcí a přístroj nakalibroval _(otázka asi 30 s
 
 
 
-![IMG_0115](http://jedenbod.cz/wp-content/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0115.png) ![IMG_0113](http://jedenbod.cz/wp-content/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0113.png) ![IMG_0112](http://jedenbod.cz/wp-content/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0112.png) ![IMG_0114](http://jedenbod.cz/wp-content/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0114.png)
+![IMG_0115](/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0115.png) ![IMG_0113](/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0113.png) ![IMG_0112](/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0112.png) ![IMG_0114](/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0114.png)
 
 
 
@@ -54,7 +54,7 @@ Sleep Cycle není obyčejný budík s přesně daným časem buzení. Mezi hlavn
 
 
 
-![IMG_0110](http://jedenbod.cz/wp-content/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0110.png) ![IMG_0109](http://jedenbod.cz/wp-content/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0109.png)
+![IMG_0110](/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0110.png) ![IMG_0109](/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0109.png)
 
 
 
@@ -66,7 +66,7 @@ Velmi kladně hodnotím i _budící_ grafiku:
 
 
 
-![IMG_0104](http://jedenbod.cz/wp-content/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0104.png)
+![IMG_0104](/uploads/livewriter/SleepCycleVbornbudkproiPhone_13CBE/IMG_0104.png)
 
 
 

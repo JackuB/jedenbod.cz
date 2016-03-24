@@ -30,7 +30,7 @@ Byl jsem zděšen tím, že jsem nemohl najít nějaký jednoduchý program, do 
 
 Nakonec jsem naštěstí našel výborný český freeware **[JPEG Resampler](http://software.macek.cc/resamplercz.php).**
 
-[caption id="attachment_410" align="aligncenter" width="569" caption="JPEG Resampler"]![JPEG Resampler](http://jedenbod.cz/wp-content/uploads/2009/07/jpeg-resampler.PNG)[/caption]
+[caption id="attachment_410" align="aligncenter" width="569" caption="JPEG Resampler"]![JPEG Resampler](/uploads/2009/07/jpeg-resampler.PNG)[/caption]
 
 **JPEG Resampler** podporuje všemožné optimalizace, přesně podle toho, jak potřebujete. Můžete si vybrat dokonce kvalitu výsledné fotky. Dále se určitě hodí možnost přidání vlastního loga do optimalizovaných fotek nebo nové pojmenování souborů.
 

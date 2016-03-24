@@ -27,7 +27,7 @@ tags:
 ---
 
 [caption id="attachment_1142" align="alignright" width="240" caption="W3C vs. IE6 box model"]
-![W3C vs. IE6 box model](http://jedenbod.cz/wp-content/uploads/2011/06/300px-W3C_and_Internet_Explorer_box_models.svg_.png)[/caption]
+![W3C vs. IE6 box model](/uploads/2011/06/300px-W3C_and_Internet_Explorer_box_models.svg_.png)[/caption]
 
 
 ## Vzpomínáte na ty časy s IE6?
@@ -73,15 +73,15 @@ Testoval jsem _(obvinění zleva doprava)_
 
 Světe div se, **mobilní prohlížeče jsou děsná sračka**. Nefunkční a nedostupné emulátory bych i omluvil _(*mávnutí rukou*)_, ale tohle:
 
-[caption id="attachment_1150" align="aligncenter" width="570" caption="Jak vykreslují mobilní prohlížeče?"][![Jak vykreslují mobilní prohlížeče?](http://jedenbod.cz/wp-content/uploads/2011/06/mobilní-sračky-head-570x275.jpg)](http://jedenbod.cz/wp-content/uploads/2011/06/mobilní-sračky-head.jpg)[/caption]
+[caption id="attachment_1150" align="aligncenter" width="570" caption="Jak vykreslují mobilní prohlížeče?"][![Jak vykreslují mobilní prohlížeče?](/uploads/2011/06/mobilní-sračky-head-570x275.jpg)](/uploads/2011/06/mobilní-sračky-head.jpg)[/caption]
 
 **Každý prohlížeč vykresluje obsah po svém.** Ok, malé problémy. Chybějící text-shadow. Lištička i barvy půjdou opravit. Možná nějaký hack pro Operu Mobile? Hmmm? A zbytek půjde také opravit benevolentnějším přístupem k procentovým rozměrům. Zkusíme skrolovat dolů...
 
-[caption id="attachment_1154" align="aligncenter" width="570" caption="Jak vykreslují mobilní prohlížeče?"][![Jak vykreslují mobilní prohlížeče?](http://jedenbod.cz/wp-content/uploads/2011/06/mobilní-sračky-bottom-570x275.jpg)](http://jedenbod.cz/wp-content/uploads/2011/06/mobilní-sračky-bottom.jpg)[/caption]
+[caption id="attachment_1154" align="aligncenter" width="570" caption="Jak vykreslují mobilní prohlížeče?"][![Jak vykreslují mobilní prohlížeče?](/uploads/2011/06/mobilní-sračky-bottom-570x275.jpg)](/uploads/2011/06/mobilní-sračky-bottom.jpg)[/caption]
 
 Yes! Yes! Yes! Vidíte to?!  Mám to snad komentovat? Jen se podívejte v plné velikosti. Jsme opět na začátku!
 
-![Genious!](http://jedenbod.cz/wp-content/uploads/2011/06/genious128640853715840425-250x180.jpg)
+![Genious!](/uploads/2011/06/genious128640853715840425-250x180.jpg)
 
 Zase budu mít co dělat. **CSS a JS hacky pro různé verze prohlížečů, na různých platformách, s různými displeji a uživatelskými prvky.** Když se nemohou dohodnout ani na takových drobnostech, jako je **primitivní** layout několika divů, jak si asi poradí se složitějšími prvky? Nebo rovnou něčím interaktivním? To snad ani ne! Navíc, každý prohlížeč přijde se svou snůškou **vlastních a GENIÁLNÍCH **meta-tagů a CSS tříd. Nemluvě o úžasných standardech. Čekají nás _(zase) _křížové výpravy za správným vykreslováním?
 

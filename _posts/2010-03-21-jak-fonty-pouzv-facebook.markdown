@@ -23,7 +23,7 @@ tags:
 
 Vše okolo Facebooku je hodně na očích. Jak by také ne. Je to jedna z nejnavštěvovanějších stránek na světě. Zajímalo mě, jaké fonty používá.
 
-![Facebook Logo](http://jedenbod.cz/wp-content/uploads/2010/03/facebook-logo-570x214.jpg)
+![Facebook Logo](/uploads/2010/03/facebook-logo-570x214.jpg)
 
 
 ## CSS
@@ -31,11 +31,11 @@ Vše okolo Facebooku je hodně na očích. Jak by také ne. Je to jedna z nejnav
 
 Pro to, abyste věděli jaké fonty používá stránka, se stačí pouze podívat do CSS. Tady je CSS Facebooku:
 
-![Facebook - CSS font-family Lucida Grande](http://jedenbod.cz/wp-content/uploads/livewriter/JakfontypouvFacebook_BEEE/fbsource.jpg)
+![Facebook - CSS font-family Lucida Grande](/uploads/livewriter/JakfontypouvFacebook_BEEE/fbsource.jpg)
 
 Jedná se tedy primárně o **Lucida Grande**.
 
-![Lucida Grande](http://jedenbod.cz/wp-content/uploads/livewriter/JakfontypouvFacebook_BEEE/lucidagrande.png)
+![Lucida Grande](/uploads/livewriter/JakfontypouvFacebook_BEEE/lucidagrande.png)
 
 Dále o klasické fonty Tahoma, Verdana apod.
 
@@ -45,7 +45,7 @@ Dále o klasické fonty Tahoma, Verdana apod.
 
 Font v logu je již obtížnější na určení. Zkusil jsem nejdříve službu [WhatTheFont](http://new.myfonts.com/WhatTheFont/). Zde je výsledek:
 
-![WhatTheFont - Facebook logo](http://jedenbod.cz/wp-content/uploads/livewriter/JakfontypouvFacebook_BEEE/wtf.jpg)
+![WhatTheFont - Facebook logo](/uploads/livewriter/JakfontypouvFacebook_BEEE/wtf.jpg)
 
 Z diskuzí ve fórech jsem vyčetl, že by se mělo jednat o **upravený font **[Klavika](http://www.processtypefoundry.com/fonts/klavika/?dir=typefaces/klavika&page=index.html) _(_[_Klavika na MyFonts_](http://new.myfonts.com/fonts/processtype/klavika/)_) – _avšak jeho bližší neupravovaná verze by měl být font [Vecta Bold](http://new.myfonts.com/fonts/wilton/vecta/bold/).
 
@@ -55,11 +55,11 @@ Z diskuzí ve fórech jsem vyčetl, že by se mělo jednat o **upravený font **
 
 Zkoušel jsem si s Vecta Bold hrát ve Photoshopu a dosáhnul jsem relativně dobrých výsledků:
 
-![facebook-logo](http://jedenbod.cz/wp-content/uploads/livewriter/JakfontypouvFacebook_BEEE/facebooklogo.jpg)
+![facebook-logo](/uploads/livewriter/JakfontypouvFacebook_BEEE/facebooklogo.jpg)
 
 A ještě porovnání:
 
-![facebook-logo-zoom](http://jedenbod.cz/wp-content/uploads/livewriter/JakfontypouvFacebook_BEEE/facebooklogozoom.jpg)
+![facebook-logo-zoom](/uploads/livewriter/JakfontypouvFacebook_BEEE/facebooklogozoom.jpg)
 
 Avšak musel jsem ručně měnit proporce jednotlivých písmen. Navíc při bližším pohledu je jasné zakulacení písmen.
 
@@ -69,11 +69,11 @@ Avšak musel jsem ručně měnit proporce jednotlivých písmen. Navíc při bli
 
 Zkusil jsem i, prý výchozí font, Klavika.
 
-![klavika-facebook](http://jedenbod.cz/wp-content/uploads/livewriter/JakfontypouvFacebook_BEEE/klavikafacebook.jpg)
+![klavika-facebook](/uploads/livewriter/JakfontypouvFacebook_BEEE/klavikafacebook.jpg)
 
 Skvělý výsledek.
 
-![klavika-facebook-zoom](http://jedenbod.cz/wp-content/uploads/livewriter/JakfontypouvFacebook_BEEE/klavikafacebookzoom.jpg)
+![klavika-facebook-zoom](/uploads/livewriter/JakfontypouvFacebook_BEEE/klavikafacebookzoom.jpg)
 
 
 ### Sentico Sans
@@ -81,10 +81,10 @@ Skvělý výsledek.
 
 Vyzkoušel jsem také font [Sentico Sans](http://new.myfonts.com/fonts/dtptypes/sentico-sans-dt/bold/).
 
-![sentico-sans-facebook](http://jedenbod.cz/wp-content/uploads/livewriter/JakfontypouvFacebook_BEEE/senticosansfacebook.jpg)
+![sentico-sans-facebook](/uploads/livewriter/JakfontypouvFacebook_BEEE/senticosansfacebook.jpg)
 
 Subjektivně u mě vede Sentico Sans.
 
-![sentico-sans-facebook-zoom](http://jedenbod.cz/wp-content/uploads/livewriter/JakfontypouvFacebook_BEEE/senticosansfacebookzoom.jpg)
+![sentico-sans-facebook-zoom](/uploads/livewriter/JakfontypouvFacebook_BEEE/senticosansfacebookzoom.jpg)
 
 **Dle mého, Sentico Sans vypadá jako správná volba, pokud plánujete například parodie Facebooku apod.**

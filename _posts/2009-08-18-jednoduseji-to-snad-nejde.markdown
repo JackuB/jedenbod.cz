@@ -34,7 +34,7 @@ Jde o zařízení, které dokáže snímat předměty před vámi a následně v
 Představa dostupnosti těchto informací okamžitě, při pouhém pohledu na nějakou věc, je, na rovinu, úžasná.
 Velmi mě zaujal příklad z obchodu, kdy si vybíráte zboží a podle vámi zadaných parametrů je vám _Šestý smysl_ schopen doporučit zboží. V podstatě bude vybírat za vás. Přeskočím to, jak by výrobci uměle upravovali _hodnoty _a _indexy_, jen aby jim zasvítila zelená v co nejvíce případech a to, _kdo _by vlastně určoval, kdy bude u výrobku zelená a kdy už oranžová.
 
-[caption id="attachment_466" align="aligncenter" width="503" caption="6th Sense v akci"]![6th Sense v akci](http://jedenbod.cz/wp-content/uploads/2009/08/6th-sense.PNG)[/caption]
+[caption id="attachment_466" align="aligncenter" width="503" caption="6th Sense v akci"]![6th Sense v akci](/uploads/2009/08/6th-sense.PNG)[/caption]
 
 Představte si, že by se toto zařízení skutečně uchytilo. Používali byste jej každý den a skutečně, fungovalo by skvěle. Obrovské množství informací na dosah. Hlavní devízou Šestého smyslu je doručit uživateli meta informace v reálném čase tak, aby mu pomohly se rychleji _(a správněji)_ rozhodnout. Technologie k vám tak přiroste, až se skutečně může sžít s _'opravdovými'_ smysly a stane se z ní onen šestý smysl.
 
@@ -50,4 +50,4 @@ Na něčem podobném již určitě pracuje např. Google, v rámci cílení rekl
 
 Není daleko doba, kdy se o nás budou starat systémy, které nás budou dobře znát. A my? Necháme si radit, proč ne? Je to jednodušší. Nebudeme se muset rozhodovat, ani přemýšlet. O to se postarají stroje. My budeme jen konzumovat.
 
-[caption id="attachment_470" align="aligncenter" width="400" caption="Aldous Huxley - Brave New World"][![Aldous Huxley - Brave New World](http://jedenbod.cz/wp-content/uploads/2009/08/brave_new_world.jpg)](http://cs.wikipedia.org/wiki/Konec_civilizace)[/caption]
+[caption id="attachment_470" align="aligncenter" width="400" caption="Aldous Huxley - Brave New World"][![Aldous Huxley - Brave New World](/uploads/2009/08/brave_new_world.jpg)](http://cs.wikipedia.org/wiki/Konec_civilizace)[/caption]

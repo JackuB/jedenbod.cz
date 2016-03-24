@@ -23,6 +23,6 @@ tags:
 
 
 
-[caption id="attachment_1456" align="aligncenter"]![Google Chrome for iOS Beta](http://jedenbod.cz/wp-content/uploads/2012/05/Google-Chrome-ios.jpg) Google Chrome for iOS Beta[/caption]
+[caption id="attachment_1456" align="aligncenter"]![Google Chrome for iOS Beta](/uploads/2012/05/Google-Chrome-ios.jpg) Google Chrome for iOS Beta[/caption]
 
 Google zbožňuje webaplikace...

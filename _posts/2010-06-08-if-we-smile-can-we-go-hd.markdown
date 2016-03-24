@@ -15,7 +15,7 @@ Možná znáte tento obrázek [Radiohead](http://www.radiohead.com) _(který byl
 
 
 
-![Radiohead - if we smile, can we go?](http://jedenbod.cz/wp-content/uploads/livewriter/ifwesmilecanwegoHD_141CE/67940729_c66903dc8d.jpg)
+![Radiohead - if we smile, can we go?](/uploads/livewriter/ifwesmilecanwegoHD_141CE/67940729_c66903dc8d.jpg)
 
 
 
@@ -29,7 +29,7 @@ Zkusil jsem si chvíli hrát ve Photoshopu, a obrázek jsem zvětšil na 1335×1
 
 
 
-[![if we smile can we go hd](http://jedenbod.cz/wp-content/uploads/livewriter/ifwesmilecanwegoHD_141CE/ifwesmilecanwegohd_thumb.jpg)](http://jedenbod.cz/wp-content/uploads/livewriter/ifwesmilecanwegoHD_141CE/ifwesmilecanwegohd.jpg)
+[![if we smile can we go hd](/uploads/livewriter/ifwesmilecanwegoHD_141CE/ifwesmilecanwegohd_thumb.jpg)](/uploads/livewriter/ifwesmilecanwegoHD_141CE/ifwesmilecanwegohd.jpg)
 
 
 

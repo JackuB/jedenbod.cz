@@ -27,7 +27,7 @@ Můj první vzhled pro Wordpress, [Ready2Launch!](http://ready2launch.jedenbod.c
 
 
 
-[![ready2launch-download](http://jedenbod.cz/wp-content/uploads/livewriter/minimalrproWordpress_11463/ready2launchdownload.jpg)](http://wordpress.org/extend/themes/ready2launch/stats/)
+[![ready2launch-download](/uploads/livewriter/minimalrproWordpress_11463/ready2launchdownload.jpg)](http://wordpress.org/extend/themes/ready2launch/stats/)
 
 
 
@@ -47,7 +47,7 @@ Postupem času se z původního záměru stalo něco úplně jiného.
 
 
 
-![vrstvy](http://jedenbod.cz/wp-content/uploads/livewriter/minimalrproWordpress_11463/vrstvy.jpg)
+![vrstvy](/uploads/livewriter/minimalrproWordpress_11463/vrstvy.jpg)
 
 
 
@@ -89,7 +89,7 @@ Takže z minimalru můžete mít chvíli mikroblog a během několika minut z n�
 
 
 
-[![Zobrazit album minimalr](http://jedenbod.cz/wp-content/uploads/livewriter/minimalrproWordpress_11463/InlineRepresentation4d24a25a16034b7c8491530b282204a7.jpg)](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1334&ct=photos)
+[![Zobrazit album minimalr](/uploads/livewriter/minimalrproWordpress_11463/InlineRepresentation4d24a25a16034b7c8491530b282204a7.jpg)](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1334&ct=photos)
 
 [Zobrazit cele album](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1334&ct=photos)
 

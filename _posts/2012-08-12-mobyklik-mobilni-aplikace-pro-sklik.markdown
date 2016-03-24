@@ -28,7 +28,7 @@ Sklik.cz nemá mobilní verzi? Ani žádnou aplikaci?
 
 To už není pravda:
 
-[![Mobyklik - mobilní rozhraní pro Sklik](http://jedenbod.cz/wp-content/uploads/2012/08/mobyklik1.jpg)](http://mobyklik.jedenbod.cz/)
+[![Mobyklik - mobilní rozhraní pro Sklik](/uploads/2012/08/mobyklik1.jpg)](http://mobyklik.jedenbod.cz/)
 
 [mobyklik.jedenbod.cz](http://mobyklik.jedenbod.cz)
 

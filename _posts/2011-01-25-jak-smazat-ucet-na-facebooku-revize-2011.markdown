@@ -27,7 +27,7 @@ Od napsání článku [Jak smazat účet na facebooku](http://jedenbod.cz/42-jak
 
 Jedna z věcí, kterou Facebook nezměnil je stále postoj k uživatelům, kteří chtějí odejít. V klasickém nastavení účtu je stále jen ono _Deaktivovat_ aneb _Necháme-si-stejně-všechno_.
 
-_![Deaktivovat účet na Facebooku](http://jedenbod.cz/wp-content/uploads/2011/01/07-570x127.png)_[Přes nápovědu](http://www.facebook.com/help/?faq=13016) se však můžete dostat k jasnému odkazu pro smazání. Postup potom už je jasný:
+_![Deaktivovat účet na Facebooku](/uploads/2011/01/07-570x127.png)_[Přes nápovědu](http://www.facebook.com/help/?faq=13016) se však můžete dostat k jasnému odkazu pro smazání. Postup potom už je jasný:
 
 
 ### [Odkaz pro smazání účtu na Facebook.com](https://www.facebook.com/help/contact.php?show_form=delete_account)
@@ -35,7 +35,7 @@ _![Deaktivovat účet na Facebooku](http://jedenbod.cz/wp-content/uploads/2011/0
 
 
 
-[![Smazání účtu na Facebooku](http://jedenbod.cz/wp-content/uploads/2011/01/01-570x200.png)](https://www.facebook.com/help/contact.php?show_form=delete_account)
+[![Smazání účtu na Facebooku](/uploads/2011/01/01-570x200.png)](https://www.facebook.com/help/contact.php?show_form=delete_account)
 
 
 
@@ -49,7 +49,7 @@ Pouhým vyplněním formuláře vše potvrdíte. Účet se na 14 dní _Deaktivu
 ### Co se děje během oněch 14 dnů?
 
 
-![Deaktivovaný uživatel na Facebooku](http://jedenbod.cz/wp-content/uploads/2011/01/05-300x111.png)Stane se z vás duch. Všechny vaše aktivity zmizí. Nahrané statusy, fotky i komentáře. Nezůstane jediná stopa. I s přímým odkazem skončíte na neexistující stránce. Můžete zůstat jen v záložce _Upozornění_, ale i odtamaď brzy zmizíte.
+![Deaktivovaný uživatel na Facebooku](/uploads/2011/01/05-300x111.png)Stane se z vás duch. Všechny vaše aktivity zmizí. Nahrané statusy, fotky i komentáře. Nezůstane jediná stopa. I s přímým odkazem skončíte na neexistující stránce. Můžete zůstat jen v záložce _Upozornění_, ale i odtamaď brzy zmizíte.
 
 
 ### Co po vás na Facebooku vlastně zbyde?
@@ -95,7 +95,7 @@ Má a není jich málo. Bohužel, málokterá mu zatím může konkurovat ((vět
 
 
 
-[![Diaspora logo](http://jedenbod.cz/wp-content/uploads/2011/01/diaspora_logo.jpg)](https://joindiaspora.com)
+[![Diaspora logo](/uploads/2011/01/diaspora_logo.jpg)](https://joindiaspora.com)
 
 
 [](https://joindiaspora.com)Mladý nadějný projekt [Diaspora*](https://joindiaspora.com) _(česká taky-alfa-verze [vytrus.cz](http://vytrus.cz))._ Můj osobní pocit je, že mnoho konceptů z Diaspory by se mělo stát standartem u sociálních sítí.

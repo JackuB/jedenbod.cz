@@ -33,7 +33,7 @@ Nepotřeboval jsem _(a ani nechtěl)_ nic složitého. Žádné velké efekty, j
 
 
 
-[caption id="attachment_222" align="aligncenter" width="570" caption="Windows Live Movie Maker Beta - První spuštění"][![Windows Live Movie Maker Beta - První spuštění](http://jedenbod.cz/wp-content/uploads/2009/05/movie-maker-live-beta-570x437.png)](http://jedenbod.cz/wp-content/uploads/2009/05/movie-maker-live-beta.png)[/caption]
+[caption id="attachment_222" align="aligncenter" width="570" caption="Windows Live Movie Maker Beta - První spuštění"][![Windows Live Movie Maker Beta - První spuštění](/uploads/2009/05/movie-maker-live-beta-570x437.png)](/uploads/2009/05/movie-maker-live-beta.png)[/caption]
 
 
 
@@ -41,7 +41,7 @@ Vypadá to hezky... ale... Žádná časová osa?!
 
 
 
-[caption id="attachment_223" align="aligncenter" width="570" caption="Windows Live Movie Maker Beta - Po přidání obrázků"][![Windows Live Movie Maker Beta - Po přidání obrázků](http://jedenbod.cz/wp-content/uploads/2009/05/movie-maker-live-beta-2-570x437.png)](http://jedenbod.cz/wp-content/uploads/2009/05/movie-maker-live-beta-2.png)[/caption]
+[caption id="attachment_223" align="aligncenter" width="570" caption="Windows Live Movie Maker Beta - Po přidání obrázků"][![Windows Live Movie Maker Beta - Po přidání obrázků](/uploads/2009/05/movie-maker-live-beta-2-570x437.png)](/uploads/2009/05/movie-maker-live-beta-2.png)[/caption]
 
 
 
@@ -49,7 +49,7 @@ Nakonec se ukázalo, že časovou osu má nahradit to, co bych jinak nazval knih
 
 
 
-[caption id="attachment_224" align="aligncenter" width="570" caption="Windows Live Movie Maker Beta - Nabídka"][![Windows Live Movie Maker Beta - Nabídka](http://jedenbod.cz/wp-content/uploads/2009/05/listy-570x306.jpg)](http://jedenbod.cz/wp-content/uploads/2009/05/listy.jpg)[/caption]
+[caption id="attachment_224" align="aligncenter" width="570" caption="Windows Live Movie Maker Beta - Nabídka"][![Windows Live Movie Maker Beta - Nabídka](/uploads/2009/05/listy-570x306.jpg)](/uploads/2009/05/listy.jpg)[/caption]
 
 
 
@@ -57,7 +57,7 @@ Naštěstí Movie Maker uměl vše co jsem zrovna potřeboval, takže jsem v ně
 
 
 
-[caption id="attachment_225" align="aligncenter" width="467" caption="Windows Live Movie Maker - Export"][![Windows Live Movie Maker - Export](http://jedenbod.cz/wp-content/uploads/2009/05/vytvorit.png)](http://jedenbod.cz/wp-content/uploads/2009/05/vytvorit.png)[/caption]
+[caption id="attachment_225" align="aligncenter" width="467" caption="Windows Live Movie Maker - Export"][![Windows Live Movie Maker - Export](/uploads/2009/05/vytvorit.png)](/uploads/2009/05/vytvorit.png)[/caption]
 
 
 
@@ -71,9 +71,9 @@ Ale přece jen v novém Movie Makeru je něco dobrého. Přímý video upload po
 
 
 
-[caption id="attachment_226" align="aligncenter" width="284" caption="Windows Live Movie Maker Beta - Upload na youtube.com"][![Windows Live Movie Maker Beta - Upload na youtube.com](http://jedenbod.cz/wp-content/uploads/2009/05/upload-na-youtube.png)](http://jedenbod.cz/wp-content/uploads/2009/05/upload-na-youtube.png)[/caption]
+[caption id="attachment_226" align="aligncenter" width="284" caption="Windows Live Movie Maker Beta - Upload na youtube.com"][![Windows Live Movie Maker Beta - Upload na youtube.com](/uploads/2009/05/upload-na-youtube.png)](/uploads/2009/05/upload-na-youtube.png)[/caption]
 
-[caption id="attachment_227" align="aligncenter" width="527" caption="Windows Live Movie Maker Beta - Upload na youtube.com"][![Windows Live Movie Maker Beta - Upload na youtube.com](http://jedenbod.cz/wp-content/uploads/2009/05/youtube-upload.png)](http://jedenbod.cz/wp-content/uploads/2009/05/youtube-upload.png)[/caption]
+[caption id="attachment_227" align="aligncenter" width="527" caption="Windows Live Movie Maker Beta - Upload na youtube.com"][![Windows Live Movie Maker Beta - Upload na youtube.com](/uploads/2009/05/youtube-upload.png)](/uploads/2009/05/youtube-upload.png)[/caption]
 
 
 
@@ -93,4 +93,4 @@ Naštěstí si můžete stáhnout i starší [Windows Movie Maker 2.6](http://ww
 
 
 
-[caption id="attachment_230" align="aligncenter" width="570" caption="Windows Movie Maker 2.6"][![Windows Movie Maker 2.6](http://jedenbod.cz/wp-content/uploads/2009/05/movie-maker-26-570x431.png)](http://jedenbod.cz/wp-content/uploads/2009/05/movie-maker-26.png)[/caption]
+[caption id="attachment_230" align="aligncenter" width="570" caption="Windows Movie Maker 2.6"][![Windows Movie Maker 2.6](/uploads/2009/05/movie-maker-26-570x431.png)](/uploads/2009/05/movie-maker-26.png)[/caption]

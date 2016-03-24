@@ -35,7 +35,7 @@ Easing není jen výsledek práce nudících se zaměstatnců jakési softwarov�
 
 Easing se netýká jen vyskakujících nabídek a podobných, dokrášlovacích detailů, ale může fungovat i jako součást samotného UI. Například ve **Windows 7** _(a tuším, že i Windows Vista)_ se při přihlašování/odhlašování systému. Začínáte na přihlašovací obrazovce, vyvedené v _systémových _barvách Windows 7, kde si vyberete profil, zadáte heslo a po potvrzení se celá obrazovka ztmaví a po rozjasněji jste již ve _svém světě-svém profilu._
 
-[caption id="attachment_387" align="aligncenter" width="570" caption="Windows 7 Login - Zdroj: Win7.in"]![Windows 7 Login](http://jedenbod.cz/wp-content/uploads/2009/07/windows7build7057login-570x375.jpg)[/caption]
+[caption id="attachment_387" align="aligncenter" width="570" caption="Windows 7 Login - Zdroj: Win7.in"]![Windows 7 Login](/uploads/2009/07/windows7build7057login-570x375.jpg)[/caption]
 
 Trochu mě mrzí, že easing, ačkoliv je na implementaci jednoduchý, není vidět/slyšet častěji. Ještě jeden, tentokrát špatný příklad z Windows 7.
 

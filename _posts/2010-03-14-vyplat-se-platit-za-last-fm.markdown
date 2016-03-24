@@ -25,7 +25,7 @@ tags:
 
 [Last.fm](http://last.fm/) snad ani není nutné představovat. Encyklopedie hudby založená na posluchačské základně, které je následně generován profil posluchače. Zjednodušeně.
 
-![Domovská stránka Last.fm](http://jedenbod.cz/wp-content/uploads/livewriter/VyplatseplatitzaLast.fm_E3F/home.jpg)
+![Domovská stránka Last.fm](/uploads/livewriter/VyplatseplatitzaLast.fm_E3F/home.jpg)
 
 Last.fm má dnes něco kolem 30 000 000 uživatelů. Polovina úspěchu vždy stála, kromě přesných doporučení hudby, i na rozsáhlé hudební knihovně, kterou jste si mohli pouštět v rádiu.
 
@@ -88,13 +88,13 @@ Platba probíhá rychle, přes [PayPal](http://www.paypal.com) a za pár minut j
 
 Last.fm radio, od doby kdy jsem ho poslouchal naposledy, prošlo mnoha změnami.
 
-![Last.fm radio](http://jedenbod.cz/wp-content/uploads/livewriter/VyplatseplatitzaLast.fm_E3F/radio2.jpg)
+![Last.fm radio](/uploads/livewriter/VyplatseplatitzaLast.fm_E3F/radio2.jpg)
 
 Přehrávání v Last.fm klientu je stejné, avšak přehrávání přímo na webu je mnohem pokročilejší. Vidíte malou prezentaci umělce, kterého právě posloucháte. Jeho fotografie a podobné umělce. Zlepšila se i přesnost – takže už žádný metalový nářez při poslechu funkového rádia.
 
 Příjemnou novinkou je také více-tagové hledání hudby. Díky čemuž můžete najít i obskurní žánry, které byste jinak hledali těžce.
 
-![experimantal + vocal + jazz radio](http://jedenbod.cz/wp-content/uploads/livewriter/VyplatseplatitzaLast.fm_E3F/experimantalvocaljazzradio.jpg)
+![experimantal + vocal + jazz radio](/uploads/livewriter/VyplatseplatitzaLast.fm_E3F/experimantalvocaljazzradio.jpg)
 
 A mít po ruce hudební knihovnu, ve které je více než 3,5 miliónu skladeb, je určitě zajímavé.
 
@@ -104,7 +104,7 @@ A mít po ruce hudební knihovnu, ve které je více než 3,5 miliónu skladeb, 
 
 Zajímavým přídavkem pro platící posluchače _(=subscriber)_ je i [Last.fm’s Playground](http://playground.last.fm/). Což jsou Beta verze různých služeb, které snad budou na Last.fm zavedeny v budoucnu.
 
-![map](http://jedenbod.cz/wp-content/uploads/livewriter/VyplatseplatitzaLast.fm_E3F/map.png)
+![map](/uploads/livewriter/VyplatseplatitzaLast.fm_E3F/map.png)
 
 Jedna ze zajímavých možností je například vytvoření grafu reprezentujícího vaše hudební návyky až 2 roky zpátky. A podobné.
 

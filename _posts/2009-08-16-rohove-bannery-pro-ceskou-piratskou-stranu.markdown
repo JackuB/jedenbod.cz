@@ -24,9 +24,9 @@ tags:
 
 Vzpomínáte si na malé rohové bannery, které jste ještě před pár lety mohli vidět na každém blogu? Většinou to bylo něco jako _Podporuji ______ nebo _Jsem proti ______. Napadlo mě oživit tento fenomén a vyrobil jsem několik bannerů pro [Českou Pirátskou Stranu](http://www.ceskapiratskastrana.cz/).
 
-[caption id="attachment_457" align="aligncenter" width="570" caption="Rohové bannery pro ČPS"]![Rohové bannery pro ČPS](http://jedenbod.cz/wp-content/uploads/2009/08/cps-banners-570x372.PNG)[/caption]
+[caption id="attachment_457" align="aligncenter" width="570" caption="Rohové bannery pro ČPS"]![Rohové bannery pro ČPS](/uploads/2009/08/cps-banners-570x372.PNG)[/caption]
 
-Všech 28 bannerů si můžete stáhnout v jediném archivu: [ČPS rohové bannery](http://jedenbod.cz/wp-content/uploads/2009/08/CPS-rohove-bannery.rar).rar
+Všech 28 bannerů si můžete stáhnout v jediném archivu: [ČPS rohové bannery](/uploads/2009/08/CPS-rohove-bannery.rar).rar
 
 Vložení do stránky je pak velmi jednoduché.
 

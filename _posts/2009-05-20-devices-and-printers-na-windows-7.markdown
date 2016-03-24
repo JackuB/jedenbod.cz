@@ -23,18 +23,18 @@ Windows 7 v sobě mají spoustu malých-krásných _vychytávek_, které vám č
 
 Když jsem připojil svůj [Creative ZEN](http://zen.jedenbod.cz/), během několika vteřin se stáhly ovladače a já s údivem sledoval, jak se ikonka ZENu objevila na liště.
 
-[caption id="attachment_275" align="aligncenter" width="255" caption="Windows 7 - Creative ZEN"][![Windows 7 - Creative ZEN](http://jedenbod.cz/wp-content/uploads/2009/05/creative-zen.png)](http://jedenbod.cz/wp-content/uploads/2009/05/creative-zen.png)[/caption]
+[caption id="attachment_275" align="aligncenter" width="255" caption="Windows 7 - Creative ZEN"][![Windows 7 - Creative ZEN](/uploads/2009/05/creative-zen.png)](/uploads/2009/05/creative-zen.png)[/caption]
 
 V Devices and Printers se ZEN samozřejmě objevil také
 
-[caption id="attachment_276" align="aligncenter" width="570" caption="Windows 7 - Devices and Printers"][![Windows 7 - Devices and Printers](http://jedenbod.cz/wp-content/uploads/2009/05/devices-and-printers-1-570x488.png)](http://jedenbod.cz/wp-content/uploads/2009/05/devices-and-printers-1.png)[/caption]
+[caption id="attachment_276" align="aligncenter" width="570" caption="Windows 7 - Devices and Printers"][![Windows 7 - Devices and Printers](/uploads/2009/05/devices-and-printers-1-570x488.png)](/uploads/2009/05/devices-and-printers-1.png)[/caption]
 
 Po rozklepnutí se dostanete ke stavu baterie, volného místa a ihned můžete přenášet soubory. Ty se mohou dokonce zoptimalizovat, aby nezabírali na přehrávači více místa než musí _(například zmenšení videa pro displej přehrávače)_.
-[caption id="attachment_279" align="aligncenter" width="570" caption="Windows 7 - Creative ZEN"][![Windows 7 - Creative ZEN](http://jedenbod.cz/wp-content/uploads/2009/05/devices-and-printers-2-570x416.png)](http://jedenbod.cz/wp-content/uploads/2009/05/devices-and-printers-2.png)[/caption]
+[caption id="attachment_279" align="aligncenter" width="570" caption="Windows 7 - Creative ZEN"][![Windows 7 - Creative ZEN](/uploads/2009/05/devices-and-printers-2-570x416.png)](/uploads/2009/05/devices-and-printers-2.png)[/caption]
 
 Jak jsem již psal, a nejspíše jste slyšeli, instalace ovladačů pro zařízení probíhá pokud možno automaticky. Připojíte zařízení a za chvíli již vše funguje. Většinou bez restartu. Není nic příjemnějšího, když víte, že už nemusíte prolézat bludiště stránek podpory vašeho výrobce tiskárny, jen abyste našli správnou verzi ovladače.
 
-[caption id="attachment_278" align="aligncenter" width="570" caption="Windows 7 - Instalace ovladače"][![Windows 7 - Instalace ovladače](http://jedenbod.cz/wp-content/uploads/2009/05/instalace-570x505.png)](http://jedenbod.cz/wp-content/uploads/2009/05/instalace.png)[/caption]
+[caption id="attachment_278" align="aligncenter" width="570" caption="Windows 7 - Instalace ovladače"][![Windows 7 - Instalace ovladače](/uploads/2009/05/instalace-570x505.png)](/uploads/2009/05/instalace.png)[/caption]
 
 Pokud na Windows Update správný ovladač není, takovýchto případů bude, dle mého, po větším rozšíření Windows 7, ubývat, tak budete nasměrováni na stránky výrobce. Velmi často přímo na na soubor, takže stránky _Podpora_ ani neuvidíte. Uff.
 

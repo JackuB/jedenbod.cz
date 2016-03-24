@@ -37,7 +37,7 @@ Právě už instalace naznačovala, že to není _obyčejná_ hra. Instalace, i 
 
 
 
-[caption id="attachment_200" align="aligncenter" width="570" caption="Battlefield Heroes"][![Battlefield Heroes](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-22-33-24-42-570x427.jpg)](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-22-33-24-42.jpg)[/caption]
+[caption id="attachment_200" align="aligncenter" width="570" caption="Battlefield Heroes"][![Battlefield Heroes](/uploads/2009/04/bfheroes-2009-04-25-22-33-24-42-570x427.jpg)](/uploads/2009/04/bfheroes-2009-04-25-22-33-24-42.jpg)[/caption]
 
 
 
@@ -65,7 +65,7 @@ Sice se pořád trochu cukala, ale za to můžou zčásti nedokončené ovladač
 
 
 
-[caption id="attachment_201" align="aligncenter" width="570" caption="Battlefield Heroes"][![Battlefield Heroes](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-23-18-47-08-570x456.jpg)](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-23-18-47-08.jpg)[/caption]
+[caption id="attachment_201" align="aligncenter" width="570" caption="Battlefield Heroes"][![Battlefield Heroes](/uploads/2009/04/bfheroes-2009-04-25-23-18-47-08-570x456.jpg)](/uploads/2009/04/bfheroes-2009-04-25-23-18-47-08.jpg)[/caption]
 
 
 
@@ -73,7 +73,7 @@ Mé hráčské srdce hře moc nevěřilo. Ale po dvou dnech na bitevní poli moh
 
 
 
-[caption id="attachment_202" align="aligncenter" width="570" caption="Battlefield Heroes"][![Battlefield Heroes](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-23-21-01-50-570x456.jpg)](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-23-21-01-50.jpg)[/caption]
+[caption id="attachment_202" align="aligncenter" width="570" caption="Battlefield Heroes"][![Battlefield Heroes](/uploads/2009/04/bfheroes-2009-04-25-23-21-01-50-570x456.jpg)](/uploads/2009/04/bfheroes-2009-04-25-23-21-01-50.jpg)[/caption]
 
 
 
@@ -81,7 +81,7 @@ Mé hráčské srdce hře moc nevěřilo. Ale po dvou dnech na bitevní poli moh
 
 
 
-[caption id="attachment_205" align="aligncenter" width="570" caption="Battlefield Heroes - Zase jsme to Royalistům nandali!"][![Battlefield Heroes](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-23-38-36-45-570x456.jpg)](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-23-38-36-45.jpg)[/caption]
+[caption id="attachment_205" align="aligncenter" width="570" caption="Battlefield Heroes - Zase jsme to Royalistům nandali!"][![Battlefield Heroes](/uploads/2009/04/bfheroes-2009-04-25-23-38-36-45-570x456.jpg)](/uploads/2009/04/bfheroes-2009-04-25-23-38-36-45.jpg)[/caption]
 
 
 
@@ -107,7 +107,7 @@ Máte v zásadě tři možnosti.
 
 
 
-[caption id="attachment_206" align="aligncenter" width="570" caption="Battlefield Heroes - Kdo to bude?"][![Battlefield Heroes](http://jedenbod.cz/wp-content/uploads/2009/04/hero-570x371.png)](http://jedenbod.cz/wp-content/uploads/2009/04/hero.png)[/caption]
+[caption id="attachment_206" align="aligncenter" width="570" caption="Battlefield Heroes - Kdo to bude?"][![Battlefield Heroes](/uploads/2009/04/hero-570x371.png)](/uploads/2009/04/hero.png)[/caption]
 
 
 
@@ -132,7 +132,7 @@ Toto vychází z východního _(východnějšího než Rusko)_ modelu, kdy hrá�
 
 
 
-[caption id="attachment_209" align="aligncenter" width="570" caption="Battlefield Heroes - Ouch"][![Battlefield Heroes - Ouch](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-23-23-55-84-570x456.jpg)](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-23-23-55-84.jpg)[/caption]
+[caption id="attachment_209" align="aligncenter" width="570" caption="Battlefield Heroes - Ouch"][![Battlefield Heroes - Ouch](/uploads/2009/04/bfheroes-2009-04-25-23-23-55-84-570x456.jpg)](/uploads/2009/04/bfheroes-2009-04-25-23-23-55-84.jpg)[/caption]
 
 
 
@@ -162,5 +162,5 @@ Takže si to spočítáme:
 
 
 
-[caption id="attachment_213" align="aligncenter" width="570" caption="Battlefield Heroes"][![Battlefield Heroes](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-23-38-26-44-570x456.jpg)](http://jedenbod.cz/wp-content/uploads/2009/04/bfheroes-2009-04-25-23-38-26-44.jpg)[/caption]
+[caption id="attachment_213" align="aligncenter" width="570" caption="Battlefield Heroes"][![Battlefield Heroes](/uploads/2009/04/bfheroes-2009-04-25-23-38-26-44-570x456.jpg)](/uploads/2009/04/bfheroes-2009-04-25-23-38-26-44.jpg)[/caption]
 

@@ -44,7 +44,7 @@ Ill take that blame from you
 
 
 
-[![Akon](http://jedenbod.cz/wp-content/uploads/2009/03/akon-300x140.jpg)](http://jedenbod.cz/wp-content/uploads/2009/03/akon.jpg)
+[![Akon](/uploads/2009/03/akon-300x140.jpg)](/uploads/2009/03/akon.jpg)
 
 
 
@@ -55,7 +55,7 @@ Když se Akon doomlouval, a skončily všechny jeho slow-mo a bullettime pohyby 
 
 
 
-![Exit 316](http://jedenbod.cz/wp-content/uploads/2009/03/exit.jpg)
+![Exit 316](/uploads/2009/03/exit.jpg)
 
 
 
@@ -63,7 +63,7 @@ Nezapomnělo se ani na nějaký citát, který tomu všemu dodá _vyšší rozm�
 
 
 
-![Citát](http://jedenbod.cz/wp-content/uploads/2009/03/holy.jpg)
+![Citát](/uploads/2009/03/holy.jpg)
 
 
 
@@ -78,7 +78,7 @@ Velmi se mi líbily rozhovory s V.I.P. Tady je screen z jednoho takového:
 
 
 
-[caption id="attachment_121" align="aligncenter" width="370" caption="Vážně?"]![Vážně?](http://jedenbod.cz/wp-content/uploads/2009/03/vira.jpg)[/caption]
+[caption id="attachment_121" align="aligncenter" width="370" caption="Vážně?"]![Vážně?](/uploads/2009/03/vira.jpg)[/caption]
 
 
 Nápověda: když se někdo poškrábe na nose, většinou to znamená, že lže. P.S. tady ten pán to udělal dokonce dvakrát a to pokaždé, když se nad něčím zamyslel
@@ -91,7 +91,7 @@ Dále se mi extrémně líbil prvek **Ďábla** _(co by to bylo za dílo bez zá
 
 
 
-![Píseň](http://jedenbod.cz/wp-content/uploads/2009/03/song.jpg)
+![Píseň](/uploads/2009/03/song.jpg)
 
 
 
@@ -115,7 +115,7 @@ _Dokumentární pořad pro mladé_ s náboženskými prvky?! Co to sakra? Za chv
 
 
 
-[caption id="attachment_133" align="aligncenter" width="210" caption="Kde to skončí?"]![Kde to skončí?](http://jedenbod.cz/wp-content/uploads/2009/03/mnich-210x300.jpg)[/caption]
+[caption id="attachment_133" align="aligncenter" width="210" caption="Kde to skončí?"]![Kde to skončí?](/uploads/2009/03/mnich-210x300.jpg)[/caption]
 
 
 

@@ -30,15 +30,15 @@ tags:
 
 Pamatujete:
 
-[caption id="attachment_1166" align="aligncenter" width="570" caption="OBEY!"]![OBEY!](http://jedenbod.cz/wp-content/uploads/2011/07/img-570x571.jpg)[/caption]
+[caption id="attachment_1166" align="aligncenter" width="570" caption="OBEY!"]![OBEY!](/uploads/2011/07/img-570x571.jpg)[/caption]
 
 Není to tak dávno, kdy jsme byli nuceni mít _správný_ prohlížeč a _správné_ rozlišení.
 
 Potom jste museli žít ve _správné _zemi
 
-[caption id="attachment_1168" align="alignleft" width="250" caption="Sorry, bro!"]![Sorry, bro!](http://jedenbod.cz/wp-content/uploads/2011/07/youtube-not-available-in-your-country_thumb-250x151.jpg)[/caption]
+[caption id="attachment_1168" align="alignleft" width="250" caption="Sorry, bro!"]![Sorry, bro!](/uploads/2011/07/youtube-not-available-in-your-country_thumb-250x151.jpg)[/caption]
 
-[caption id="attachment_1169" align="alignright" width="270" caption="Pakuj se odsud!"]![Pakuj se odsud!](http://jedenbod.cz/wp-content/uploads/2011/07/spotify-300x144.jpg)[/caption]
+[caption id="attachment_1169" align="alignright" width="270" caption="Pakuj se odsud!"]![Pakuj se odsud!](/uploads/2011/07/spotify-300x144.jpg)[/caption]
 
 
 
@@ -64,7 +64,7 @@ Co třeba ještě sociální síť pro [instagram](http://instagr.am/)? A co tř
 
 Nemusím mít křišťálovou kouli, abych viděl, že tohle _nemůže _fungovat. **Uživatele** ((pozor, nemluvím o dojných kravách (ač se jedná o stejnou skupinu) - dojné krávy totiž vidí ti, kteří sledují imprese, followery, affilate registrace a konverze. Mluvím o skutečných lidech, kteří se potýkají s technikou)) to začne štvát. Doslova srát. Internet bude překombinovaná hovadina, kdy sledujete spousty lidí na různých kanálech. A na druhé straně spousta lidí interaguje s vámi. Takže jste kamarád s Honzou na Facebooku, on čte vaše Tweety a vy koukáte na jeho Instagram fotky - a ač je to fyzicky jeden člověk, jsou to 3 _různé_ profily na různých službách s různým stupněm interakce. Chápete kam mířím? Prostě opruz. Zmatek.
 
-![SRSS](http://jedenbod.cz/wp-content/uploads/2011/07/rss.jpg)
+![SRSS](/uploads/2011/07/rss.jpg)
 
 
 ## SRSS?

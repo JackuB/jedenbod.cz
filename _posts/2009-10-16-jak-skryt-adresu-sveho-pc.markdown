@@ -64,7 +64,7 @@ Obrana je opět, naštěstí, relativně snadná. Některé síťové karty umí
 
 Na internetu je IP adresa v podstatě vašim občanským průkazem. Říká o vás mnoho, proto je dobré ji chránit. Obrana je v tomto případě poněkud větší oříšek. Získat IP adresu uživatele není problém. Například [tento web](http://whatismyipaddress.com/) dokáže podle IP adresy většinou relativně přesně určit její pozici.
 
-[caption id="attachment_619" align="aligncenter" width="570" caption="Lokace podle IP adresy"]![Lokace podle IP adresy](http://jedenbod.cz/wp-content/uploads/2009/10/lokace-ip-adresy-570x268.PNG)[/caption]
+[caption id="attachment_619" align="aligncenter" width="570" caption="Lokace podle IP adresy"]![Lokace podle IP adresy](/uploads/2009/10/lokace-ip-adresy-570x268.PNG)[/caption]
 
 
 ### Základní ochrana přes webové proxy
@@ -96,7 +96,7 @@ Tor můžete používat jako plugin do Firefoxu, kdy po stisku jediného tlačí
 
 
 
-[caption id="attachment_625" align="aligncenter" width="570" caption="Tor, Privoxy a IE Proxy Changer"]![Tor, Privoxy a IE Proxy Changer](http://jedenbod.cz/wp-content/uploads/2009/10/tor-privoxy-proxy-changer-570x395.PNG)[/caption]
+[caption id="attachment_625" align="aligncenter" width="570" caption="Tor, Privoxy a IE Proxy Changer"]![Tor, Privoxy a IE Proxy Changer](/uploads/2009/10/tor-privoxy-proxy-changer-570x395.PNG)[/caption]
 
 Stačí spustit Tor a Privoxy a jako adresu proxy _(v nastavení připojení)_ nastavit:
 
@@ -106,7 +106,7 @@ Stačí spustit Tor a Privoxy a jako adresu proxy _(v nastavení připojení)_ n
 
 Já používám pro rychlou změnu proxy [IE Proxy Changer](http://www.allscoop.com/dotnet-software/proxy-changer.php) _(změna proxy v IE ovlivní nastavení mnoha programů - včetně Google Chrome)_. A výsledek?
 
-[caption id="attachment_631" align="aligncenter" width="570" caption="Nová IP adresa"]![Nová IP adresa](http://jedenbod.cz/wp-content/uploads/2009/10/nová-ip1-570x271.PNG)[/caption]
+[caption id="attachment_631" align="aligncenter" width="570" caption="Nová IP adresa"]![Nová IP adresa](/uploads/2009/10/nová-ip1-570x271.PNG)[/caption]
 
 Bohužel, jakousi _daň za bezpečnost_ platíte v podobě velmi malé rychlosti. Na druhou stranu jste však v podstatě nevystopovatelní.
 

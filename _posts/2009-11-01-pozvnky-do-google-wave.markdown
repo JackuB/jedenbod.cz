@@ -17,7 +17,7 @@ tags:
 
 Včera mi konečně dorazila pozvánka do Google Wave.
 
-![Pozvánka do Google Wave](http://jedenbod.cz/wp-content/uploads/2009/11/Pozvnka.jpg)
+![Pozvánka do Google Wave](/uploads/2009/11/Pozvnka.jpg)
 
 
 ## Co je to Google Wave?
@@ -65,7 +65,7 @@ Neumím si však přestavit, že by Google Wave nahradil _(byť částečně) _e
 
 Mám ještě několik pozvánek a nevím komu je poslat…
 
-![Pozvánky](http://jedenbod.cz/wp-content/uploads/2009/11/Pozvnky.jpg)**Jestli o jednu máte zájem, napište mi do komentářů **[**Haiku**](http://cs.wikipedia.org/wiki/Haiku) _(stačí česky) __(email stačí vyplnit do pole email, nemusíte jej vkládat do komentáře)_, proč byste ji měli dostat. Počet je omezen.
+![Pozvánky](/uploads/2009/11/Pozvnky.jpg)**Jestli o jednu máte zájem, napište mi do komentářů **[**Haiku**](http://cs.wikipedia.org/wiki/Haiku) _(stačí česky) __(email stačí vyplnit do pole email, nemusíte jej vkládat do komentáře)_, proč byste ji měli dostat. Počet je omezen.
 
 Bude aktualizováno – **Zbývá: 12**
 

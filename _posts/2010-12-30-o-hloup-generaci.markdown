@@ -91,7 +91,7 @@ Mozek nové - nativně digitální - generace, **neměl čas změnit princip sv�
 
 [Eskapismus](http://cs.wikipedia.org/wiki/Eskapismus) **do světa postaveného na logických základech, s jasně danými pravidly a možnostmi, je přirozenější stádium bytí, protože takový svět mozek stále očekává.** World of Warcraft i jiné_ (méně populární)_ sekundární světy staví na **mytologii **- mytologii, kterou náš mozek ještě nedávno _(několik tisíc let)_ považoval za _Realitu_. Původně sekundární/virtuální světy, které měly sloužit jako nadstavba reality, slouží nyní jako náhražka staré-reality.
 
-![J R R Tolkien](http://jedenbod.cz/wp-content/uploads/2010/12/3247205-570x383.jpg)
+![J R R Tolkien](/uploads/2010/12/3247205-570x383.jpg)
 
 
 > Fantasy is escapist, and that is its glory. If a soldier is imprisioned by the enemy, don't we consider it his duty to escape?
@@ -139,7 +139,7 @@ Další možností vyrovnání se s kvantem obsahu je **škálování**. Jednodu
 
 
 
-  * **umělé inteligence** - díky tomu, ![Škálovatelnost - Mapy](http://jedenbod.cz/wp-content/uploads/2010/12/skalovatelnost-mapy.jpg)že dnešní zpravodajské servery používají většinou podobný styl i strukturu zpráv – ty jsou přejímány od tiskových agentur a následně předělány do pyramidy (_nejdůležitější informace nahoře, méně důležité dole, aby mohlo dojít k případnému zkrácení posledních odstavců editorem, aniž by se ztratila nějaké důležitá zpráva)_ jsou možnosti nasazení umělé inteligence značně zjednodušené. Umělá inteligence by mohla sumarizovat celé kauzy a vkládat je do kontextů (časoprostorových, individuálních_ (i kdyby pouhým hyperlinkovým provázáním na osobu ve zprávě)_ apod.)
+  * **umělé inteligence** - díky tomu, ![Škálovatelnost - Mapy](/uploads/2010/12/skalovatelnost-mapy.jpg)že dnešní zpravodajské servery používají většinou podobný styl i strukturu zpráv – ty jsou přejímány od tiskových agentur a následně předělány do pyramidy (_nejdůležitější informace nahoře, méně důležité dole, aby mohlo dojít k případnému zkrácení posledních odstavců editorem, aniž by se ztratila nějaké důležitá zpráva)_ jsou možnosti nasazení umělé inteligence značně zjednodušené. Umělá inteligence by mohla sumarizovat celé kauzy a vkládat je do kontextů (časoprostorových, individuálních_ (i kdyby pouhým hyperlinkovým provázáním na osobu ve zprávě)_ apod.)
 
 
   * či **kolektivní inteligence** – zde by bylo praktické nasazení komplikovanější, protože se může často jednat o citlivá témata (zkuste si namátkou přečíst diskuzi na jakémkoliv českém zpravodajském serveru)

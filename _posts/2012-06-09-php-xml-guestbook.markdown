@@ -56,4 +56,4 @@ K nahlédnutí je na **[http://jedenbod.cz/gb/](http://jedenbod.cz/gb/)**
 
 
 
-[![PHP / XML Guestbook bez databáze](http://jedenbod.cz/wp-content/uploads/2012/06/guestbook-570x373.png)](http://jedenbod.cz/gb/)
+[![PHP / XML Guestbook bez databáze](/uploads/2012/06/guestbook-570x373.png)](http://jedenbod.cz/gb/)

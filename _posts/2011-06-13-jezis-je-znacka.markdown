@@ -20,7 +20,7 @@ tags:
 
 Zajímalo by mě, jestli se více prodává Ježíš-mučedník, Ježíš-vtipálek nebo Ježíš-"Cool Hand Luke edition"...
 
-![Jesus: Kids edition](http://jedenbod.cz/wp-content/uploads/2011/06/jesus-fucking-christ.jpg)
+![Jesus: Kids edition](/uploads/2011/06/jesus-fucking-christ.jpg)
 
 Fotky z různých _dětských Biblí_
 

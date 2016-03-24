@@ -24,12 +24,12 @@ Vydal jsem aktualizovanou verzi článku: [Jak smazat účet na Facebooku (reviz
 
 
 
-Nedávno jsem se chtěl zbavit svého účtu na [Facebooku](http://www.facebook.com). Nejsem totiž zrovna velký fanoušek **Facebooku** a socializací obecně, hlavně kvůli aktuální módní vlně s ním spojené.
+Nedávno jsem se chtěl zbavit svého účtu na [Facebooku](http://www.facebook.com).
 
 
 
 
-[caption id="attachment_50" align="aligncenter" width="487" caption="Smazaný účet na Facebook.com"]![Smazaný účet na Facebook.com](http://jedenbod.cz/wp-content/uploads/2009/03/delete.png)[/caption]
+![Smazaný účet na Facebook.com](/uploads/2009/03/delete.png)
 
 
 
@@ -43,7 +43,7 @@ Nedávno jsem se chtěl zbavit svého účtu na [Facebooku](http://www.facebook.
 
 
 
-[caption id="attachment_46" align="aligncenter" width="561" caption="Deaktivovat účet na Facebooku"]![Deaktivovat účet na Facebooku](http://jedenbod.cz/wp-content/uploads/2009/03/deaktivace.png)[/caption]
+![Deaktivovat účet na Facebooku](/uploads/2009/03/deaktivace.png)
 
 
 
@@ -57,7 +57,7 @@ Bohužel, všichni víme, jak se **Facebook** chová k osobním datům. Bylo o t
 
 
 
-[caption id="attachment_49" align="aligncenter" width="551" caption="Vypnutí emailových upozornění"]![Vypnutí emailových upozornění](http://jedenbod.cz/wp-content/uploads/2009/03/vypnuto.png)[/caption]
+![Vypnutí emailových upozornění](/uploads/2009/03/vypnuto.png)
 
 
 

@@ -50,7 +50,7 @@ Na jednu stranu se jedná o úžasnou příležitost pro kybertext - kulturní o
 
 Představuji vám Mamray - absolutní platforma sdílení lidských dat. Decentralizovaná, bezpečná, neomylná. Služby jako **Pinterest **možná ukazují cestu - embedování informace. Kopírování nic neznamená. Je přečtení bráno za vytvoření kopie? Technicky ano, jakýkoliv _text _se někam nakopíruje. Alespoň do RAM. Každý přístup znamená kopii. Která sice zmizí, ale možná nemusí.
 
-[caption id="attachment_1422" align="aligncenter" width="570"]![Everything is a copy of a copy of a copy.](http://jedenbod.cz/wp-content/uploads/2012/05/fight_club_edward_norton_3-570x239.jpg) Everything is a copy of a copy of a copy.[/caption]
+[caption id="attachment_1422" align="aligncenter" width="570"]![Everything is a copy of a copy of a copy.](/uploads/2012/05/fight_club_edward_norton_3-570x239.jpg) Everything is a copy of a copy of a copy.[/caption]
 
 Proč Haylesová na začátku? Jestliže díky _cloudu_ přestáváme být závislí na fyzickém stroji (( vždyť _i Windows 8_ bude v základní verzi obsahovat synchronizaci přes SkyDrive. Po přihlášení na jiném PC se vám přenesou soubory z _cloudu_. )) Dostáváme se zpět k terminálové technologii. _Nezáleží nám na fyzické stránce našeho virtuálna._ Je načase přestat být _závislý na informacích_. Přestat kopírovat kopírované. Nemít možnost remixovat. Zapomínat. **Absolutní datový systém Mamray počítá s vytvořením lidského informačního fondu.** Memetický genofond. Transcendentální systém pro cestování věděním a časem. Veškeré informace a zdroje jsou decentralizovaně a rozeseté po síti. Jedná se o nový informační věk.
 
@@ -74,7 +74,7 @@ Mamray nás rychle zbaví konceptu duševního vlastnictví. Díky sdílenému f
 
 Věříme v nadřazený server, kam předáme vše. [Věříme v rozšiřování kapacit, neomezená data.](http://www.spacemonkey.com/) Vrací se jasné vymezení mezi terminálem a serverem. Vracíme se k náboženskému uspořádání světa. Je načase přestat být _závislý na informacích_. V budoucnosti zapomeňte na singularitu. Zapomeňte na nesmrtelnost z ní plynoucí. Budeme se mnohem více bavit o _kontrole_.
 
-![Brian O'Blivion](http://jedenbod.cz/wp-content/uploads/2012/05/videodrome-brian-570x349.png)
+![Brian O'Blivion](/uploads/2012/05/videodrome-brian-570x349.png)
 
 Kontrola hladiny informací. 21. století ji patří.
 Mamray je utopie i má noční můra. Obsah bez formy.

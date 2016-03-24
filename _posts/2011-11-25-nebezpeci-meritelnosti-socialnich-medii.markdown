@@ -40,7 +40,7 @@ tags:
 
 Elektronická média nám dala zajímavou možnost - _komputace lidských životů_. Jakkoliv složitě vypadající chaos je jen komplexní systém. Lidská společnost je právě takový komplexní systém. Už nějakou dobu víme, že není zase tak jednoduché ji ovládat - teorie magické střely prostě nefunguje. Podprahová reklama nefunguje. Hypnóza nefunguje. Illumináti nás neovládají. Jsme vázáni na mnohem komplikovanější a komplexnější vztahy se světem. Sami je nechápeme, protože žijeme v rozštěpených realitách a filtračních bublinách.
 
-![brainwave self hypnosis](http://jedenbod.cz/wp-content/uploads/2011/11/brainwave.jpg)
+![brainwave self hypnosis](/uploads/2011/11/brainwave.jpg)
 
 [Human dynamics lab](http://hd.media.mit.edu/) nás přesvědčuje, že můžeme pomocí [reality mining předvídat pohyb lidí](http://www.technologyreview.com/read_article.aspx?ch=specialsections&sc=emerging08&id=20247). [Nautilus](http://www.sciencedaily.com/releases/2011/09/110906144602.htm) nás přesvědčuje, že **můžeme předvídat sociální změny a důležité události** - samozřejmě kromě černých labutí. Nautilus není jediný počítač svého druhu - ten krásný hypotetický model, kdy lidstvo něco očekává… zkrátka podmíněná věštba.
 
@@ -50,7 +50,7 @@ Elektronická média nám dala zajímavou možnost - _komputace lidských život
 
 Když se zaposloucháte do zpráv o Arabském jaru a hnutích jako **Occupy Wall Street** nebo **Take the square**, uslyšíte, jak při organizaci protestů pomohla sociální média. Kyber-optimismus 80. a 90. let _(o opravdové demokracii, lepším životě apod.)_ už je pryč - ale sociální média se stále považují za něco vyloženě přínosného pro utlačované občany.
 
-[caption id="attachment_1247" align="aligncenter" width="570" caption="#OWS"][![#OWS](http://jedenbod.cz/wp-content/uploads/2011/11/bp20-570x380.jpg)](http://www.boston.com/bigpicture/2011/10/occupy_wall_street_global_prot.html)[/caption]
+[caption id="attachment_1247" align="aligncenter" width="570" caption="#OWS"][![#OWS](/uploads/2011/11/bp20-570x380.jpg)](http://www.boston.com/bigpicture/2011/10/occupy_wall_street_global_prot.html)[/caption]
 
 Podle kritiků takového přístupu ((jako Evgeny Morozov a jeho The Net Delusion)) můžou být sociální média používána jak protestujícími tak vládou. **V dlouhodobém měřítku jsou sociální média pro protivládní protesty zdrcující zbraní v rukou státu.**
 

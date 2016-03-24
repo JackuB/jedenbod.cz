@@ -26,7 +26,7 @@ tags:
 
 Na žádost [Bystroushaaka](http://kitakitsune.org/) přidávám seminární práci o cypherpunku.
 
-Pokud ji vážně hodláte číst doporučuji [PDF verzi](http://jedenbod.cz/wp-content/uploads/2011/12/Crypto.pdf) (je hezčí).
+Pokud ji vážně hodláte číst doporučuji [PDF verzi](/uploads/2011/12/Crypto.pdf) (je hezčí).
 
 Pokud ji _vážně_ budete číst, berte na vědomí,
 
@@ -87,7 +87,7 @@ Větší zvrat nastává s příchodem druhé světové války. V této době ji
 
 Od druhé světové války byly na tvorbu šifer (především v USA) vydávány obrovské sumy vládních peněz ((History of cryptography. In Wikipedia : the free encyclopedia [online]. St. Petersburg (Florida) : Wikipedia Foundation, [cit. 2011-06-20]. Dostupné z WWW: <http://en.wikipedia.org/wiki/History_of_cryptography>.)). Do kryptografie investuje především námořnictvo a tajná služba. V roce 1949 vzniká útvar AFSA (Armed Forces Security Agency), předchůdce dnešní National Security Agency (NSA), založené v roce 1952. V roce 1949 se však stala ještě jedna důležitá věc – vyšla kniha Communication Theory of Secrecy Systems ((SHANNON, Claude. Communication Theory of Secrecy Systems. New Jersey : Bell Labs, 1949. 60 s.)). Claude Shannon – „otec informačních technologií“ pracoval během Druhé světové války na projektech spojených s kryptografií a binární logikou. Jeho návrh řešení problémů booleanovy logiky v binárních systémech se stal základem pro práci pozdějších matematiků. Jeho práce je považována za počátek moderní kryptografie. Shannon navrhuje využití informačních technologií ((Je v tomto ohledu důležité si uvědomit v jaké fázi vývoje byly informační systémy v roce 1949)) pro lepší šifrování. Jeho výsledky velmi zaujaly AFSA – a tak se počítalo s tím, že (digitální) šifrování bude primárně armádní záležitostí. A skutečně tomu tak bylo – nejpokročilejší šifrování měla americká NSA a britská GCHQ (Government Communications Headquarters).
 
-![Shh](http://jedenbod.cz/wp-content/uploads/2011/12/0905-shh-dont-tell-sm1.jpg)
+![Shh](/uploads/2011/12/0905-shh-dont-tell-sm1.jpg)
 
 Polovina 70. let však přinesla změnu, kterou pociťujeme až dodnes. Nejdříve v roce 1976 vznikl Data Encryption Standard ((SMID, Miles; BRANSTAD, Dennis. The Data Encryption Standard : Past and Future. Proceedings of the IEEE. 1988, s. 43-65.)) – veřejná šifra vyvinutá IBM a propagovaná vládou a Národním institutem standardů a technologie. Bohužel se nikdy ve velkém neuchytila ((Používala se pouze asi do poloviny 80. let)), částečně také ze strachu z backdooru ((Nedokumentovaná cesta, jak napadnout systém. V případě DES byl problém v _podezřelých _code blocích)), který by do ní teoreticky mohla umístit NSA, aby měla přístup k zašifrovaným datům. Důležité bylo, že sama vláda prosazovala standardizovanou šifru pro privátní sektor. Sama vláda chtěla, aby si občané alespoň nějak svá data (jako firemní tajemství atd.) šifrovali.
 
@@ -154,7 +154,7 @@ Eric Hughes - Cypherpunk’s manifesto
 
 _„Cypherpunks write code“_se stalo jakýmsi heslem cypherpunkerů. Další důležitý text vycházející z cypherpunkerské ideologie je Assassination politics ((BELL, Jim. Outpost of Freedom [online]. 1997 [cit. 2011-06-14]. Assassination Politics. Dostupné z WWW: <http://www.outpost-of-freedom.com/jimbellap.htm>.)). Assassination politics Jima Bella je zajímavý myšlenkový experiment, který počítá se vznikem anonymního ((S použitím anonymních platebních metod, aby nebylo možno vystopovat účastníky)) _Dead Poolu_ ((Seznam lidí, u kterých „tipujete“ kdy zemřou. Správné uhádnutí se rovná výhře.)), který nám v konečném důsledku má přinést otevřenou společnost, minimální stát apod. Zajímavostí je, že vznikl také pornofilm, který vyšel v malém nákladu a pro cypherpunkery – Cryptic seduction ((Mail-archive.com [online]. 2000 [cit. 2011-05-30]. CRYPTIC SEDUCTION -- CYPHERPUNK SPECIAL. Dostupné z WWW: <http://www.mail-archive.com/cypherpunks@algebra.com/msg04068.html>.)). Podle popisu je rozdíl mezi klasickým porno filmem a krypto porno filmem například v několika odkazech k backdoorům ((ORLOWSKI, Andrew. The Register [online]. 2002 [cit. 2011-05-30]. Alice, Bob and Eve too. Dostupné z WWW: <http://www.theregister.co.uk/2002/03/16/alice_bob_and_eve/>.)).
 
-![WIRED - Crypto Rebels](http://jedenbod.cz/wp-content/uploads/2011/12/Image-570x427.jpg)
+![WIRED - Crypto Rebels](/uploads/2011/12/Image-570x427.jpg)
 
 Důležitým bodem byl také článek Crypto Rebels ((LEVY, Steven. Crypto Rebels. Wired 1.02. 1993, 1, 2. Dostupný také z WWW: <http://www.wired.com/wired/archive/1.02/crypto.rebels_pr.html>.)) v tehdy začínajícím časopisu Wired – který cypherpunkerům přinesl větší podporu veřejnosti. Je to obsáhlý článek osvětlující důvody a způsob jejich vzniku. Obsahuje také vyjádření NSA k cypherpunkerům, informace o zatčení Johna Gillmora nebo zamyšlení nad budoucností cypherpunkerů v době přicházejících mobilních telefonů.
 
@@ -247,7 +247,7 @@ Jak stručně zhodnotit uplynulých 20 let cypherpunku?
 Cypherpunkerům se rozhodně povedlo, alespoň částečně, zvrátit tlak NSA (i jiných vládních agentur) o omezení kryptografických nástrojů dostupných pro veřejnost ((Dnešní šifry nemají vládní backdoory, ani není limitované jejich použití nebo vývoz.)). Nezanedbatelný je také jejich přínos v ohledu ochrany soukromí na webu. Dalším podstatným důsledkem je tvorba ideového základu pro práce jako Assasination politics nebo WikiLeaks. Bez cypherpunkerů by nevznikla tato nová vlna digitálních revolucionářů, jako je Julian Assange.
 
 
-![](http://jedenbod.cz/wp-content/uploads/2011/12/assange.png)
+![](/uploads/2011/12/assange.png)
 
 
 Nesmíme zapomínat také na to, že heslo cypherpunkerů bylo: „We write code“ – a tak také činili. Cypherpunk nebyl pouze myšlenkovým experimentem nebo kecacím pláckem. Během let vzniklo mnoho projektů, od malých a zaměřených přímo na odbornou komunitu ((Jako různé druhy pokročilých anonymních remailerů)), až po velmi praktické projekty s obrovským dopadem. Kupříkladu PGP ((Pretty good privacy – velmi populární program pro použití asymetrických klíčů – sice vyvinutý už na počátku 90. let, ale s myšlením blízkým cypherpunkerům.)), Tor a v poslední době BitCoin ((Systém anonymní měny – podobné, jakou popisoval Jim Bell ve své Assasination politics)).

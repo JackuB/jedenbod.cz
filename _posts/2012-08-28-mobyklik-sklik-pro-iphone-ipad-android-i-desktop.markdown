@@ -23,7 +23,7 @@ tags:
 - Windows Phone
 ---
 
-[![Sklik.cz pro iPhone, iPad, Android, Windows, Linux, OS X](http://jedenbod.cz/wp-content/uploads/2012/08/mobyklik2-570x236.jpg)](http://mobyklik.jedenbod.cz/)
+[![Sklik.cz pro iPhone, iPad, Android, Windows, Linux, OS X](/uploads/2012/08/mobyklik2-570x236.jpg)](http://mobyklik.jedenbod.cz/)
 
 Mobyklik se naučil vypisovat reklamy a pracovat s dalšími systémy. Takže je nyní otevřený nejen iOS, ale i Androidu, Windows Phone, ale hlavně desktopům.
 

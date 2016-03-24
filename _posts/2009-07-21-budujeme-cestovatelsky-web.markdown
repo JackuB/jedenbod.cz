@@ -118,7 +118,7 @@ Kdykoliv vyfotím nějakou povedenou fotku, nastavím ji jako pozadí na blogu i
 
 ##
 
-[caption id="attachment_423" align="aligncenter" width="570" caption="Měsíc v UK"][![Měsíc v UK](http://jedenbod.cz/wp-content/uploads/2009/07/mesicvuk-570x478.jpg)](http://uk.jedenbod.cz/)[/caption]
+[caption id="attachment_423" align="aligncenter" width="570" caption="Měsíc v UK"][![Měsíc v UK](/uploads/2009/07/mesicvuk-570x478.jpg)](http://uk.jedenbod.cz/)[/caption]
 
 
 Na výsledek se [podívejte](http://uk.jedenbod.cz/) sami.

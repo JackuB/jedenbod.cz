@@ -35,7 +35,7 @@ V hlavním okně Windows Live Writeru zvolte **Nástroje –> Účty**. Otevře 
 
 
 
-![Možnosti Writeru](http://jedenbod.cz/wp-content/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/01.png)
+![Možnosti Writeru](/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/01.png)
 
 
 
@@ -43,7 +43,7 @@ Zde si vyberte svůj blog a zvolte **Upravit**.
 
 
 
-![Konfigurace](http://jedenbod.cz/wp-content/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/02.png)
+![Konfigurace](/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/02.png)
 
 
 
@@ -51,7 +51,7 @@ V dalším okně vyberte záložku **Obrázky** a **Odeslat obrázky na server F
 
 
 
-![Nastavení FTP](http://jedenbod.cz/wp-content/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/03.png)
+![Nastavení FTP](/uploads/livewriter/eenchybovhlkyvWindowsLiveWriteru_133B6/03.png)
 
 
 

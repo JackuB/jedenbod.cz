@@ -17,4 +17,4 @@ tags:
 
 Tyhle zbraně musely figurovat už ve stovkách vražd...
 
-![Ilustrační foto](http://jedenbod.cz/wp-content/uploads/2012/07/pistole-570x190.png)
+![Ilustrační foto](/uploads/2012/07/pistole-570x190.png)

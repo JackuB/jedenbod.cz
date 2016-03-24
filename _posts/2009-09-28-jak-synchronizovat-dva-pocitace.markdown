@@ -32,7 +32,7 @@ Pokud máte dva nebo více počítačů, určitě víte, jaký občas bývá pro
 
 Na notebooku máte starší verzi několika dokumentů, ale na velkém PC zase nemáte fotky, které jste nafotili včera a dali je jen na notebook. Časem v tom budete mít _bordel_. Manuální aktualizace jsou zkrátka nepohodlné, nepraktické a neefektivní.
 
-Když jsem se poprvé setkal s tímto![Live Mesh preview](http://jedenbod.cz/wp-content/uploads/2009/09/live-mesh-preview.jpg) problémem neaktuálnosti, doufal jsem, že mi Google poradí mnoho různých kvalitních synchronizačních nástrojů. Bohužel, skoro všechny jsou k ničemu. Předem říkám, neexistuje skutečně kvalitní synchronizační nástroj. Skutečně, je to rána, ale není nic s čím bych byl skutečně spokojen. Ale buďme rádi alespoň za těch několik kvalitních.
+Když jsem se poprvé setkal s tímto![Live Mesh preview](/uploads/2009/09/live-mesh-preview.jpg) problémem neaktuálnosti, doufal jsem, že mi Google poradí mnoho různých kvalitních synchronizačních nástrojů. Bohužel, skoro všechny jsou k ničemu. Předem říkám, neexistuje skutečně kvalitní synchronizační nástroj. Skutečně, je to rána, ale není nic s čím bych byl skutečně spokojen. Ale buďme rádi alespoň za těch několik kvalitních.
 
 
 ## Trocha teorie
@@ -83,7 +83,7 @@ Mít vše online.
 
 Díky [gOS](http://www.thinkgos.com), [G.ho.st](http://g.ho.st/) nebo [Google Docs](http://docs.google.com/) si můžete být jisti, že dokumenty se kterými pracujete, jsou aktuální. Nevýhoda je zřejmá - žádný internet, žádné dokumenty.
 
-[caption id="attachment_584" align="aligncenter" width="570" caption="G.ho.st"]![G.ho.st](http://jedenbod.cz/wp-content/uploads/2009/09/ghost-570x442.jpg)[/caption]
+[caption id="attachment_584" align="aligncenter" width="570" caption="G.ho.st"]![G.ho.st](/uploads/2009/09/ghost-570x442.jpg)[/caption]
 
 
 ## Synchronizujeme menší data - dokumenty
@@ -91,11 +91,11 @@ Díky [gOS](http://www.thinkgos.com), [G.ho.st](http://g.ho.st/) nebo [Google Do
 
 Nejlepší volbou pro snadné a rychlé synchronizování menšího objemu dat je [Live Mesh](http://www.mesh.com) od Microsoftu. Dokáže synchronizovat složku mezi několika PC a online úložištěm - **Live Desktop**, takže se k souborům kdykoliv dostanete i z jiného PC.
 
-[caption id="attachment_585" align="aligncenter" width="570" caption="Live Mesh Beta"]![Live Mesh Beta](http://jedenbod.cz/wp-content/uploads/2009/09/live-mesh-570x441.jpg)[/caption]
+[caption id="attachment_585" align="aligncenter" width="570" caption="Live Mesh Beta"]![Live Mesh Beta](/uploads/2009/09/live-mesh-570x441.jpg)[/caption]
 
 Do každého PC, které chcete synchronizovat, nainstalujete malou aplikaci, která se o vše postará automaticky a na pozadí. Výhodou je, že díky Live Desktop ani nemusí být druhé synchronizované PC online.
 
-![Live Mesh Beta](http://jedenbod.cz/wp-content/uploads/2009/09/live-mesh-taskbar.PNG)
+![Live Mesh Beta](/uploads/2009/09/live-mesh-taskbar.PNG)
 
 Nejlepší řešení je v rámci Dokumentů vytvořit složku, kterou chcete mít synchronizovanou a do ní pak ukládat vše důležité.
 
@@ -113,13 +113,13 @@ Tady je už synchronizace přes internet vyloučena. Přenášet desítky gigaba
 
 Zde musíme přistoupit k síťovému _([LAN](http://cs.wikipedia.org/wiki/Local_Area_Network)) _připojení. Stačí použít síťový kabel [RJ-45](http://cs.wikipedia.org/wiki/RJ-45). Ten koupíte všude, kde se prodává něco s technikou.
 
-[caption id="attachment_601" align="aligncenter" width="570" caption="RJ-45"][![RJ-45](http://jedenbod.cz/wp-content/uploads/2009/09/rj45-570x313.jpg)](http://cs.wikipedia.org/wiki/RJ-45)[/caption]
+[caption id="attachment_601" align="aligncenter" width="570" caption="RJ-45"][![RJ-45](/uploads/2009/09/rj45-570x313.jpg)](http://cs.wikipedia.org/wiki/RJ-45)[/caption]
 
 Pro základní synchronizaci, stačí soubory pouze zkopírovat po síti, ale pokud hledáte poněkud sofistikovanější způsob, který zkontroluje verze souborů, je tady [GoodSync](http://www.goodsync.com/).
 
 Vyberete pouze cesty k synchronizovaným složkám a stisknete _Sync_. [GoodSync](http://www.goodsync.com/) automaticky porovná verze _(čas poslední změny)_ a vše synchronizuje.
 
-[caption id="attachment_605" align="aligncenter" width="570" caption="GoodSync"]![GoodSync](http://jedenbod.cz/wp-content/uploads/2009/09/sync2.jpg)[/caption]
+[caption id="attachment_605" align="aligncenter" width="570" caption="GoodSync"]![GoodSync](/uploads/2009/09/sync2.jpg)[/caption]
 
 
 Například první synchronizace mé hudební knihovny _(skoro 50 Gb a 11 000 souborů)_ trvala něco málo přes hodinu a půl. Příště už bude čas znatelně kratší, protože se budou přenášet jen nové skladby.
@@ -127,7 +127,7 @@ Například první synchronizace mé hudební knihovny _(skoro 50 Gb a 11 000 so
 
 
 
-![GoodSync](http://jedenbod.cz/wp-content/uploads/2009/09/good-sync.PNG)
+![GoodSync](/uploads/2009/09/good-sync.PNG)
 
 
 

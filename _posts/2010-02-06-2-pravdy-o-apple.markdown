@@ -23,7 +23,7 @@ tags:
 
 _To, co nevidí lidé bez Apple_
 
-![Apple iMac](http://jedenbod.cz/wp-content/uploads/2010/02/Apple-imac-new-217x250.jpg)**Produkty Apple jsou skvělé.** iPody změnily to, jak lidé vnímají a konzumují hudbu. iMacy udělaly z počítačů také módní doplňky. iPhone změnil trh s mobilními telefony.
+![Apple iMac](/uploads/2010/02/Apple-imac-new-217x250.jpg)**Produkty Apple jsou skvělé.** iPody změnily to, jak lidé vnímají a konzumují hudbu. iMacy udělaly z počítačů také módní doplňky. iPhone změnil trh s mobilními telefony.
 
 **Přitom to nebyly úplně nové koncepty ani přístroje.** MP3 přehrávače existovaly dávno před iPodem. Notebooky existovaly před iBooky. Telefonovalo se i před iPhonem. Apple však umí dávat svým výrobkům vysoký need-faktor. Mohl by jinak prodávat často neůměrně předražený hardware?
 
@@ -33,7 +33,7 @@ A teď nemluvím o marketingu, ale o tom, že se jejich výrobky skutečně dob
 
 Ve vesmíru Apple je vše naleštěné a funguje snadno a intuitivně. _Pokud platíte..._
 
-_![iPhone 3GS](http://jedenbod.cz/wp-content/uploads/2010/02/iphone3gs_3up1-570x380.jpg)_
+_![iPhone 3GS](/uploads/2010/02/iphone3gs_3up1-570x380.jpg)_
 
 
 ## 2, Apple = Kapitalismus
@@ -41,13 +41,13 @@ _![iPhone 3GS](http://jedenbod.cz/wp-content/uploads/2010/02/iphone3gs_3up1-570x
 
 _To, co nevidí lidé s Apple_
 
-![Apple logo](http://jedenbod.cz/wp-content/uploads/2010/02/Apple_logo.jpg)Naopak, mnoho lidí nevidí, že **Apple je korporace**. Korporace která musí vydělávat. Apple neexistuje pro zlepšení poměrů na zemi ani pro světový mír. **Apple existuje jen pro zisk.** Nic jiného ho nezajímá.
+![Apple logo](/uploads/2010/02/Apple_logo.jpg)Naopak, mnoho lidí nevidí, že **Apple je korporace**. Korporace která musí vydělávat. Apple neexistuje pro zlepšení poměrů na zemi ani pro světový mír. **Apple existuje jen pro zisk.** Nic jiného ho nezajímá.
 
 Pokud to bude dobré pro zisk, Apple bude dál dělat to co dělá teď - tvářit se přátelsky a vytvářet nová zařízení.
 
 To co je špatné pro zisk, Apple nikdy neudělá - například přiznat chybu. Tento [thread na fóru Apple o problémech s Wifi na iPhone 3G a 3GS](http://discussions.apple.com/thread.jspa?threadID=2044754&tstart=0) má přes 350 000 zhlédnutí a více než 1500 postů. Připočítejte k tomu [velké množství dalších fór a zpráv](http://www.google.com/search?hl=cs&safe=off&q=iphone+wifi+problem&btnG=Hledat&lr=&aq=f&oq=), včetně diskuzí k nim. Apple se k problému nikdy nevyjádřil, i když se ukázalo, že problém způsobila chyba ve firmware. Apple místo toho jen mění poškozené iPhone za [refurbished](http://en.wikipedia.org/wiki/Refurbishment_(electronics)) telefony.
 
-![Apple = Kapitalismus](http://jedenbod.cz/wp-content/uploads/2010/02/apple_money.jpg)
+![Apple = Kapitalismus](/uploads/2010/02/apple_money.jpg)
 
 
 ## Konkluze

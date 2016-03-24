@@ -33,7 +33,7 @@ Paralaxní skrolování není vůbec nic nového:
 
 
 
-[![](http://jedenbod.cz/wp-content/uploads/livewriter/ParalaxnskrolujcpozadpomocCSSajQuery_FF1D/video2e8e43ffa0a2.jpg)](http://www.youtube.com/watch?v=4vN9h7N-z_E)
+[![](/uploads/livewriter/ParalaxnskrolujcpozadpomocCSSajQuery_FF1D/video2e8e43ffa0a2.jpg)](http://www.youtube.com/watch?v=4vN9h7N-z_E)
 
 
 

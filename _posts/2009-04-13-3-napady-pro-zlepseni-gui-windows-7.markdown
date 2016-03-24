@@ -28,7 +28,7 @@ Přicházející **Windows 7** nejspíše bude jeden z nejlepších systémů, j
 
 
 
-[caption id="attachment_161" align="aligncenter" width="300" caption="Windows 7"][![Windows 7](http://jedenbod.cz/wp-content/uploads/2009/04/windows7-300x240.jpg)](http://jedenbod.cz/wp-content/uploads/2009/04/windows7.jpg)[/caption]
+[caption id="attachment_161" align="aligncenter" width="300" caption="Windows 7"][![Windows 7](/uploads/2009/04/windows7-300x240.jpg)](/uploads/2009/04/windows7.jpg)[/caption]
 
 
 
@@ -82,7 +82,7 @@ Jednou z možností jsou virtuální plochy. Ale ouvej. Kdo s nimi déle pracova
 
 
 
-[caption id="attachment_154" align="aligncenter" width="400" caption="Virtuální plochy"]![Virtuální plochy](http://jedenbod.cz/wp-content/uploads/2009/04/virtualni-plochy.jpg)[/caption]
+[caption id="attachment_154" align="aligncenter" width="400" caption="Virtuální plochy"]![Virtuální plochy](/uploads/2009/04/virtualni-plochy.jpg)[/caption]
 
 
 
@@ -95,7 +95,7 @@ Co takhle mít více prostoru, aniž by bylo nutné měnit/přidávat monitor ne
 
 
 
-[caption id="attachment_155" align="aligncenter" width="292" caption="Expanzivní virtuální plocha"]![Expanzivní virtuální plocha](http://jedenbod.cz/wp-content/uploads/2009/04/exp-virt-plocha1.jpg)[/caption]
+[caption id="attachment_155" align="aligncenter" width="292" caption="Expanzivní virtuální plocha"]![Expanzivní virtuální plocha](/uploads/2009/04/exp-virt-plocha1.jpg)[/caption]
 
 
 
@@ -137,7 +137,7 @@ Miniaplikace, běžící nejspíše v nějakém rohu obrazovky. Ukazovala by roz
 
 
 
-[caption id="attachment_162" align="aligncenter" width="300" caption="Minimapa"][![Minimapa](http://jedenbod.cz/wp-content/uploads/2009/04/exp-virt-plocha-minimapa-300x240.jpg)](http://jedenbod.cz/wp-content/uploads/2009/04/exp-virt-plocha-minimapa.jpg)[/caption]
+[caption id="attachment_162" align="aligncenter" width="300" caption="Minimapa"][![Minimapa](/uploads/2009/04/exp-virt-plocha-minimapa-300x240.jpg)](/uploads/2009/04/exp-virt-plocha-minimapa.jpg)[/caption]
 
 
 
@@ -189,7 +189,7 @@ Na **taskbar **se postupem času nabaluje čím dál více ikon. Některé použ
 
 
 
-[caption id="attachment_166" align="aligncenter" width="300" caption="Taskbar"][![Taskbar](http://jedenbod.cz/wp-content/uploads/2009/04/heatmap-taskbar-300x23.jpg)](http://jedenbod.cz/wp-content/uploads/2009/04/heatmap-taskbar.jpg)[/caption]
+[caption id="attachment_166" align="aligncenter" width="300" caption="Taskbar"][![Taskbar](/uploads/2009/04/heatmap-taskbar-300x23.jpg)](/uploads/2009/04/heatmap-taskbar.jpg)[/caption]
 
 
 
@@ -222,7 +222,7 @@ Osobně mi příjde potenciál Start menu dost nevyužitý. Spíše bych ho vid�
 
 
 
-[caption id="attachment_168" align="aligncenter" width="300" caption="Windows 7 Getting Started"][![Windows 7 Getting Started](http://jedenbod.cz/wp-content/uploads/2009/04/getting-started-300x240.jpg)](http://jedenbod.cz/wp-content/uploads/2009/04/getting-started.jpg)[/caption]
+[caption id="attachment_168" align="aligncenter" width="300" caption="Windows 7 Getting Started"][![Windows 7 Getting Started](/uploads/2009/04/getting-started-300x240.jpg)](/uploads/2009/04/getting-started.jpg)[/caption]
 
 
 
@@ -230,7 +230,7 @@ _Welcome Screen/Getting Started _vám nedává moc možností, ale směřuje to 
 
 
 
-[caption id="attachment_171" align="aligncenter" width="426" caption="Windows 7 Start Menu"]![Windows 7 Start Menu](http://jedenbod.cz/wp-content/uploads/2009/04/start-menu.jpg)[/caption]
+[caption id="attachment_171" align="aligncenter" width="426" caption="Windows 7 Start Menu"]![Windows 7 Start Menu](/uploads/2009/04/start-menu.jpg)[/caption]
 
 
 

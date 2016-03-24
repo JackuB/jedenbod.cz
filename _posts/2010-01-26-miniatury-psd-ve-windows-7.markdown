@@ -26,7 +26,7 @@ _Rychlý tip._![](http://www.mdofpc.com/onlinestore/images/options/PhotoshopCS4i
 
 
 
-![explorer](http://jedenbod.cz/wp-content/uploads/livewriter/MiniaturyPDSveWindows7_149B4/explorer.jpg)
+![explorer](/uploads/livewriter/MiniaturyPDSveWindows7_149B4/explorer.jpg)
 
 
 

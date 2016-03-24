@@ -70,21 +70,21 @@ Doba přípravy je přibližně hodina.
 
 Začneme s masem. Jako u všeho platí – čím lepší výchozí suroviny, tím lepší výsledek.
 
-![Krůtí maso](http://jedenbod.cz/wp-content/uploads/livewriter/Chillikrta_12A1E/P1040493.jpg)
+![Krůtí maso](/uploads/livewriter/Chillikrta_12A1E/P1040493.jpg)
 
 Maso musíme rozřezat na malé kousky, ne moc malé, aby se zbytečně nerozpadaly, ale _tak-akorát_.
 
-![P1040507](http://jedenbod.cz/wp-content/uploads/livewriter/Chillikrta_12A1E/P1040507.jpg)
+![P1040507](/uploads/livewriter/Chillikrta_12A1E/P1040507.jpg)
 
 Hned potom si na pánvi rozehřejeme olej a přidáme cibuli a trochu česneku.
 
-![Pánev](http://jedenbod.cz/wp-content/uploads/livewriter/Chillikrta_12A1E/P1040513.jpg)![Cibule](http://jedenbod.cz/wp-content/uploads/livewriter/Chillikrta_12A1E/P1040508.jpg)
+![Pánev](/uploads/livewriter/Chillikrta_12A1E/P1040513.jpg)![Cibule](/uploads/livewriter/Chillikrta_12A1E/P1040508.jpg)
 
 Po pár minutách cibule změkne a můžeme přidat maso. Snižte teplotu a duste pod pokličkou 5-10 minut, dokud maso neztratí růžovou barvu. Nezapomeňte občas promíchat, ať se cibule nepřipálí.
 
 V _mezičase_ připravte pár dalších ingrediencí, nasekejte papriku, oloupejte rajče, vytáhněte koření a otevřete plechovku s fazolemi.
 
-![P1040526](http://jedenbod.cz/wp-content/uploads/livewriter/Chillikrta_12A1E/P1040526.jpg)
+![P1040526](/uploads/livewriter/Chillikrta_12A1E/P1040526.jpg)
 
 Když maso dostane tu správnou barvu, začněte přidávat koření. Doporučuji větší dávku karí, pepře a chilli. Potom přidejte fazole _(osobně mám rád bílé)_ a další zeleninu.
 
@@ -96,10 +96,10 @@ Pak ještě asi 30-45 minut vařte, dokud omáčka nebude mít tu správnou konz
 
 K chilli se výborně hodí nějaký tmavší chleba.
 
-![P1040550](http://jedenbod.cz/wp-content/uploads/livewriter/Chillikrta_12A1E/P1040550.jpg)
+![P1040550](/uploads/livewriter/Chillikrta_12A1E/P1040550.jpg)
 
 Nahoru nezapomeňte nastrouhat trochu sýru a můžete přidat i čerstvá rajčata.
 
-![P1040553](http://jedenbod.cz/wp-content/uploads/livewriter/Chillikrta_12A1E/P1040553.jpg)
+![P1040553](/uploads/livewriter/Chillikrta_12A1E/P1040553.jpg)
 
 Dobrou chuť.

@@ -38,13 +38,13 @@ Pokud potřebujete ukrýt například soubor fotka.jpg před jiným uživatelem 
 
 Pokud máte na PC vypnuté zobrazování systémových a skrytých souborů, klikněte pravým na přejmenovaný soubor -> vlastnosti a v atributech zaškrtnětě _**Skrytý**._
 
-[caption id="attachment_539" align="aligncenter" width="387" caption="Vlastnosti - Skrytý"]![Vlastnosti - Skrytý](http://jedenbod.cz/wp-content/uploads/2009/09/atributy-skrytý.PNG)[/caption]
+[caption id="attachment_539" align="aligncenter" width="387" caption="Vlastnosti - Skrytý"]![Vlastnosti - Skrytý](/uploads/2009/09/atributy-skrytý.PNG)[/caption]
 
 Soubor naoko zmizí. Můžete ho znovu zobrazit, když v průzkumníkovi zvolíte Nástroje - Možnosti složky - Zobrazení a povolíte zobrazování skrytých souborů. Pro použití musíte souboru opět přidat správnou koncovku.
 
 
 
-[caption id="attachment_540" align="aligncenter" width="353" caption="Upřesnit nastavení"]![Upřesnit nastavení](http://jedenbod.cz/wp-content/uploads/2009/09/upřesnit-nastavení.PNG)[/caption]
+[caption id="attachment_540" align="aligncenter" width="353" caption="Upřesnit nastavení"]![Upřesnit nastavení](/uploads/2009/09/upřesnit-nastavení.PNG)[/caption]
 
 
 ### Schovejte soubor hluboko do systémových adresářů
@@ -64,13 +64,13 @@ Zde se již nabízí více cest. Vybírám jen několik.
 ### Schování rar do jpg
 
 
-Pokud přece jen nepotřebujete až takovou ochranu stačí schovat **rar **archiv, s libovolným obsahem, do **jpg**. Není to nic složitého. Podívejte se na tento obrázek: [vysledek.jpg](http://jedenbod.cz/wp-content/uploads/2009/09/vysledek.jpg). Stáhněte si jej na plochu a zkuste jej otevřít jako normální obrázek. Vše OK. A teď jej otevřete ve WinRaru.
+Pokud přece jen nepotřebujete až takovou ochranu stačí schovat **rar **archiv, s libovolným obsahem, do **jpg**. Není to nic složitého. Podívejte se na tento obrázek: [vysledek.jpg](/uploads/2009/09/vysledek.jpg). Stáhněte si jej na plochu a zkuste jej otevřít jako normální obrázek. Vše OK. A teď jej otevřete ve WinRaru.
 
 Jak na to?
 
 Vše lze bez nějakého programu, stačí příkazová řádka ve Windows. Vložte obrázek i rar do jedné složky. Použil jsem _c:\rar-test_.
 
-[caption id="attachment_545" align="aligncenter" width="570" caption="Rar v jpg"]![Rar v jpg](http://jedenbod.cz/wp-content/uploads/2009/09/rar-v-jpg-570x333.PNG)[/caption]
+[caption id="attachment_545" align="aligncenter" width="570" caption="Rar v jpg"]![Rar v jpg](/uploads/2009/09/rar-v-jpg-570x333.PNG)[/caption]
 
 Pomocí příkazu
 
@@ -104,7 +104,7 @@ Nezapomínejte také na to, že šifrování znamená zpomalení výkonu vašeho
 ## Velmi bezpečné - Proti VELMI zvídavým lidem
 
 
-Občas se stane, že máte něco, co je skutečně důležité. Ne, nemyslím vaše nahé fotky před zrcadlem. Ale něco **SKUTEČNĚ** důležitého. Zabezpečit něco takového není zrovna jednoduché. Předchozí metody, kromě šifrování, jdou prohlédnout a co se šifrování týče, můžete být donuceni říct heslo. Ať už vládními agenty nebo sociohackingem.![FBI Party Van](http://jedenbod.cz/wp-content/uploads/2009/09/FBI-570x324.jpg)
+Občas se stane, že máte něco, co je skutečně důležité. Ne, nemyslím vaše nahé fotky před zrcadlem. Ale něco **SKUTEČNĚ** důležitého. Zabezpečit něco takového není zrovna jednoduché. Předchozí metody, kromě šifrování, jdou prohlédnout a co se šifrování týče, můžete být donuceni říct heslo. Ať už vládními agenty nebo sociohackingem.![FBI Party Van](/uploads/2009/09/FBI-570x324.jpg)
 
 Mezi nejbezpečnější cesty pro zabezpečení se jeví použití TrueCryptu s možností skrývaní partition nebo celých operačních systémů. Ze zkušeností ostatních vím, že se vyplatí mít nějaká data, _jakože _skrytá. Klidně zašifrovaná pomocí TrueCryptu, jen na odvedení pozornosti. Když vydáte tyto, nemusí se nikdo dozvědět o dalších zašifrovaných datech na vašem PC.
 
@@ -121,7 +121,7 @@ Nějaký jednoduchý návod neexistuje. Nemůžete vědět, do jaké situace se 
 
 Určitě víte, že smazáním souboru pomocí průzkumníku, se souboru nezbavíte. Jen se vymaže z indexu souborů. Na disku stále zůstává. Aby se soubour nedal obnovit, musíte ho přepsat nějakými daty. K tomu se hodí jednoduchý program [CyberShredder](http://www.cylog.org/utilities/cybershredder.jsp), který právě toto umí.
 
-[caption id="attachment_551" align="aligncenter" width="318" caption="CyberShredder"]![CyberShredder](http://jedenbod.cz/wp-content/uploads/2009/09/CyberShredder.PNG)[/caption]
+[caption id="attachment_551" align="aligncenter" width="318" caption="CyberShredder"]![CyberShredder](/uploads/2009/09/CyberShredder.PNG)[/caption]
 
 Přepisování daty sice chvíli trvá, ale ani forenzní analýza by neměla odhalit, jaká že data tam byla předtím.
 

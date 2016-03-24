@@ -36,7 +36,7 @@ Ve hře **Brothers in Arms - Hell's Highway** máte na výběr 3 obtížnosti:
   3. Authentic - _ta se odemkne po dokončení hry na jednu z předchozích obtížností_
 
 
-[caption id="attachment_186" align="alignnone" width="570" caption="Brothers in Arms - Hell's Highway"]![Brothers in Arms - Hell's Highway](http://jedenbod.cz/wp-content/uploads/2009/04/bia-in-game1-1024x576.jpg)[/caption]
+[caption id="attachment_186" align="alignnone" width="570" caption="Brothers in Arms - Hell's Highway"]![Brothers in Arms - Hell's Highway](/uploads/2009/04/bia-in-game1-1024x576.jpg)[/caption]
 
 Poprvé jsem hru dohrál na úrovni _Veteran_, jenže to mi přišlo docela jednoduché. Série **Brothers in Arms** byly vždy spíše trochu méně arkádovější než ostatní tittuly jako **Call of Duty** nebo **Medal of Honor**. Proto jsem se rozhodl vyzkoušet úroveň **Authentic**.
 
@@ -66,7 +66,7 @@ Například ve starším **Vietcongu**, jste v multiplayeru, při zapnutí módu
 
 Nebo **ArmA** z vás po zapnutí nejvyššího stupně realističnosti udělala idiotského vojáka, který ani nepoznal spolubojovníka stojícího 1 metr od vás.
 
-[caption id="attachment_190" align="aligncenter" width="570" caption="ArmA"]![ArmA](http://jedenbod.cz/wp-content/uploads/2009/04/arma_screenshot_2006_18-570x510.jpg)[/caption]
+[caption id="attachment_190" align="aligncenter" width="570" caption="ArmA"]![ArmA](/uploads/2009/04/arma_screenshot_2006_18-570x510.jpg)[/caption]
 
 Takhle realitu ve hře rozhodně nezískáte.
 

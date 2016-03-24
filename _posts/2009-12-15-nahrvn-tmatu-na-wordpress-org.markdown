@@ -29,6 +29,6 @@ Schválení tématu však, kromě mnoha hodin kódování ve volném čase, pře
 
 
 
-[![Zobrazit album Nahrávání do Wordpressu](http://jedenbod.cz/wp-content/uploads/livewriter/7f7399245978_DFF6/InlineRepresentation28f7e27ca00b4a26aedb32129184960f.jpg)](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1323&ct=photos)
+[![Zobrazit album Nahrávání do Wordpressu](/uploads/livewriter/7f7399245978_DFF6/InlineRepresentation28f7e27ca00b4a26aedb32129184960f.jpg)](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1323&ct=photos)
 
 [Zobrazit cele album](http://cid-8cf1d55c6c1f391b.skydrive.live.com/redir.aspx?page=browse&resid=8CF1D55C6C1F391B!1323&ct=photos)

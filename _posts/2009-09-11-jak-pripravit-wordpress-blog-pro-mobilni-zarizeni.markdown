@@ -33,7 +33,7 @@ Přístup na web pomocí mobilních zařízení stále tvoří dost mizivou čá
 
 Nejdříve si odzkoušejte jak vypadá váš web v mobilním zařízení. Jestli nemáte žádné po ruce, můžete vyzkoušet [online verzi Opera Mini](http://www.opera.com/mini/demo/). Můj web vypadal asi takto.
 
-![jedenbod-opera-mini-4.2-1](http://jedenbod.cz/wp-content/uploads/2009/09/jedenbod-opera-mini-4.2-1.PNG)![jedenbod-opera-mini-4.2-2](http://jedenbod.cz/wp-content/uploads/2009/09/jedenbod-opera-mini-4.2-2.PNG)
+![jedenbod-opera-mini-4.2-1](/uploads/2009/09/jedenbod-opera-mini-4.2-1.PNG)![jedenbod-opera-mini-4.2-2](/uploads/2009/09/jedenbod-opera-mini-4.2-2.PNG)
 
 Jasně vidíte, že nic moc, abych tak řekl. Je to sotva na hranici použitelnosti. Naštěstí je tady řešení.
 
@@ -45,7 +45,7 @@ Jedním pluginem můžete pokrýt téměř všechny mobilní zařízení. Stáhn
 
 Pohrál jsem si chvilku s lokalizací a web vypadal najednou takto:
 
-![jedenbod-opera-mini-4.2-3](http://jedenbod.cz/wp-content/uploads/2009/09/jedenbod-opera-mini-4.2-3.PNG)![jedenbod-opera-mini-4.2-4](http://jedenbod.cz/wp-content/uploads/2009/09/jedenbod-opera-mini-4.2-4.PNG)
+![jedenbod-opera-mini-4.2-3](/uploads/2009/09/jedenbod-opera-mini-4.2-3.PNG)![jedenbod-opera-mini-4.2-4](/uploads/2009/09/jedenbod-opera-mini-4.2-4.PNG)
 
 [Můžete se podívat sami](http://www.opera.com/mini/demo/).
 
@@ -63,12 +63,12 @@ Nejdříve si musíte stáhnout [Safari pro Windows](http://www.apple.com/safari
 
 
 
-[caption id="attachment_533" align="aligncenter" width="434" caption="iPhone web simulator"]![iPhone web simulator](http://jedenbod.cz/wp-content/uploads/2009/09/iphone-web-simulator.PNG)[/caption]
+[caption id="attachment_533" align="aligncenter" width="434" caption="iPhone web simulator"]![iPhone web simulator](/uploads/2009/09/iphone-web-simulator.PNG)[/caption]
 
 Teď si do Wordpressu stáhneme plugin [iWPhone](http://iwphone.contentrobot.com/), který aplikujete podobně jako Wordpress Mobile Edition. Zde si už můžete více vyhrát, kromě překladu, také s CSS. Můj web tedy na iPhonu vypadá přibližně takto:
 
 
 
-[caption id="attachment_534" align="aligncenter" width="439" caption="iPhone web simulator - iWPhone"]![iPhone web simulator - iWPhone](http://jedenbod.cz/wp-content/uploads/2009/09/jedenbod-iphone-web-simulator.PNG)[/caption]
+[caption id="attachment_534" align="aligncenter" width="439" caption="iPhone web simulator - iWPhone"]![iPhone web simulator - iWPhone](/uploads/2009/09/jedenbod-iphone-web-simulator.PNG)[/caption]
 
 Pokud chcete, můžete využít také [speciální administrační rozhraní pro Wordpress](http://iphone.wordpress.org/), připravené pro iPhone/iPod.

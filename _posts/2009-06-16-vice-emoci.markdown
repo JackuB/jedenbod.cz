@@ -26,7 +26,7 @@ tags:
 
 O emocích v PC hrách se hovoří již velmi dlouhou dobu. Snad od jejich vzniku. Mnoho herních designérů se u hráčů snažilo nastolit pocit, že ta _věc_, se kterou vedou interakci, není jen hromada pixelů. Ať se snažili sebevíc, pořád to byla _hra_. Ta hranice mezi monitorem a světem byla nesmazatelná. I když jste se do hry ponořili, stále byla velmi jasně cítit. Nepočítám teď jednotlivé případy odtržení hráčů od reality, ale bavíme se spíše v obecné rovině.
 
-[caption id="attachment_330" align="aligncenter" width="570" caption="Peter Molyneux"]![Peter Molyneux](http://jedenbod.cz/wp-content/uploads/2009/06/Peter-Molyneux-570x270.jpg)[/caption]
+[caption id="attachment_330" align="aligncenter" width="570" caption="Peter Molyneux"]![Peter Molyneux](/uploads/2009/06/Peter-Molyneux-570x270.jpg)[/caption]
 
 Vzpomínám si na jeden článek z [Levelu](http://level.cz/), tuším, že ho psal Dan Vávra, jeden z vývojářů Mafie. Byla v něm citována malá část rozhovoru s Peterem Molyneuxem. Článek se točil právě o emocích ve hrách. Peter Molyneux tvrdil, že v opravdu dobré hře, se budete muset např. skutečně rozhodnout, jestli onu postavu zastřelíte či ne. Hlavní rozdíl je v tom, že to nebude již jen několik miliónů reálně stínovaných polygonů nasvícených HDR a viděných na HD. Samozřejmě, že to k next-gen patří, ale je to prostředek, ne cíl. Cíl je, že se budete dostávat do skutečných světů. Alespoň vaše mysl. **Postavy** vás budou znát, vy budete znát je. Vaše rozhodování má být řízeno morálními postoji a ne jen tím, za co dostanete více bodů/karmy. Skutečně, pokud se opět nejedná o pře-hypovaný projekt, Peter Molyneux se dočkal. **Projekt Natal**.
 
@@ -39,7 +39,7 @@ Ale myšlenka _přiblížení světů_ mi přijde lákavá. Jenže na PC stále 
 ## Left 4 Dead
 
 
-[caption id="attachment_333" align="aligncenter" width="570" caption="Left 4 Dead"]![Left 4 Dead](http://jedenbod.cz/wp-content/uploads/2009/06/xleft4dead-2009-06-16-20-54-02-30-570x456.jpg)[/caption]
+[caption id="attachment_333" align="aligncenter" width="570" caption="Left 4 Dead"]![Left 4 Dead](/uploads/2009/06/xleft4dead-2009-06-16-20-54-02-30-570x456.jpg)[/caption]
 
 Skutečně akční hra. Umělá inteligence se přizpůsobuje vašemu stylu hraní, takže se ani vteřinu nenudíte. Dobře odvedená práce.
 
@@ -47,9 +47,9 @@ Ale přece. Má to být survival akce a já jsem nějak necítil nějaký silný
 
 Podívejte se na tyto 2 obrázky:
 
-[caption id="attachment_334" align="aligncenter" width="570" caption="Left 4 Dead"]![Left 4 Dead](http://jedenbod.cz/wp-content/uploads/2009/06/xleft4dead-2009-06-16-21-18-50-07-570x456.jpg)[/caption]
+[caption id="attachment_334" align="aligncenter" width="570" caption="Left 4 Dead"]![Left 4 Dead](/uploads/2009/06/xleft4dead-2009-06-16-21-18-50-07-570x456.jpg)[/caption]
 
-[caption id="attachment_335" align="aligncenter" width="570" caption="Left 4 Dead"]![Left 4 Dead](http://jedenbod.cz/wp-content/uploads/2009/06/xleft4dead-2009-06-16-21-18-56-11-570x456.jpg)[/caption]
+[caption id="attachment_335" align="aligncenter" width="570" caption="Left 4 Dead"]![Left 4 Dead](/uploads/2009/06/xleft4dead-2009-06-16-21-18-56-11-570x456.jpg)[/caption]
 
 Můj avatar stále svírá zbraně, ve stejné poloze, jako by se nic nedělo. Může se to zdát jako malichernost. Ale představte si situaci, že je kolem vás 10 zombie, kteří do vás zuřivě kopou:
 
@@ -66,7 +66,7 @@ Už víte kam mířím? Jak jsem psal výše, hra má skvělou hororovou atmosf�
 
 Když už se děje něco, co zavání _strašením_, hra se přepne do 3D módu. Například při útoku Huntera, což je daleko-skákající zombie, který vás útokem srazí k zemi, kde vás začne cupovat.
 
-[caption id="attachment_338" align="aligncenter" width="570" caption="Left 4 Dead - Útok Huntera"]![Left 4 Dead - Útok Huntera](http://jedenbod.cz/wp-content/uploads/2009/06/left_4_dead_hunter_attack_02-570x356.jpg)[/caption]
+[caption id="attachment_338" align="aligncenter" width="570" caption="Left 4 Dead - Útok Huntera"]![Left 4 Dead - Útok Huntera](/uploads/2009/06/left_4_dead_hunter_attack_02-570x356.jpg)[/caption]
 
 Co takhle pohled z první osoby, kdy před sebou mácháte rukama, ale Hunter vás stejně pomalu, ale jistě zabíjí á la útok psa v Call of Duty 4?
 

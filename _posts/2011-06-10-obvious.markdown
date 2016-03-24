@@ -16,7 +16,7 @@ tags:
 - It's a trap
 ---
 
-![20110610-181149.jpg](http://jedenbod.cz/wp-content/uploads/2011/06/20110610-181149.jpg)
+![20110610-181149.jpg](/uploads/2011/06/20110610-181149.jpg)
 
 
 
@@ -27,7 +27,7 @@ tags:
 
 
 
-![20110610-181236.jpg](http://jedenbod.cz/wp-content/uploads/2011/06/20110610-181236.jpg)
+![20110610-181236.jpg](/uploads/2011/06/20110610-181236.jpg)
 
 Volejte hned: +420 723 337 253
 

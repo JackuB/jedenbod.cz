@@ -23,7 +23,7 @@ tags:
 
 Facebook již dříve [ohlašoval redesign hlavní](http://www.insidefacebook.com/2009/10/19/facebook-redesign-document-shows-more-changes-for-the-news-feed/) stránky a skutečně k němu dnes v 10 hodin pacifického času došlo. Mělo jít hlavně o vytvoření nového kanálu, který by fungoval na principu _Hlavních zpráv_. Zkrátka: jeden kanál, kde bude vše, jak to bylo dříve, a jeden, kde budou jen ty nejdůležitější věci.
 
-![facebook-banner](http://jedenbod.cz/wp-content/uploads/2009/10/facebook-banner.jpg)
+![facebook-banner](/uploads/2009/10/facebook-banner.jpg)
 
 
 ## Původní plány na redesign
@@ -52,7 +52,7 @@ Facebook se příliš netajil, že by chtěl změnit celkovou strukturu hlavní 
 
 Jde o jakýsi souhrn všeho co se děje u všech vašich přátel. Samozřejmě v reálném čase. Kanál aktuálních zpráv nahrazuje v podstatě původní _**Zeď**_, kde bylo vše co jste neodfiltrovali.
 
-[caption id="attachment_673" align="aligncenter" width="546" caption="Kanály na Facebooku"]![Kanály na Facebooku](http://jedenbod.cz/wp-content/uploads/2009/10/kanály.jpg)[/caption]
+[caption id="attachment_673" align="aligncenter" width="546" caption="Kanály na Facebooku"]![Kanály na Facebooku](/uploads/2009/10/kanály.jpg)[/caption]
 
 
 ### News Feed - Novinky
@@ -60,7 +60,7 @@ Jde o jakýsi souhrn všeho co se děje u všech vašich přátel. Samozřejmě 
 
 Naproti tomu stojí _Novinky_, které vypadají jako _novinka_. Avšak tento prvek, vybírání toho nejdůležitějšího - _Highlights,_ byl na Facebooku již dříve, v pravém sloupci.
 
-[caption id="attachment_671" align="alignleft" width="106" caption="Facebook highlights"]![Facebook highlights - zdroj: Flickr](http://jedenbod.cz/wp-content/uploads/2009/10/highlights.jpg)[/caption]
+[caption id="attachment_671" align="alignleft" width="106" caption="Facebook highlights"]![Facebook highlights - zdroj: Flickr](/uploads/2009/10/highlights.jpg)[/caption]
 
 Jenže _Highlights_ neměl příliš velké prokliky a celkově nějak zapadl. Proto došlo ke změně - sloupec zmizel a stal se z něj druhý kanál - _News Feed_, který by měl být důležitější.
 

@@ -36,7 +36,7 @@ Nebavíme se už pouze o zahození konceptu _bílé krychle_ a přechodu k flu
 
 
 
-![4chan place where friends meet](http://jedenbod.cz/wp-content/uploads/2012/04/1325641956381-570x712.jpg)
+![4chan place where friends meet](/uploads/2012/04/1325641956381-570x712.jpg)
 
 
 
@@ -44,7 +44,7 @@ Nebavíme se už pouze o zahození konceptu _bílé krychle_ a přechodu k flu
 
 
 
-![4chan smash face on keyboard post results](http://jedenbod.cz/wp-content/uploads/2012/04/1248972006309-570x497.jpg)
+![4chan smash face on keyboard post results](/uploads/2012/04/1248972006309-570x497.jpg)
 
 
 ##
@@ -61,7 +61,7 @@ Podstatnou pravdou je, že historie /b/ částečně opisuje historii umění ((
 
 
 
-![meme kitsch](http://jedenbod.cz/wp-content/uploads/2012/04/13343563802631-570x1282.png)
+![meme kitsch](/uploads/2012/04/13343563802631-570x1282.png)
 
 
 
@@ -69,7 +69,7 @@ Nemohli konkurovat kýči - musí se rozhodnout jít cestou, která pro masy neb
 
 
 
-![Milhouse is not a meme](http://jedenbod.cz/wp-content/uploads/2012/04/600px-milhouse_van_houten-570x570.png)
+![Milhouse is not a meme](/uploads/2012/04/600px-milhouse_van_houten-570x570.png)
 
 
 

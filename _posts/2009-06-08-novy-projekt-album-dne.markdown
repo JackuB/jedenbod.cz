@@ -19,7 +19,7 @@ tags:
 
 Celý nápad vznikl náhodou. Několik dní po sobě jsem ráno co ráno řešil dilema, co budu poslouchat. Vždy jsem narychlo něco vybral a to pak pro mě bylo **'Album Dne'**. Časem z toho vznikl tento nápad.
 
-[caption id="attachment_287" align="aligncenter" width="570" caption="Album dne"][![Album dne](http://jedenbod.cz/wp-content/uploads/2009/06/album-dne-570x509.jpg)](http://albumdne.jedenbod.cz/)[/caption]
+[caption id="attachment_287" align="aligncenter" width="570" caption="Album dne"][![Album dne](/uploads/2009/06/album-dne-570x509.jpg)](http://albumdne.jedenbod.cz/)[/caption]
 
 Nápad je jednoduchý. Každý den jedno album. Včetně krátkého infa a odkazů, kde jej sehnat.
 
